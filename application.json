@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "id": "Login",
+      "isDefault": true
+    },
+    {
+      "id": "Event ",
+      "isDefault": false
+    },
+    {
+      "id": "Main",
+      "isDefault": false
+    },
+    {
+      "id": "Calculator",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "63bbad0aa9f4ff7974e6b21e",
+  "color": "#F3F1C7",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
