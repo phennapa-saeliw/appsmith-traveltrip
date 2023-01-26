@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_trip\n  (name, trip_start, trip_end)\nVALUES\n  (\n    {{JSONForm1.fieldState.customField1}},\n    {{JSONForm1.fieldState.customField2}},\n    {{JSONForm1.fieldState.customField3}}\n  );\n\tINSERT INTO event_member\n\t (member_id)\n\t VALUES\n\t \t({{JSONForm1.fieldState.customField4}});",
+      "body": "INSERT INTO event_trip\n  (name)\nVALUES\n  (\n    '{{JSONForm1.formData.customField1}}'\n  )\n\tINSERT INTO event_trip\n  (name)\nVALUES\n  (\n    '{{JSONForm1.formData.customField4}}'\n  );\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,10 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1.fieldState.customField1",
-      "JSONForm1.fieldState.customField2",
-      "JSONForm1.fieldState.customField3",
-      "JSONForm1.fieldState.customField4"
+      "JSONForm1.formData.customField1",
+      "JSONForm1.formData.customField4"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

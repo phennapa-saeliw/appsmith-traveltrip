@@ -46,23 +46,19 @@
               "parentColumnSpace": 6.21875,
               "dynamicTriggerPathList": [],
               "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "backgroundColor"
-                }
-              ],
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas5Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 520,
+                  "bottomRow": 560,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 518,
+                  "minHeight": 562,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -514,12 +510,12 @@
                           "widgetName": "Canvas6Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 50,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
                           "hideCard": true,
-                          "minHeight": 50,
+                          "minHeight": 60,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
@@ -548,10 +544,10 @@
                               "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Edit infomation trip",
+                              "text": "แก้ไขรายละเอียดของทริป",
                               "key": "1ojvgm3hgy",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 61,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "grjifhdgeo",
@@ -562,10 +558,10 @@
                               "parentId": "68p6iduw1u",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 1,
+                              "originalTopRow": 0,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 5,
+                              "originalBottomRow": 6,
                               "fontSize": "1.25rem",
                               "minDynamicHeight": 4
                             }
@@ -611,8 +607,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 47,
-                      "bottomRow": 51,
+                      "topRow": 49,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -661,10 +657,10 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 518,
+              "height": 562,
               "isDeprecated": false,
               "rightColumn": 25,
-              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "ttrqfzbbee",
@@ -2389,11 +2385,7 @@
               "parentColumnSpace": 6.21875,
               "dynamicTriggerPathList": [],
               "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "backgroundColor"
-                }
-              ],
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas5",
@@ -2667,6 +2659,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "{{create_trip.run(() => showAlert('สร้างรายการสำเร็จ','success'), () => {})}}",
                       "topRow": 6,
                       "bottomRow": 49,
                       "fieldLimitExceeded": false,
@@ -2682,6 +2675,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField1.onTextChanged"
+                        },
+                        {
+                          "key": "onSubmit"
                         }
                       ],
                       "leftColumn": 0,
@@ -2987,7 +2983,7 @@
               "height": 518,
               "isDeprecated": false,
               "rightColumn": 25,
-              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "f9ywy6pvcy",

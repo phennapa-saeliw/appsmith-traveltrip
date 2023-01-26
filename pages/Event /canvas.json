@@ -46,23 +46,19 @@
               "parentColumnSpace": 6.21875,
               "dynamicTriggerPathList": [],
               "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "backgroundColor"
-                }
-              ],
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas5CopyCopy1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 600,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 552,
+                  "minHeight": 610,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -78,8 +74,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 49,
-                      "bottomRow": 54,
+                      "topRow": 53,
+                      "bottomRow": 58,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -493,7 +489,7 @@
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
                       "topRow": 6,
-                      "bottomRow": 49,
+                      "bottomRow": 52,
                       "fieldLimitExceeded": false,
                       "parentRowSpace": 10,
                       "title": "",
@@ -741,12 +737,12 @@
                           "widgetName": "Canvas6CopyCopy1",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 50,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
                           "hideCard": true,
-                          "minHeight": 50,
+                          "minHeight": 60,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
@@ -771,14 +767,14 @@
                               "fontFamily": "Poppins",
                               "parentColumnSpace": 6.4921875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 3,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Edit event",
+                              "text": "เเก้ไขรายละเอียดของกิจกรรม",
                               "key": "1ojvgm3hgy",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 64,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "1x9omcx27u",
@@ -789,10 +785,10 @@
                               "parentId": "wisacu52io",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 1,
+                              "originalTopRow": 0,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 5,
+                              "originalBottomRow": 6,
                               "fontSize": "1.25rem",
                               "minDynamicHeight": 4
                             }
@@ -842,10 +838,10 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 552,
+              "height": 610,
               "isDeprecated": false,
               "rightColumn": 25,
-              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "9bat55ofe7",
@@ -885,23 +881,19 @@
                 }
               ],
               "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "backgroundColor"
-                }
-              ],
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas5CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 710,
+                  "bottomRow": 630,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 716,
+                  "minHeight": 636,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -1010,7 +1002,7 @@
                               "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Manage a Second event",
+                              "text": "จัดการกิจกรรมย่อย",
                               "key": "1ojvgm3hgy",
                               "isDeprecated": false,
                               "rightColumn": 59,
@@ -1066,7 +1058,11 @@
                       "boxShadow": "none",
                       "widgetName": "ButtonGroup1",
                       "isCanvas": false,
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "buttonVariant"
+                        }
+                      ],
                       "displayName": "Button Group",
                       "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
                       "searchTags": [
@@ -1088,7 +1084,7 @@
                           "isDisabled": false,
                           "index": 0,
                           "menuItems": {},
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "buttonColor": "#ec4899",
                           "onClick": "{{storeValue('tab','Tab 1')}}"
                         },
                         "groupButton2": {
@@ -1102,7 +1098,7 @@
                           "isDisabled": false,
                           "index": 1,
                           "menuItems": {},
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "buttonColor": "#fff",
                           "onClick": "{{storeValue('tab','Tab 2')}}"
                         }
                       },
@@ -1122,12 +1118,6 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "groupButtons.groupButton1.buttonColor"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.buttonColor"
                         }
                       ],
                       "isDisabled": false,
@@ -2767,10 +2757,10 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 716,
+              "height": 636,
               "isDeprecated": false,
               "rightColumn": 25,
-              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "3rcppy1rm2",
