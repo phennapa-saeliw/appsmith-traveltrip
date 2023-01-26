@@ -5,11 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Event ",
+      "id": "Main",
       "isDefault": false
     },
     {
-      "id": "Main",
+      "id": "Event ",
       "isDefault": false
     },
     {

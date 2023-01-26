@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 690,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1190,7 +1190,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas7",
                           "displayName": "Canvas",
-                          "bottomRow": 460,
+                          "bottomRow": 470,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -1202,78 +1202,6 @@
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
-                            {
-                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                              "widgetName": "Container4CopyCopyCopy",
-                              "borderColor": "#ec4899",
-                              "isCanvas": true,
-                              "displayName": "Container",
-                              "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
-                              "searchTags": [
-                                "div",
-                                "parent",
-                                "group"
-                              ],
-                              "topRow": 38,
-                              "bottomRow": 43,
-                              "parentRowSpace": 10,
-                              "type": "CONTAINER_WIDGET",
-                              "hideCard": false,
-                              "shouldScrollContents": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.4921875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 4,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "boxShadow"
-                                }
-                              ],
-                              "children": [
-                                {
-                                  "widgetName": "Canvas6CopyCopyCopy",
-                                  "displayName": "Canvas",
-                                  "topRow": 0,
-                                  "bottomRow": 60,
-                                  "parentRowSpace": 1,
-                                  "type": "CANVAS_WIDGET",
-                                  "canExtend": false,
-                                  "hideCard": true,
-                                  "minHeight": 60,
-                                  "parentColumnSpace": 1,
-                                  "leftColumn": 0,
-                                  "dynamicBindingPathList": [],
-                                  "children": [],
-                                  "key": "xwp4t4uufl",
-                                  "isDeprecated": false,
-                                  "rightColumn": 155.8125,
-                                  "detachFromLayout": true,
-                                  "widgetId": "f6xzc8tgn6",
-                                  "containerStyle": "none",
-                                  "isVisible": true,
-                                  "version": 1,
-                                  "parentId": "tlrrv9rc1n",
-                                  "renderMode": "CANVAS",
-                                  "isLoading": false
-                                }
-                              ],
-                              "borderWidth": "",
-                              "key": "9d2fslvmpg",
-                              "backgroundColor": "#fff",
-                              "isDeprecated": false,
-                              "rightColumn": 59,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "tlrrv9rc1n",
-                              "containerStyle": "card",
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "s1yimd31ds",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "1.5rem",
-                              "maxDynamicHeight": 9000,
-                              "minDynamicHeight": 10
-                            },
                             {
                               "template": {
                                 "Text6": {
@@ -1693,7 +1621,7 @@
                               },
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                               "widgetName": "List2",
-                              "listData": "[\n  {\n    \"id\": \"001\",\n    \"name\": \"ขนมปัง\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n\n\t\n  {\n    \"id\": \"002\",\n    \"name\": \"Green\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"003\",\n    \"name\": \"Red\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"004\",\n    \"name\": \"4Red\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"005\",\n    \"name\": \"R5ed\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"006\",\n    \"name\": \"Red6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n\t\n  {\n    \"id\": \"007\",\n    \"name\": \"Red76\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"008\",\n    \"name\": \"Re8d6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"009\",\n    \"name\": \"9ed6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"010\",\n    \"name\": \"Red106\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"011\",\n    \"name\": \"R11ed6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"012\",\n    \"name\": \"Red1126\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  }\n \n]",
+                              "listData": "[\n  {\n    \"id\": \"001\",\n    \"name\": \"ขนมปัง\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n\n\t\n  {\n    \"id\": \"002\",\n    \"name\": \"ข้าวต้ม\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"003\",\n    \"name\": \"ไก่ทอด\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"004\",\n    \"name\": \"ปลาย่าง\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"005\",\n    \"name\": \"R5ed\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"006\",\n    \"name\": \"Red6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n\t\n  {\n    \"id\": \"007\",\n    \"name\": \"Red76\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"008\",\n    \"name\": \"Re8d6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"009\",\n    \"name\": \"9ed6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"010\",\n    \"name\": \"Red106\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"011\",\n    \"name\": \"R11ed6\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"012\",\n    \"name\": \"Red1126\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  }\n \n]",
                               "isCanvas": true,
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -1845,6 +1773,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 62,
                                               "iconName": "trash",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "4592ndwhdd",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -1924,7 +1853,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 54,
                                               "textAlign": "LEFT",
-                                              "dynamicHeight": "AUTO_HEIGHT",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "sve5f39olt",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -2021,7 +1950,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 41,
                                               "textAlign": "LEFT",
-                                              "dynamicHeight": "AUTO_HEIGHT",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "kijxcv5ci5",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -2084,6 +2013,7 @@
                                             {
                                               "boxShadow": "none",
                                               "widgetName": "Text6",
+                                              "dynamicPropertyPathList": [],
                                               "displayName": "Text",
                                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                                               "searchTags": [
@@ -2107,9 +2037,6 @@
                                                   "key": "truncateButtonColor"
                                                 },
                                                 {
-                                                  "key": "fontFamily"
-                                                },
-                                                {
                                                   "key": "borderRadius"
                                                 }
                                               ],
@@ -2121,7 +2048,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 26,
                                               "textAlign": "CENTER",
-                                              "dynamicHeight": "AUTO_HEIGHT",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "p0v5kd8hdr",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -2221,7 +2148,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 10,
                                               "textAlign": "CENTER",
-                                              "dynamicHeight": "AUTO_HEIGHT",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "wma2umijb8",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -4329,7 +4256,7 @@
                               },
                               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                               "widgetName": "List1",
-                              "listData": "[\n  {\n    \"id\": \"001\",\n    \"name\": \"ทานอาหาร\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"002\",\n    \"name\": \"ที่พัก\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"003\",\n    \"name\": \"ทานอาหาร\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"002\",\n    \"name\": \"เดินทาง\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"003\",\n    \"name\": \"จุดท่องเที่ยว\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"002\",\n    \"name\": \"Green\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  },\n  {\n    \"id\": \"003\",\n    \"name\": \"Red\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  }\n]",
+                              "listData": "[\n  {\n    \"id\": \"001\",\n    \"name\": \"ทานอาหาร\",\n    \"img\": \"https://assets.appsmith.com/widgets/default.png\"\n  }\n]",
                               "isCanvas": true,
                               "dynamicPropertyPathList": [],
                               "displayName": "List",
@@ -4497,6 +4424,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 53,
                                               "iconName": "edit",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "2y6nxqfvzx",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -4564,6 +4492,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 63,
                                               "iconName": "trash",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "pzd6cdfqy7",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -4686,6 +4615,7 @@
                                                       "isDeprecated": false,
                                                       "rightColumn": 63,
                                                       "iconName": "align-justify",
+                                                      "dynamicHeight": "FIXED",
                                                       "menuVariant": "PRIMARY",
                                                       "widgetId": "egl7wbzpll",
                                                       "menuItems": {
@@ -4972,7 +4902,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 10,
                                               "textAlign": "LEFT",
-                                              "dynamicHeight": "AUTO_HEIGHT",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "edx64r429m",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -5066,6 +4996,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 34,
                                               "iconName": "shopping-cart",
+                                              "dynamicHeight": "FIXED",
                                               "widgetId": "o3qs5qmhpl",
                                               "logBlackList": {
                                                 "isVisible": true,
@@ -5215,10 +5146,14 @@
                       "parentColumnSpace": 6.53125,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 9,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "บันทึกกิจกรรม \nกทม - เชียงใหม่ ทริป 3 วัน 2 คืน\n",
+                      "text": "บันทึกกิจกรรม\n{{appsmith.URL.queryParams.listname}}",
                       "key": "sf3r6zjw7q",
                       "isDeprecated": false,
                       "rightColumn": 54,

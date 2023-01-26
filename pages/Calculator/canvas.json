@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 690,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -994,7 +994,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "[\n  {\n    \"label\": \"กรุงเทพ - เชียงใหม่ 3 วัน 2 คืน\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"เชียงใหม่ - กรุงเทพ 5 วัน 4 คืน\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"เชียงราย - เชียงใหม่ 4 วัน 3 คืน\",\n    \"value\": \"RED\"\n  }\n]",
+                              "options": "",
                               "labelStyle": "BOLD",
                               "placeholderText": "กรุณาเลือกทริป",
                               "isDisabled": false,
