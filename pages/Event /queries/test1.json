@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "create_trip",
+    "name": "test1",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Event ",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_trip (name, event_trip_start, event_trip_end) \n\nVALUES\n  (\n    '{{JSONForm1.formData.customField1}}',\n\t\t'{{JSONForm1.formData.customField2}}',\n\t\t'{{JSONForm1.formData.customField3}}'\n\t\t\n  )\n\n\n\n",
+      "body": "select list_expense.list_expense_id , list_type.list_type_name , list_expense.name, list_expense.list_expense_amount \nfrom list_expense\ninner join list_type on list_expense.list_type_id = list_type.list_type_id  \nWhere event_history_id  = {{appsmith.store.id_event}}\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,16 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1.formData.customField1",
-      "JSONForm1.formData.customField2",
-      "JSONForm1.formData.customField3"
+      "appsmith.store.id_event"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_create_trip",
+  "id": "Event _test1",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63d238bc3b57a70f0657d0bd"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63d763c83b57a70f0657d201"
 }

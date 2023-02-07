@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "create_trip",
+    "name": "create_trip_select_user",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_trip (name, event_trip_start, event_trip_end) \n\nVALUES\n  (\n    '{{JSONForm1.formData.customField1}}',\n\t\t'{{JSONForm1.formData.customField2}}',\n\t\t'{{JSONForm1.formData.customField3}}'\n\t\t\n  )\n\n\n\n",
+      "body": "select event_trip_id from event_trip WHERE name = '{{JSONForm1.formData.customField1}}'\nand event_trip_start = '{{JSONForm1.formData.customField2}}'\nand event_trip_end = '{{JSONForm1.formData.customField3}}'\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -45,7 +45,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_create_trip",
+  "id": "Main_create_trip_select_user",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63d238bc3b57a70f0657d0bd"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63e1becd3b57a70f0657d2c1"
 }

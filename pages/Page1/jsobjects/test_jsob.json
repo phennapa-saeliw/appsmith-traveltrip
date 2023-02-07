@@ -1,0 +1,21 @@
+{
+  "unpublishedCollection": {
+    "name": "test_jsob",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tusers : [\n\t\t{\n\t\t\t\"label\" : \"john\",\n\t\t\t\"value\" : \"john@mail.com\"\n\t\t},\n\t\t{\n\t\t\t\"label\" : \"pink\",\n\t\t\t\"value\" : \"pink@mail.com\"\n\t\t},\n\t\t{\n\t\t\t\"label\" : \"blue\",\n\t\t\t\"value\" : \"blue@mail.com\"\n\t\t},\n\t\t\n\t\t\n\t]\n\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "users",
+        "value": "[{\n  \"label\": \"john\",\n  \"value\": \"john@mail.com\"\n}, {\n  \"label\": \"pink\",\n  \"value\": \"pink@mail.com\"\n}, {\n  \"label\": \"blue\",\n  \"value\": \"blue@mail.com\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_test_jsob",
+  "deleted": false,
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63db72f83b57a70f0657d267"
+}
