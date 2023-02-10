@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tuserfunc: async () => {\n\t\t\n\t\tawait JS_create_event.run()\n\t\tawait JS_select_event_trip.run()\n\t\tawait JS_insert_location.run()\n\t\tawait JS_select_location_id.run()\n\t\tstoreValue('event_id')\n\t\t\n\t\tawait JS_insert_location_id.run()\n\t\t\n\t\t\n\t/*\n\t let user_select  = JSONForm1Copy.formData.customField6;\n\t\n\t for(let i=0;i < user_select.length;i++){                         \n\t\t\tconst user_num = user_select[i];    \n\t\t //console.log(user_num);\n\t\t \n\t\t storeValue('user_id',user_num)\n\t\t \n\n\t}\n\t */\n}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _JSObject1",
+  "deleted": false,
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63e4863f3b57a70f0657d331"
+}

@@ -171,7 +171,7 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "ชื่อกิจกรรม",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (List1.selectedItem.event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                              "defaultValue": ""
                             },
                             "customField2": {
                               "children": {},
@@ -603,28 +603,112 @@
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
-                          "key": "schema.__root_schema__.children.customField1.borderRadius"
+                          "key": "schema.__root_schema__.children.event_trip_id.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField1.accentColor"
+                          "key": "schema.__root_schema__.children.event_trip_id.accentColor"
                         },
                         {
-                          "key": "boxShadow"
+                          "key": "schema.__root_schema__.children.event_trip_id.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField2.accentColor"
+                          "key": "schema.__root_schema__.children.event_location_id.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                          "key": "schema.__root_schema__.children.event_location_id.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.defaultValue"
+                          "key": "schema.__root_schema__.children.event_location_id.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.borderRadius"
+                          "key": "schema.__root_schema__.children.event_end.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.cellBorderRadius"
+                          "key": "schema.__root_schema__.children.event_end.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.accentColor"
                         },
                         {
                           "key": "schema.__root_schema__.children.customField3.borderRadius"
@@ -633,115 +717,19 @@
                           "key": "schema.__root_schema__.children.customField3.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField4.accentColor"
+                          "key": "schema.__root_schema__.children.customField2.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField4.borderRadius"
+                          "key": "schema.__root_schema__.children.customField2.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField5.accentColor"
+                          "key": "schema.__root_schema__.children.customField1.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField5.borderRadius"
+                          "key": "schema.__root_schema__.children.customField1.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField6.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField6.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField7.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField7.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField8.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField8.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField9.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField9.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_history_id.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_history_id.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_history_id.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_type_id.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_type_id.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_type_id.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_name.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_name.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_name.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_detail.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_detail.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_detail.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_start.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_start.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_start.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_end.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_end.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_end.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_trip_id.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_trip_id.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_trip_id.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField1.defaultValue"
+                          "key": "boxShadow"
                         }
                       ],
                       "borderWidth": "1",
@@ -1309,6 +1297,9 @@
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
+                          "key": "defaultTab"
+                        },
+                        {
                           "key": "accentColor"
                         },
                         {
@@ -1316,9 +1307,6 @@
                         },
                         {
                           "key": "boxShadow"
-                        },
-                        {
-                          "key": "defaultTab"
                         }
                       ],
                       "children": [
@@ -1755,58 +1743,13 @@
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "listData"
                                 },
                                 {
                                   "key": "borderRadius"
                                 },
                                 {
                                   "key": "boxShadow"
-                                },
-                                {
-                                  "key": "template.Text6.text"
-                                },
-                                {
-                                  "key": "template.Text7.textAlign"
-                                },
-                                {
-                                  "key": "template.Text6.textAlign"
-                                },
-                                {
-                                  "key": "template.IconButton1CopyCopy.iconName"
-                                },
-                                {
-                                  "key": "template.IconButton3CopyCopy1.boxShadow"
-                                },
-                                {
-                                  "key": "template.IconButton3CopyCopy1.buttonVariant"
-                                },
-                                {
-                                  "key": "template.Text7.text"
-                                },
-                                {
-                                  "key": "template.Text6Copy.text"
-                                },
-                                {
-                                  "key": "listData"
-                                },
-                                {
-                                  "key": "template.IconButton3CopyCopy1Copy.iconName"
-                                },
-                                {
-                                  "key": "template.Text6Copy.textAlign"
-                                },
-                                {
-                                  "key": "template.Text6.borderColor"
-                                },
-                                {
-                                  "key": "template.Text6Copy.borderColor"
-                                },
-                                {
-                                  "key": "template.Text6Copy.borderWidth"
-                                },
-                                {
-                                  "key": "template.Text6.textColor"
                                 }
                               ],
                               "gridType": "vertical",
@@ -2051,16 +1994,10 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "dynamicBindingPathList": [
                                                 {
-                                                  "key": "truncateButtonColor"
+                                                  "key": "text"
                                                 },
                                                 {
                                                   "key": "fontFamily"
-                                                },
-                                                {
-                                                  "key": "borderRadius"
-                                                },
-                                                {
-                                                  "key": "text"
                                                 }
                                               ],
                                               "leftColumn": 27,
@@ -2157,10 +2094,7 @@
                                                   "key": "text"
                                                 },
                                                 {
-                                                  "key": "truncateButtonColor"
-                                                },
-                                                {
-                                                  "key": "borderRadius"
+                                                  "key": "fontFamily"
                                                 }
                                               ],
                                               "leftColumn": 8,
@@ -2253,16 +2187,10 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "dynamicBindingPathList": [
                                                 {
-                                                  "key": "truncateButtonColor"
+                                                  "key": "text"
                                                 },
                                                 {
                                                   "key": "fontFamily"
-                                                },
-                                                {
-                                                  "key": "borderRadius"
-                                                },
-                                                {
-                                                  "key": "text"
                                                 }
                                               ],
                                               "leftColumn": 0,
@@ -2653,6 +2581,24 @@
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
+                                  "key": "schema.__root_schema__.children.customField7.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField7.accentColor"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField6.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField6.accentColor"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField2.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField2.accentColor"
+                                },
+                                {
                                   "key": "schema.__root_schema__.children.customField1.borderRadius"
                                 },
                                 {
@@ -2684,33 +2630,6 @@
                                 },
                                 {
                                   "key": "schema.__root_schema__.children.name.defaultValue"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField2.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField2.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.defaultValue"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.cellBorderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField6.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField6.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField7.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField7.borderRadius"
                                 }
                               ],
                               "borderWidth": "1",
@@ -3091,6 +3010,24 @@
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
+                                  "key": "schema.__root_schema__.children.customField7.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField7.accentColor"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField6.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField6.accentColor"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField2.borderRadius"
+                                },
+                                {
+                                  "key": "schema.__root_schema__.children.customField2.accentColor"
+                                },
+                                {
                                   "key": "schema.__root_schema__.children.customField1.borderRadius"
                                 },
                                 {
@@ -3122,33 +3059,6 @@
                                 },
                                 {
                                   "key": "schema.__root_schema__.children.name.defaultValue"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField2.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField2.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.defaultValue"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.cellBorderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField6.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField6.borderRadius"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField7.accentColor"
-                                },
-                                {
-                                  "key": "schema.__root_schema__.children.customField7.borderRadius"
                                 }
                               ],
                               "borderWidth": "1",
@@ -3373,11 +3283,7 @@
               "parentColumnSpace": 6.21875,
               "dynamicTriggerPathList": [],
               "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "backgroundColor"
-                }
-              ],
+              "dynamicBindingPathList": [],
               "children": [
                 {
                   "widgetName": "Canvas5Copy",
@@ -3439,7 +3345,7 @@
                             "name": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "defaultValue": "",
                               "fieldType": "Text Input",
                               "sourceData": "John",
                               "isCustomField": false,
@@ -3544,12 +3450,12 @@
                               "boxShadow": "none",
                               "isDisabled": false,
                               "isFilterable": false,
-                              "isRequired": true,
+                              "isRequired": false,
                               "isVisible": true,
-                              "label": "ประเภทของกิจกรรม",
+                              "label": "ประเภทกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "[\n  {\n    \"label\": \"ที่พัก\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"ทานอาหาร\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"จุดท่องเที่ยว\",\n    \"value\": \"RED\"\n  },\n  {\n    \"label\": \"เดินทาง\",\n    \"value\": \"RED2\"\n  }\n]"
+                              "options": "{{event_type.data.map(u =>({label : u.event_type, value : u.event_type_id}))}}"
                             },
                             "customField3": {
                               "children": {},
@@ -3569,7 +3475,6 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "ข้อมูลกิจกรรม"
                             },
@@ -3648,20 +3553,7 @@
                               "label": "เพิ่มสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": [
-                                {
-                                  "label": "Blue",
-                                  "value": "BLUE"
-                                },
-                                {
-                                  "label": "Green",
-                                  "value": "GREEN"
-                                },
-                                {
-                                  "label": "Red",
-                                  "value": "RED"
-                                }
-                              ],
+                              "options": "{{ member_fullname.data.map((row) => { \n      return { label: row.member_fullname, value: row.member_id } \n   }) \n}}",
                               "placeholderText": "เลือกสมาชิก"
                             },
                             "customField7": {
@@ -3706,8 +3598,7 @@
                               "isSpellCheck": false,
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
-                              "label": "Latitude",
-                              "placeholderText": "Latitude"
+                              "label": "Latitude"
                             },
                             "customField9": {
                               "children": {},
@@ -3773,6 +3664,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "{{JSObject1.userfunc()}}",
                       "topRow": 6,
                       "bottomRow": 49,
                       "fieldLimitExceeded": false,
@@ -3782,9 +3674,58 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.customField9.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.accentColor"
+                        },
                         {
                           "key": "schema.__root_schema__.children.customField1.borderRadius"
                         },
@@ -3816,16 +3757,10 @@
                           "key": "schema.__root_schema__.children.name.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.name.defaultValue"
-                        },
-                        {
                           "key": "boxShadow"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField2.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                          "key": "schema.__root_schema__.children.customField2.options"
                         },
                         {
                           "key": "schema.__root_schema__.defaultValue"
@@ -3837,54 +3772,14 @@
                           "key": "schema.__root_schema__.cellBorderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField3.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField3.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField6.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField6.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField7.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField7.borderRadius"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField8.accentColor"
                         },
                         {
                           "key": "schema.__root_schema__.children.customField8.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField9.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField9.borderRadius"
                         }
                       ],
                       "borderWidth": "1",
-                      "sourceData": {
-                        "name": "John",
-                        "date_of_birth": "20/02/1990",
-                        "employee_id": 1001
-                      },
+                      "sourceData": "{\n  \"name\": \"John\",\n  \"date_of_birth\": \"20/02/1990\",\n  \"employee_id\": 1001\n}",
                       "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "ohykrv1mgj",
@@ -4126,7 +4021,7 @@
               "height": 518,
               "isDeprecated": false,
               "rightColumn": 25,
-              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
               "widgetId": "9utwimv8o4",
@@ -4846,58 +4741,13 @@
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
+                                  "key": "listData"
+                                },
+                                {
                                   "key": "borderRadius"
                                 },
                                 {
                                   "key": "boxShadow"
-                                },
-                                {
-                                  "key": "template.Text4.text"
-                                },
-                                {
-                                  "key": "template.IconButton3.borderRadius"
-                                },
-                                {
-                                  "key": "template.IconButton3.buttonVariant"
-                                },
-                                {
-                                  "key": "template.IconButton3.iconName"
-                                },
-                                {
-                                  "key": "template.IconButton3.boxShadow"
-                                },
-                                {
-                                  "key": "template.IconButton3Copy.iconName"
-                                },
-                                {
-                                  "key": "template.IconButton3Copy.buttonVariant"
-                                },
-                                {
-                                  "key": "template.IconButton3Copy.buttonColor"
-                                },
-                                {
-                                  "key": "template.IconButton3Copy.boxShadow"
-                                },
-                                {
-                                  "key": "template.IconButton3CopyCopy.iconName"
-                                },
-                                {
-                                  "key": "listData"
-                                },
-                                {
-                                  "key": "template.Text3.text"
-                                },
-                                {
-                                  "key": "template.Text4.textAlign"
-                                },
-                                {
-                                  "key": "template.IconButton3.buttonColor"
-                                },
-                                {
-                                  "key": "template.Text3.textAlign"
-                                },
-                                {
-                                  "key": "template.Text3.fontSize"
                                 }
                               ],
                               "gridType": "vertical",
@@ -6941,13 +6791,7 @@
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
-                          "key": "truncateButtonColor"
-                        },
-                        {
                           "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
                         }
                       ],
                       "shouldTruncate": false,
@@ -7085,13 +6929,13 @@
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
+                          "key": "defaultText"
+                        },
+                        {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -7174,6 +7018,24 @@
               "jsonPathKeys": [
                 "appsmith.store.id_event"
               ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Event _event_type",
+              "name": "event_type",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _member_fullname",
+              "name": "member_fullname",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
