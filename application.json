@@ -9,6 +9,10 @@
       "isDefault": false
     },
     {
+      "id": "Register",
+      "isDefault": false
+    },
+    {
       "id": "Event ",
       "isDefault": false
     },

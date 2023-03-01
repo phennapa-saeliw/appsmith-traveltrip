@@ -274,9 +274,8 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{login_api.run(() => storeValue('jwt',login_api.data.jwt), () => {})}}",
+                              "onClick": "{{navigateTo('Main', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -447,6 +446,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1Copy",
+                      "onClick": "{{navigateTo('Register', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#831843",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -461,7 +461,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.3173828125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
