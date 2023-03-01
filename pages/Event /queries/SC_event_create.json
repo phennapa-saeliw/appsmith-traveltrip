@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_insert_location_id",
+    "name": "SC_event_create",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_history ( event_location_id )\n\nVALUES\n  (\n\t\t'{{appsmith.store.location_id}}'\n\t\t\n  )\n",
+      "body": "INSERT INTO list_expense (name, list_type_id, list_expense_amount ,event_history_id ) \n\nVALUES\n  (\n\t\t'{{SC_event_form.formData.customField1}}',\n    '{{SC_event_form.formData.customField2}}',\n\t\t'{{SC_event_form.formData.customField7}}',\n\t\t'{{appsmith.store.history_id}}'\n\t\t\n  )\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,17 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.location_id"
+      "SC_event_form.formData.customField1",
+      "SC_event_form.formData.customField2",
+      "SC_event_form.formData.customField7",
+      "appsmith.store.history_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_insert_location_id",
+  "id": "Event _SC_event_create",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e5c56a3b57a70f0657d36e"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63f84d9f3b57a70f0657d409"
 }

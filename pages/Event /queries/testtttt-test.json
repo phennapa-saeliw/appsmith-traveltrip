@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "hello",
-    "fullyQualifiedName": "test_jsob.hello",
+    "name": "test",
+    "fullyQualifiedName": "testtttt.test",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,16 +13,16 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_test_jsob",
+    "pageId": "Event ",
+    "collectionId": "Event _testtttt",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return \"ssss\";\n}",
+      "body": "async () => {\n  JS_create_event.run();\n  await JS_select_event_history.run(() => {\n    storeValue('history_id');\n  });\n  showAlert(\"value \" + appsmith.store.history_id);\n  {\n    {\n      List1.selectedItem.event_trip_id;\n    }\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return \"ssss\";\n}"
+      "async () => {\n  JS_create_event.run();\n  await JS_select_event_history.run(() => {\n    storeValue('history_id');\n  });\n  showAlert(\"value \" + appsmith.store.history_id);\n  {\n    {\n      List1.selectedItem.event_trip_id;\n    }\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_test_jsob.hello",
+  "id": "Event _testtttt.test",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63dc9eb03b57a70f0657d278"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63eb18223b57a70f0657d3aa"
 }

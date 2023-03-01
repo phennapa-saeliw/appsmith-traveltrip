@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_select_location_id",
+    "name": "select_trip",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Calculator",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select event_location_id from event_location WHERE event_location.event_location = '{{JSONForm1Copy.formData.customField7}}'\nand event_location_start_lat = '{{JSONForm1Copy.formData.customField8}}'\nand event_location_start_lon = '{{JSONForm1Copy.formData.customField9}}'\n\n\n",
+      "body": "SELECT * FROM event_trip",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,26 +26,18 @@
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField7",
-      "JSONForm1Copy.formData.customField8",
-      "JSONForm1Copy.formData.customField9"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_select_location_id",
+  "id": "Calculator_select_trip",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e5c1093b57a70f0657d36b"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63fdc1c73b57a70f0657d459"
 }

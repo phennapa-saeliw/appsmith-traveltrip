@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_insert_trip_id",
+    "name": "JS_select_trip_id",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_history ( event_trip_id )\n\nVALUES\n  (\n\t\t'{{appsmith.store.event_no}}'\n\t\t\n  )\n",
+      "body": "select event_history_id from event_history WHERE event_type_id = '{{JSONForm1Copy.formData.customField2}}'\nand event_name = '{{JSONForm1Copy.formData.customField1}}'\nand event_detail = '{{JSONForm1Copy.formData.customField3}}'\nand event_start = '{{JSONForm1Copy.formData.customField4}}'\nand event_end = '{{JSONForm1Copy.formData.customField5}}'\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,18 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.event_no"
+      "JSONForm1Copy.formData.customField1",
+      "JSONForm1Copy.formData.customField2",
+      "JSONForm1Copy.formData.customField3",
+      "JSONForm1Copy.formData.customField4",
+      "JSONForm1Copy.formData.customField5"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_insert_trip_id",
+  "id": "Event _JS_select_trip_id",
   "deleted": false,
   "gitSyncId": "63c647e929e6fc43b6bc5555_63e4b1363b57a70f0657d34d"
 }

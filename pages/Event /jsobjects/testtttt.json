@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "testtttt",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\ttest: async () => {\n\t\t\n\t\tJS_create_event.run()\n\t\t\n\t\tawait JS_select_event_history.run(() => {storeValue('history_id',)})\n\t\tshowAlert(\"value \" + appsmith.store.history_id)\n\t\t\n\t\t{{List1.selectedItem.event_trip_id}}\n\t\t/*\t\n\t\tJS_insert_location.run()\n\t\t\tlet location_id = JS_select_location_id.data.event_trip_id\n\t\t\tstoreValue('location_id',location_id)\n\t\t\n\t\tJS_select_location_id.run()\n\t\tstoreValue('event_id')\n\t\t\n\t\tJS_insert_location_id.run()\n\t\t*/\n\t\t\n\t/*\n\t let user_select  = JSONForm1Copy.formData.customField6;\n\t\n\t for(let i=0;i < user_select.length;i++){                         \n\t\t\tconst user_num = user_select[i];    \n\t\t //console.log(user_num);\n\t\t \n\t\t storeValue('user_id',user_num)\n\t\t \n\n\t}\n\t */\n}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _testtttt",
+  "deleted": false,
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63eb181a3b57a70f0657d3a8"
+}

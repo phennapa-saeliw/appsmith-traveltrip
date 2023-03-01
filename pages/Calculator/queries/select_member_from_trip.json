@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "test1",
+    "name": "select_member_from_trip",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Calculator",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select list_expense.list_expense_id , list_type.list_type_name , list_expense.name, list_expense.list_expense_amount \nfrom list_expense\ninner join list_type on list_expense.list_type_id = list_type.list_type_id  \nWhere event_history_id  = {{appsmith.store.id_event}}\n\n",
+      "body": "SELECT event_trip_id , member_id FROM event_member\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,23 +27,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "appsmith.store.id_event"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _test1",
+  "id": "Calculator_select_member_from_trip",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63d763c83b57a70f0657d201"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63fdc3093b57a70f0657d45d"
 }

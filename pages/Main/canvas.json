@@ -114,7 +114,7 @@
                               "isCustomField": false,
                               "accessor": "name",
                               "identifier": "name",
-                              "position": 0,
+                              "position": 5,
                               "originalIdentifier": "name",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -135,7 +135,7 @@
                               "isCustomField": true,
                               "accessor": "customField1",
                               "identifier": "customField1",
-                              "position": 3,
+                              "position": 0,
                               "originalIdentifier": "customField1",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -152,13 +152,12 @@
                             "customField2": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
                               "accessor": "customField2",
                               "identifier": "customField2",
-                              "position": 4,
+                              "position": 1,
                               "originalIdentifier": "customField2",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -185,7 +184,7 @@
                               "isCustomField": true,
                               "accessor": "customField3",
                               "identifier": "customField3",
-                              "position": 5,
+                              "position": 2,
                               "originalIdentifier": "customField3",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -212,7 +211,7 @@
                               "isCustomField": true,
                               "accessor": "{{member_fullname.data}}",
                               "identifier": "customField4",
-                              "position": 6,
+                              "position": 4,
                               "originalIdentifier": "customField4",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -238,7 +237,7 @@
                               "isCustomField": false,
                               "accessor": "event_trip_id",
                               "identifier": "event_trip_id",
-                              "position": 5,
+                              "position": 3,
                               "originalIdentifier": "event_trip_id",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -1837,12 +1836,12 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 46,
+                                              "leftColumn": 49,
                                               "dynamicBindingPathList": [],
                                               "isDisabled": false,
                                               "key": "0anfnwvuje",
                                               "isDeprecated": false,
-                                              "rightColumn": 53,
+                                              "rightColumn": 56,
                                               "iconName": "edit",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "lw9mijydmf",
@@ -1939,11 +1938,11 @@
                                 "undefined": true
                               },
                               "key": "atck079t75",
-                              "backgroundColor": "#fff",
+                              "backgroundColor": "transparent",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "onListItemClick": "",
-                              "itemBackgroundColor": "#fff",
+                              "itemBackgroundColor": "transparent",
                               "widgetId": "0ty6ti24tq",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
@@ -2458,13 +2457,13 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 510,
+                  "bottomRow": 550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 518,
+                  "minHeight": 560,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -2536,7 +2535,7 @@
                             "date_of_birth": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "20/02/1990",
                               "isCustomField": false,
@@ -2726,7 +2725,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{select_user.userfunc()}}",
+                      "onSubmit": "{{select_user.userfunc()\nshowAlert('สร้างรายการสำเร็จ','success')\ncloseModal('Create_new_trip')\nevent_trip.run()}}",
                       "topRow": 5,
                       "bottomRow": 48,
                       "fieldLimitExceeded": false,
@@ -2787,9 +2786,6 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.date_of_birth.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
                         },
                         {
                           "key": "schema.__root_schema__.children.name.borderRadius"
@@ -3047,7 +3043,7 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 518,
+              "height": 560,
               "isDeprecated": false,
               "rightColumn": 25,
               "backgroundColor": "#fca3cc",
@@ -3259,8 +3255,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button4",
-                      "onClick": "{{delete_trip_1.run(() => showAlert('ลบรายการทริปสำเร็จ','success'), () => {})}}",
+                      "onClick": "{{delete_trip_1.run()\nshowAlert('ลบรายการสำเร็จ','success')\ncloseModal('confirm_delete')\nevent_trip.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_select_location_id",
+    "name": "Delete_event",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select event_location_id from event_location WHERE event_location.event_location = '{{JSONForm1Copy.formData.customField7}}'\nand event_location_start_lat = '{{JSONForm1Copy.formData.customField8}}'\nand event_location_start_lon = '{{JSONForm1Copy.formData.customField9}}'\n\n\n",
+      "body": "DELETE FROM event_history WHERE event_history_id = {{List1.selectedItem.event_history_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,16 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField7",
-      "JSONForm1Copy.formData.customField8",
-      "JSONForm1Copy.formData.customField9"
+      "List1.selectedItem.event_history_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_select_location_id",
+  "id": "Event _Delete_event",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e5c1093b57a70f0657d36b"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63fd95783b57a70f0657d44f"
 }

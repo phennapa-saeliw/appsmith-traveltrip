@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_select_location_id",
+    "name": "JS_update_location_id",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select event_location_id from event_location WHERE event_location.event_location = '{{JSONForm1Copy.formData.customField7}}'\nand event_location_start_lat = '{{JSONForm1Copy.formData.customField8}}'\nand event_location_start_lon = '{{JSONForm1Copy.formData.customField9}}'\n\n\n",
+      "body": "UPDATE event_history \nSET event_location_id = '{{appsmith.store.location_id}}'\nWHERE event_history = '{{appsmith.store.history_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,16 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField7",
-      "JSONForm1Copy.formData.customField8",
-      "JSONForm1Copy.formData.customField9"
+      "appsmith.store.history_id",
+      "appsmith.store.location_id"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_select_location_id",
+  "id": "Event _JS_update_location_id",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e5c1093b57a70f0657d36b"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63e5c56a3b57a70f0657d36e"
 }

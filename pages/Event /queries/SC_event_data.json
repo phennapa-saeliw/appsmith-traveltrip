@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "JS_select_event_trip",
+    "name": "SC_event_data",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select event_history_id from event_history WHERE event_name = '{{JSONForm1Copy.formData.customField1}}'\nand event_detail = '{{JSONForm1.formData.customField3}}'\nand event_start = '{{JSONForm1.formData.customField4}}'\nand event_end = '{{JSONForm1.formData.customField5}}'\n\n",
+      "body": "select * from list_expense ",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,27 +26,18 @@
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "JSONForm1.formData.customField3",
-      "JSONForm1.formData.customField4",
-      "JSONForm1.formData.customField5",
-      "JSONForm1Copy.formData.customField1"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _JS_select_event_trip",
+  "id": "Event _SC_event_data",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e488a33b57a70f0657d335"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63f881f63b57a70f0657d413"
 }

@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\t\n\tdelete_trip: async () => {\n\t\t\n\t\tawait create_trip.run()\n\t\tawait create_trip_select_user.run()\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t await create_trip_user_JS.run()\n \n\t}\n\t\n}\n}",
+    "body": "export default {\n\t\n\tdelete_trip: async () => {\n\t\t\n\t\tawait create_trip.run()\n\t\tawait create_trip_select_user.run()\n\n\t\t await create_trip_user_JS.run()\n \n\t}\n\t\n}\n}",
     "variables": [],
     "userPermissions": []
   },

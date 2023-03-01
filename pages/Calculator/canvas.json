@@ -882,7 +882,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `ทั้งหมด`))(Select1Copy.options, Select1Copy.serverSideFiltering) }}",
+                              "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [],
@@ -895,11 +895,11 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "defaultOptionValue"
+                                  "key": "options"
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "[\n  {\n    \"label\": \"ทั้งหมด\",\n    \"value\": \"ทั้งหมด\"\n  },\n  {\n    \"label\": \"happy_one\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"happy_two\",\n    \"value\": \"RED\"\n  }\n]",
+                              "options": "{{ select_member_from_trip.data.map((row) => { \n      return { label: row.member_fullname, value: row.member_id } \n   }) \n}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -991,10 +991,13 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "options"
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "",
+                              "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "กรุณาเลือกทริป",
                               "isDisabled": false,
@@ -1015,52 +1018,6 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "minDynamicHeight": 4
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 23,
-                              "bottomRow": 27,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 23,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "คำนวณ !",
-                              "isDisabled": false,
-                              "key": "ych0vygyei",
-                              "isDeprecated": false,
-                              "rightColumn": 39,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "w3817x63v0",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "blirrmmdhu",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
                             },
                             {
                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
@@ -2193,7 +2150,26 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Calculator_select_member_from_trip",
+              "name": "select_member_from_trip",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Calculator_select_trip",
+              "name": "select_trip",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Calculator",
