@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname \nFROM member ORDER BY member_id  \n",
+      "body": "SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname \nFROM member ORDER BY member_id  ",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -39,5 +39,5 @@
   },
   "id": "Calculator_member_fullname",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63fdc78b3b57a70f0657d45f"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63fec13a3b57a70f0657d466"
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_member_from_trip",
+    "name": "test_inner",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT event_trip_id , member_id FROM event_member WHERE event_trip_id = {{Select1.selectedOptionValue}}\n",
+      "body": "SELECT  member.member_id,member.member_firstname || ' ' || member_lastname AS member_fullname  FROM  \nmember\nINNER JOIN event_member\nON member.member_id = event_member.member_id\n\nSELECT event_trip_id FROM event_history\nINNER JOIN event_member\nON event_history.event_trip_id = \n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,23 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Select1.selectedOptionValue"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_select_member_from_trip",
+  "id": "Calculator_test_inner",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63fdc3093b57a70f0657d45d"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63fec1cb3b57a70f0657d469"
 }

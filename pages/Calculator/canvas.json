@@ -899,7 +899,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{ select_member_from_trip.data.map((row) => { \n      return { label: row.member_fullname, value: row.member_id } \n   }) \n}}",
+                              "options": "{{member_fullname.data}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -2153,13 +2153,15 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Calculator_select_member_from_trip",
-              "name": "select_member_from_trip",
+              "id": "Calculator_member_fullname",
+              "name": "member_fullname",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Calculator_select_trip",
               "name": "select_trip",
