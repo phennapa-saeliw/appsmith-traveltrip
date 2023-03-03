@@ -116,7 +116,7 @@
                     },
                     {
                       "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                      "widgetName": "input_login",
+                      "widgetName": "Input_login",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Container",
@@ -154,7 +154,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "widgetName": "input_username",
+                              "widgetName": "Input_username",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -181,10 +181,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "labelTextColor"
                                 }
                               ],
                               "labelPosition": "Left",
                               "labelStyle": "BOLD",
+                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
                               "inputType": "TEXT",
                               "placeholderText": "username",
                               "isDisabled": false,
@@ -240,10 +244,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "labelTextColor"
                                 }
                               ],
                               "labelPosition": "Left",
                               "labelStyle": "BOLD",
+                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
                               "inputType": "PASSWORD",
                               "placeholderText": "password",
                               "isDisabled": false,
@@ -273,9 +281,10 @@
                             {
                               "resetFormOnClick": false,
                               "boxShadow": "none",
-                              "widgetName": "Button1",
-                              "onClick": "{{navigateTo('Main', {}, 'SAME_WINDOW')}}",
+                              "widgetName": "Button_login",
+                              "onClick": "{{login.myFun2()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [

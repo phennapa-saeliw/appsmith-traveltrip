@@ -5,11 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Main",
+      "id": "Register",
       "isDefault": false
     },
     {
-      "id": "Register",
+      "id": "Main",
       "isDefault": false
     },
     {
