@@ -140,7 +140,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "DD/MM/YYYY HH:mm",
                               "isDisabled": false,
@@ -148,16 +148,17 @@
                               "isVisible": true,
                               "label": "วันและเวลา เริ่มทริป",
                               "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
-                              "defaultValue": ""
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "onDateSelected": "{{test_picktime.run()}}"
                             },
                             "customField3": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_end))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -168,18 +169,19 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "DD/MM/YYYY HH:mm",
                               "isDisabled": false,
                               "isRequired": true,
                               "isVisible": true,
                               "label": "วันและเวลา จบทริป",
-                              "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "2023-01-13T16:42:02.022+07:00",
+                              "maxDate": "",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
-                              "labelTextSize": "0.875rem"
+                              "labelTextSize": "0.875rem",
+                              "onFocus": ""
                             },
                             "customField4": {
                               "children": {},
@@ -207,47 +209,227 @@
                               "placeholderText": "ค้นหาสมาชิก",
                               "onOptionChange": ""
                             },
-                            "isVisible": {
-                              "children": {},
-                              "dataType": "boolean",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "fieldType": "Switch",
-                              "sourceData": true,
+                            "button_next": {
+                              "children": {
+                                "isVisible": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.button_next.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": true,
+                                  "isCustomField": false,
+                                  "accessor": "isVisible",
+                                  "identifier": "isVisible",
+                                  "position": 0,
+                                  "originalIdentifier": "isVisible",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Is Visible"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.button_next))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "isVisible": true
+                              },
                               "isCustomField": false,
-                              "accessor": "isVisible",
-                              "identifier": "isVisible",
+                              "accessor": "button_next",
+                              "identifier": "button_next",
                               "position": 4,
-                              "originalIdentifier": "isVisible",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "boxShadow": "none",
-                              "alignWidget": "LEFT",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isVisible": false,
-                              "labelTextSize": "0.875rem",
-                              "label": "Is Visible"
-                            },
-                            "text": {
-                              "children": {},
-                              "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.text))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "fieldType": "Text Input",
-                              "sourceData": "ไปเที่ยวพร้อมกับผองเพื่อน",
-                              "isCustomField": false,
-                              "accessor": "text",
-                              "identifier": "text",
-                              "position": 5,
-                              "originalIdentifier": "text",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "originalIdentifier": "button_next",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "boxShadow": "none",
-                              "iconAlign": "left",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "cellBoxShadow": "none",
                               "isDisabled": false,
                               "isRequired": false,
-                              "isSpellCheck": false,
                               "isVisible": false,
                               "labelTextSize": "0.875rem",
-                              "label": "Text"
+                              "label": "Button Next"
+                            },
+                            "name_trip": {
+                              "children": {
+                                "isVisible": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name_trip.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": true,
+                                  "isCustomField": false,
+                                  "accessor": "isVisible",
+                                  "identifier": "isVisible",
+                                  "position": 0,
+                                  "originalIdentifier": "isVisible",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Is Visible"
+                                },
+                                "text": {
+                                  "children": {},
+                                  "dataType": "string",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name_trip.text))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Text Input",
+                                  "sourceData": "ไปเที่ยวพร้อมกับผองเพื่อน",
+                                  "isCustomField": false,
+                                  "accessor": "text",
+                                  "identifier": "text",
+                                  "position": 1,
+                                  "originalIdentifier": "text",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "iconAlign": "left",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isSpellCheck": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Text"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name_trip))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "isVisible": true,
+                                "text": "ไปเที่ยวพร้อมกับผองเพื่อน"
+                              },
+                              "isCustomField": false,
+                              "accessor": "name_trip",
+                              "identifier": "name_trip",
+                              "position": 5,
+                              "originalIdentifier": "name_trip",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Name Trip"
+                            },
+                            "id_trip": {
+                              "children": {
+                                "isVisible": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": true,
+                                  "isCustomField": false,
+                                  "accessor": "isVisible",
+                                  "identifier": "isVisible",
+                                  "position": 0,
+                                  "originalIdentifier": "isVisible",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Is Visible"
+                                },
+                                "text": {
+                                  "children": {},
+                                  "dataType": "string",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip.text))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Text Input",
+                                  "sourceData": "74",
+                                  "isCustomField": false,
+                                  "accessor": "text",
+                                  "identifier": "text",
+                                  "position": 1,
+                                  "originalIdentifier": "text",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "iconAlign": "left",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isSpellCheck": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Text"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "isVisible": true,
+                                "text": "74"
+                              },
+                              "isCustomField": false,
+                              "accessor": "id_trip",
+                              "identifier": "id_trip",
+                              "position": 6,
+                              "originalIdentifier": "id_trip",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Id Trip"
+                            },
+                            "button_edit_trip": {
+                              "children": {
+                                "isVisible": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.button_edit_trip.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": true,
+                                  "isCustomField": false,
+                                  "accessor": "isVisible",
+                                  "identifier": "isVisible",
+                                  "position": 0,
+                                  "originalIdentifier": "isVisible",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Is Visible"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.button_edit_trip))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "isVisible": true
+                              },
+                              "isCustomField": false,
+                              "accessor": "button_edit_trip",
+                              "identifier": "button_edit_trip",
+                              "position": 7,
+                              "originalIdentifier": "button_edit_trip",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Button Edit Trip"
                             }
                           },
                           "dataType": "object",
@@ -285,10 +467,31 @@
                       },
                       "dynamicPropertyPathList": [
                         {
-                          "key": "schema.__root_schema__.children.isVisible.defaultValue"
+                          "key": "schema.__root_schema__.children.button_next.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.children.isVisible.defaultValue"
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.minDate"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -305,6 +508,12 @@
                       "dynamicTriggerPathList": [
                         {
                           "key": "schema.__root_schema__.children.customField4.onOptionChange"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.onFocus"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.onDateSelected"
                         }
                       ],
                       "leftColumn": 0,
@@ -352,21 +561,6 @@
                           "key": "sourceData"
                         },
                         {
-                          "key": "schema.__root_schema__.children.isVisible.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.isVisible.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.text.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.text.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.text.borderRadius"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField2.accessor"
                         },
                         {
@@ -374,6 +568,96 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_next.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_next.children.isVisible.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_next.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_next.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_next.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.isVisible.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.text.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.text.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.children.text.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.name_trip.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.text.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.text.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.children.text.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id_trip.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.children.isVisible.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.button_edit_trip.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.minDate"
                         }
                       ],
                       "borderWidth": "1",
@@ -977,6 +1261,7 @@
                                               "key": "4m5zf9fh67",
                                               "isDeprecated": false,
                                               "rightColumn": 46,
+                                              "disableLink": false,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "c8yx3zl4pt",
@@ -1810,7 +2095,6 @@
                             "customField2": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -2567,6 +2851,18 @@
             {
               "id": "Main_n_select_user_join",
               "name": "n_select_user_join",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "list2.triggeredItem.event_trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Main_test_picktime",
+              "name": "test_picktime",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

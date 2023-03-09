@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM event_history WHERE event_history_id = {{List1.selectedItem.event_history_id}}",
+      "body": "DELETE FROM event_history WHERE event_history_id = {{list2.triggeredItem}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List1.selectedItem.event_history_id"
+      "list2.triggeredItem"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -2474,10 +2474,10 @@
                                   "key": "schema.__root_schema__.children.name.defaultValue"
                                 },
                                 {
-                                  "key": "schema.__root_schema__.children.customField6.options"
+                                  "key": "schema.__root_schema__.children.customField2.options"
                                 },
                                 {
-                                  "key": "schema.__root_schema__.children.customField2.options"
+                                  "key": "schema.__root_schema__.children.customField6.options"
                                 }
                               ],
                               "showReset": true,
@@ -2694,7 +2694,7 @@
                                     "customField6": {
                                       "children": {},
                                       "dataType": "array",
-                                      "defaultValue": [],
+                                      "defaultValue": "",
                                       "fieldType": "Multiselect",
                                       "sourceData": [],
                                       "isCustomField": true,
@@ -2712,7 +2712,7 @@
                                       "label": "เลือกสมาชิก",
                                       "labelTextSize": "0.875rem",
                                       "serverSideFiltering": false,
-                                      "options": "{{ member_fullname.data.map((row) => { \n      return { label: row.member_fullname, value: row.member_id } \n   }) \n}}"
+                                      "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel : row.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}"
                                     },
                                     "customField7": {
                                       "children": {},
@@ -4459,7 +4459,7 @@
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "IconButton3Copy3",
-                                              "onClick": "{{showModal('event_cost', {event_name:currentItem.event_name,\nevent_id:currentItem.event_history_id})}}",
+                                              "onClick": "{{showModal('event_cost', {event_name:currentItem.event_name,\nevent_id:currentItem.event_history_id},n_select_user_join.run())}}",
                                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                                               "dynamicPropertyPathList": [],
                                               "displayName": "Icon Button",
@@ -6218,6 +6218,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.URL.queryParams.list_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Event _n_select_user_join",
+              "name": "n_select_user_join",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List2Copy.triggeredItem.event_trip_id"
               ],
               "timeoutInMillisecond": 10000
             }

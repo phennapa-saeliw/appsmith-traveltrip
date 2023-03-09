@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "test",
-    "fullyQualifiedName": "testtttt.test",
+    "name": "myFun2",
+    "fullyQualifiedName": "test.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
-    "collectionId": "Event _testtttt",
+    "pageId": "Register",
+    "collectionId": "Register_test",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  JS_create_event.run();\n  await JS_select_event_history.run(() => {\n    storeValue('history_id');\n  });\n  showAlert(\"value \" + appsmith.store.history_id);\n  {\n    {\n      List1.selectedItem.event_trip_id;\n    }\n  }\n}",
+      "body": "async () => {\n  let username = input_username.inputText;\n  let checkusername = 'kasama1';\n  if (check_username.data > 0) {\n    showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว', 'error');\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  JS_create_event.run();\n  await JS_select_event_history.run(() => {\n    storeValue('history_id');\n  });\n  showAlert(\"value \" + appsmith.store.history_id);\n  {\n    {\n      List1.selectedItem.event_trip_id;\n    }\n  }\n}"
+      "async () => {\n  let username = input_username.inputText;\n  let checkusername = 'kasama1';\n  if (check_username.data > 0) {\n    showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว', 'error');\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _testtttt.test",
+  "id": "Register_test.myFun2",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63eb18223b57a70f0657d3aa"
+  "gitSyncId": "6402c1438424293fe7876437_640846238424293fe7876610"
 }

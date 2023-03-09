@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "delete_trip_1",
+    "name": "test_picktime",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM event_trip WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}}",
+      "body": "SELECT *FROM event_trip where event_trip_id = {{list2.triggeredItem.event_trip_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -43,7 +43,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_delete_trip_1",
+  "id": "Main_test_picktime",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e1ed353b57a70f0657d2c7"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63e309b43b57a70f0657d2d0"
 }

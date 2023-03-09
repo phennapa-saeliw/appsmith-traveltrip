@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select event_trip.event_trip_id , member.member_firstname || ' ' || member.member_lastname AS fullname , event_trip.\"name\" \t\nfrom event_trip\ninner join member on event_trip_id = member.member_id \nwhere event_trip.member_id = 2\n",
+      "body": "SELECT *FROM event_trip where event_trip_id = {{list2.triggeredItem.event_trip_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "list2.triggeredItem.event_trip_id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

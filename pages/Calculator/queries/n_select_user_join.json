@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "delete_trip_1",
+    "name": "n_select_user_join",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Calculator",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM event_trip WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}}",
+      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  , event_trip_id\n\nFROM member \n\ninner join event_member\n\non member.member_id = event_member.member_id\n\nwhere event_trip_id = {{Select1.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "list2.triggeredItem.event_trip_id"
+      "Select1.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_delete_trip_1",
+  "id": "Calculator_n_select_user_join",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e1ed353b57a70f0657d2c7"
+  "gitSyncId": "6402c1438424293fe7876437_6406fdfc8424293fe78765e1"
 }

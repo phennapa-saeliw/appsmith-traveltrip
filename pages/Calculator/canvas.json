@@ -840,10 +840,13 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "options"
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "[\n  {\n    \"label\": \"ทั้งหมด\",\n    \"value\": \"ทั้งหมด\"\n  },\n  {\n    \"label\": \"asd\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"assda\",\n    \"value\": \"RED\"\n  }\n]",
+                              "options": "{{}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -899,7 +902,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{member_fullname.data}}",
+                              "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -983,7 +986,11 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
                               "leftColumn": 6,
                               "dynamicBindingPathList": [
                                 {
@@ -1017,6 +1024,7 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "onOptionChange": "{{n_select_user_join.run()}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -2153,8 +2161,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Calculator_member_fullname",
-              "name": "member_fullname",
+              "id": "Calculator_select_trip",
+              "name": "select_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -2163,11 +2171,13 @@
           ],
           [
             {
-              "id": "Calculator_select_trip",
-              "name": "select_trip",
+              "id": "Calculator_n_select_user_join",
+              "name": "n_select_user_join",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

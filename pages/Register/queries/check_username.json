@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "delete_trip_1",
+    "name": "check_username",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Register",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM event_trip WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}}",
+      "body": "SELECT member_username FROM member WHERE member_username = {{input_username.inputText}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "list2.triggeredItem.event_trip_id"
+      "input_username.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_delete_trip_1",
+  "id": "Register_check_username",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e1ed353b57a70f0657d2c7"
+  "gitSyncId": "6402c1438424293fe7876437_640847338424293fe7876616"
 }
