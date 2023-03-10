@@ -1336,7 +1336,7 @@
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "button_edit_trip",
-                                              "onClick": "{{showModal('Edit_Create_new_tripCopy', n_select_user_join.run())}}",
+                                              "onClick": "{{showModal('Edit_Create_new_tripCopy', n_select_user_join.run(),n_select_time.run())}}",
                                               "buttonColor": "#dc2626",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -1595,6 +1595,76 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "isCompact": false,
+                              "boxShadow": "none",
+                              "widgetName": "MenuButton1",
+                              "configureMenuItems": {
+                                "label": "Configure Menu Items",
+                                "id": "config",
+                                "config": {
+                                  "id": "config",
+                                  "label": "Menu Item",
+                                  "isVisible": true,
+                                  "isDisabled": false
+                                }
+                              },
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "iconName"
+                                }
+                              ],
+                              "displayName": "Menu Button",
+                              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+                              "topRow": 0,
+                              "bottomRow": 5,
+                              "parentRowSpace": 10,
+                              "type": "MENU_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.53125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "menuItems.menuItem1.onClick"
+                                }
+                              ],
+                              "leftColumn": 56,
+                              "dynamicBindingPathList": [],
+                              "isDisabled": false,
+                              "sourceData": "[]",
+                              "key": "bu74nu1clm",
+                              "sourceDataKeys": [],
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "iconName": "align-justify",
+                              "menuVariant": "PRIMARY",
+                              "widgetId": "vloi0chck4",
+                              "menuItems": {
+                                "menuItem1": {
+                                  "label": "Logout",
+                                  "id": "menuItem1",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 0,
+                                  "iconColor": "transparent",
+                                  "textColor": "#fff",
+                                  "backgroundColor": "#ec4899",
+                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}"
+                                }
+                              },
+                              "isVisible": true,
+                              "label": "",
+                              "version": 1,
+                              "parentId": "a8ikkwn7ol",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "1.5rem",
+                              "menuItemsSource": "STATIC",
+                              "menuColor": "#FCA3CC",
+                              "iconAlign": "left",
+                              "placement": "CENTER"
+                            },
+                            {
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2Copy2",
@@ -1613,7 +1683,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 18,
+                              "leftColumn": 17,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1623,7 +1693,7 @@
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 36,
+                              "rightColumn": 35,
                               "isDefaultClickDisabled": true,
                               "iconName": "map-marker",
                               "widgetId": "lluy535uf1",
@@ -1708,7 +1778,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 36,
+                              "leftColumn": 35,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1718,7 +1788,7 @@
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 56,
+                              "rightColumn": 55,
                               "isDefaultClickDisabled": true,
                               "iconName": "calculator",
                               "widgetId": "xnga2ltmww",
@@ -1731,76 +1801,6 @@
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "isCompact": false,
-                              "boxShadow": "none",
-                              "widgetName": "MenuButton1",
-                              "configureMenuItems": {
-                                "label": "Configure Menu Items",
-                                "id": "config",
-                                "config": {
-                                  "id": "config",
-                                  "label": "Menu Item",
-                                  "isVisible": true,
-                                  "isDisabled": false
-                                }
-                              },
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "iconName"
-                                }
-                              ],
-                              "displayName": "Menu Button",
-                              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "MENU_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.53125,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "menuItems.menuItem1.onClick"
-                                }
-                              ],
-                              "leftColumn": 56,
-                              "dynamicBindingPathList": [],
-                              "isDisabled": false,
-                              "sourceData": "[]",
-                              "key": "bu74nu1clm",
-                              "sourceDataKeys": [],
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "iconName": "align-justify",
-                              "menuVariant": "PRIMARY",
-                              "widgetId": "anofnhzcqh",
-                              "menuItems": {
-                                "menuItem1": {
-                                  "label": "Logout",
-                                  "id": "menuItem1",
-                                  "widgetId": "",
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "index": 0,
-                                  "iconColor": "transparent",
-                                  "textColor": "#fff",
-                                  "backgroundColor": "#3b82f6",
-                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}"
-                                }
-                              },
-                              "isVisible": true,
-                              "label": "",
-                              "version": 1,
-                              "parentId": "a8ikkwn7ol",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "1.5rem",
-                              "menuItemsSource": "STATIC",
-                              "menuColor": "#FCA3CC",
                               "iconAlign": "left",
                               "placement": "CENTER"
                             },
@@ -1828,7 +1828,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1838,7 +1838,7 @@
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 18,
+                              "rightColumn": 17,
                               "isDefaultClickDisabled": true,
                               "iconName": "home",
                               "widgetId": "japn1lxp0g",
@@ -2105,7 +2105,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
                               "isDisabled": false,
@@ -2132,7 +2132,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
                               "isDisabled": false,
@@ -2829,8 +2829,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Main_event_trip",
-              "name": "event_trip",
+              "id": "Main_member_fullname",
+              "name": "member_fullname",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -2839,11 +2839,13 @@
           ],
           [
             {
-              "id": "Main_member_fullname",
-              "name": "member_fullname",
+              "id": "Main_event_trip",
+              "name": "event_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.member_username"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],

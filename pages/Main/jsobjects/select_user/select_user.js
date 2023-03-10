@@ -2,6 +2,9 @@ export default {
 	
 	userfunc: async () => {
 		
+		let member_id = select_name_to_id.data[0].member_id
+		storeValue('member_id',member_id)
+		
 		await create_trip.run()
 		await create_trip_select_user.run()
 		
@@ -16,6 +19,7 @@ export default {
 		 //console.log(user_num);
 		 
 		 storeValue('user_id',user_num)
+		 
 		 
 		 await create_trip_user_JS.run()
  

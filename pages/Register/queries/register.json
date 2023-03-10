@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO member ( member_username , member_password  )\n\nVALUES\n  (\n    '{{input_username.inputText}}',\n\t\t'{{input_password1.inputText}}'\n\t\t\n\t\t\n  )\n\n",
+      "body": "INSERT INTO member ( member_username , member_password , member_firstname , member_lastname  )\n\nVALUES\n  (\n    '{{input_username.inputText}}',\n\t\t'{{input_password1.inputText}}',\n\t\t'{{input_firstname.inputText}}',\n\t\t'{{input_lastname.inputText}}'\n\t\t\n\t\t\n  )\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,6 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "input_firstname.inputText",
+      "input_lastname.inputText",
       "input_password1.inputText",
       "input_username.inputText"
     ],

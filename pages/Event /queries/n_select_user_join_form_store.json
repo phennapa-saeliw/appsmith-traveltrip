@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "member_fullname",
+    "name": "n_select_user_join_form_store",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname \nFROM member ORDER BY member_id ",
+      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,event_trip_id\n\nFROM member \n\ninner join event_member\n\non member.member_id = event_member.member_id\n\nwhere event_trip_id = {{appsmith.store.trip_id}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,18 +26,24 @@
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.trip_id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _member_fullname",
+  "id": "Event _n_select_user_join_form_store",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e4a4343b57a70f0657d33f"
+  "gitSyncId": "6402c1438424293fe7876437_6409b3908424293fe7876644"
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "member_fullname",
+    "name": "select_name_to_id",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Main",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname \nFROM member ORDER BY member_id ",
+      "body": "SELECT * FROM member where member_username = {{appsmith.store.member_username}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,17 +27,23 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.member_username"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _member_fullname",
+  "id": "Main_select_name_to_id",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e4a4343b57a70f0657d33f"
+  "gitSyncId": "6402c1438424293fe7876437_640af8848424293fe7876687"
 }

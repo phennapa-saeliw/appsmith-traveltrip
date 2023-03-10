@@ -621,6 +621,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
+                      "onClick": "{{Delete_event.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -635,7 +636,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -725,7 +730,7 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "ชื่อกิจกรรม",
-                              "defaultValue": ""
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (List2Copy.triggeredItem.event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
                             },
                             "customField2": {
                               "children": {},
@@ -748,12 +753,12 @@
                               "label": "ประเภทของกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "[\n  {\n    \"label\": \"ที่พัก\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"ทานอาหาร\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"จุดท่องเที่ยว\",\n    \"value\": \"RED\"\n  },\n  {\n    \"label\": \"เดินทาง\",\n    \"value\": \"RED2\"\n  }\n]"
+                              "options": ""
                             },
                             "customField3": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (List2Copy.triggeredItem.event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
                               "fieldType": "Multiline Text Input",
                               "sourceData": "",
                               "isCustomField": true,
@@ -829,7 +834,7 @@
                             "customField6": {
                               "children": {},
                               "dataType": "array",
-                              "defaultValue": [],
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
                               "fieldType": "Multiselect",
                               "sourceData": [],
                               "isCustomField": true,
@@ -847,20 +852,7 @@
                               "label": "เพิ่มสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": [
-                                {
-                                  "label": "Blue",
-                                  "value": "BLUE"
-                                },
-                                {
-                                  "label": "Green",
-                                  "value": "GREEN"
-                                },
-                                {
-                                  "label": "Red",
-                                  "value": "RED"
-                                }
-                              ],
+                              "options": "{{n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "placeholderText": "เลือกสมาชิก"
                             },
                             "customField7": {
@@ -949,7 +941,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event History Id"
                             },
@@ -971,7 +963,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event Type Id"
                             },
@@ -993,7 +985,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event Name"
                             },
@@ -1015,7 +1007,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event Detail"
                             },
@@ -1037,7 +1029,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event Start"
                             },
@@ -1059,31 +1051,9 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event End"
-                            },
-                            "event_location_id": {
-                              "children": {},
-                              "dataType": "number",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_location_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "fieldType": "Number Input",
-                              "sourceData": 1,
-                              "isCustomField": false,
-                              "accessor": "event_location_id",
-                              "identifier": "event_location_id",
-                              "position": 15,
-                              "originalIdentifier": "event_location_id",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "boxShadow": "none",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Event Location Id"
                             },
                             "event_trip_id": {
                               "children": {},
@@ -1103,7 +1073,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Event Trip Id"
                             }
@@ -1164,15 +1134,6 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.event_trip_id.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.event_location_id.defaultValue"
                         },
                         {
                           "key": "schema.__root_schema__.children.event_end.borderRadius"
@@ -1284,10 +1245,25 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "sourceData"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.defaultValue"
                         }
                       ],
                       "borderWidth": "1",
-                      "sourceData": "",
+                      "sourceData": "{{List2Copy.triggeredItem}}",
                       "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "ohykrv1mgj",
@@ -3551,7 +3527,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DD HH:mm",
                               "isDisabled": false,
@@ -3578,7 +3554,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": false,
+                              "closeOnSelection": true,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DD HH:mm",
                               "isDisabled": false,
@@ -3612,7 +3588,7 @@
                               "label": "เพิ่มสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{ member_fullname.data.map((row) => { \n      return { label: row.member_fullname, value: row.member_id } \n   }) \n}}",
+                              "options": "{{n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "placeholderText": "เลือกสมาชิก"
                             },
                             "customField7": {
@@ -3762,9 +3738,6 @@
                           "key": "schema.__root_schema__.children.customField6.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField6.options"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField5.borderRadius"
                         },
                         {
@@ -3838,6 +3811,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField8.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.options"
                         }
                       ],
                       "borderWidth": "1",
@@ -4312,8 +4288,8 @@
                                           "children": [
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                                              "widgetName": "IconButton3CopyCopy2",
-                                              "onClick": "{{showModal('confirm_delete')}}",
+                                              "widgetName": "IconButton3CopyCopyCopy",
+                                              "onClick": "{{showModal('Edit_event')}}",
                                               "buttonColor": "#dc2626",
                                               "displayName": "Icon Button",
                                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -4339,79 +4315,6 @@
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
                                               "rightColumn": 62,
-                                              "iconName": "trash",
-                                              "dynamicHeight": "FIXED",
-                                              "widgetId": "nbyih1vyzk",
-                                              "logBlackList": {
-                                                "isVisible": true,
-                                                "iconName": true,
-                                                "buttonVariant": true,
-                                                "isDisabled": true,
-                                                "widgetName": true,
-                                                "version": true,
-                                                "animateLoading": true,
-                                                "searchTags": true,
-                                                "type": true,
-                                                "hideCard": true,
-                                                "isDeprecated": true,
-                                                "replacement": true,
-                                                "displayName": true,
-                                                "key": true,
-                                                "iconSVG": true,
-                                                "isCanvas": true,
-                                                "minHeight": true,
-                                                "widgetId": true,
-                                                "renderMode": true,
-                                                "buttonColor": true,
-                                                "borderRadius": true,
-                                                "boxShadow": true,
-                                                "isLoading": true,
-                                                "parentColumnSpace": true,
-                                                "parentRowSpace": true,
-                                                "leftColumn": true,
-                                                "rightColumn": true,
-                                                "topRow": true,
-                                                "bottomRow": true,
-                                                "parentId": true,
-                                                "dynamicBindingPathList": true
-                                              },
-                                              "isVisible": true,
-                                              "version": 1,
-                                              "parentId": "24jgikhpiz",
-                                              "renderMode": "CANVAS",
-                                              "isLoading": false,
-                                              "borderRadius": "1.5rem",
-                                              "buttonVariant": "TERTIARY"
-                                            },
-                                            {
-                                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                                              "widgetName": "IconButton3CopyCopyCopy",
-                                              "onClick": "{{showModal('Edit_event')}}",
-                                              "buttonColor": "#dc2626",
-                                              "displayName": "Icon Button",
-                                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-                                              "searchTags": [
-                                                "click",
-                                                "submit"
-                                              ],
-                                              "topRow": 0,
-                                              "bottomRow": 6,
-                                              "parentRowSpace": 10,
-                                              "type": "ICON_BUTTON_WIDGET",
-                                              "hideCard": false,
-                                              "animateLoading": true,
-                                              "parentColumnSpace": 5.78125,
-                                              "dynamicTriggerPathList": [
-                                                {
-                                                  "key": "onClick"
-                                                }
-                                              ],
-                                              "leftColumn": 48,
-                                              "dynamicBindingPathList": [],
-                                              "isDisabled": false,
-                                              "key": "p9jgkzye50",
-                                              "isDeprecated": false,
-                                              "rightColumn": 54,
                                               "iconName": "edit",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "geosd1dele",
@@ -6200,14 +6103,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Event _member_fullname",
-              "name": "member_fullname",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -6230,6 +6125,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "List2Copy.triggeredItem.event_trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _n_select_user_join_form_store",
+              "name": "n_select_user_join_form_store",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.trip_id"
               ],
               "timeoutInMillisecond": 10000
             }

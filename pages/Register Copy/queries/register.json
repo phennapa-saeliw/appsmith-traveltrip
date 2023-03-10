@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "member_fullname",
+    "name": "register",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Register Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname \nFROM member ORDER BY member_id ",
+      "body": "INSERT INTO member ( member_username , member_password  )\n\nVALUES\n  (\n    '{{input_username.inputText}}',\n\t\t'{{input_password1.inputText}}'\n\t\t\n\t\t\n  )\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,17 +27,24 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "input_password1.inputText",
+      "input_username.inputText"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _member_fullname",
+  "id": "Register Copy_register",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e4a4343b57a70f0657d33f"
+  "gitSyncId": "6402c1438424293fe7876437_640ab0568424293fe787665f"
 }

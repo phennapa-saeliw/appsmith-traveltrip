@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let username = input_username.inputText;\n  let checkusername = 'kasama1';\n  if (check_username.data > 0) {\n    showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว', 'error');\n  }\n}",
+      "body": "async () => {\n  check_username.run(() => {\n    let result = check_username.data;\n    if (result.length != 0) {\n      console.log(result);\n      showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว!', 'error');\n      return;\n    }\n    let p1 = input_password1.inputText;\n    let p2 = input_password2.inputText;\n    if (p1 != p2) {\n      showAlert('รหัสผ่านไม่ตรงกัน', 'error');\n      return;\n    }\n    register.run(showAlert('สมัครสมาชิกสำเร็จ', 'success'), navigateTo('Login', 'SAMEPAGE'));\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let username = input_username.inputText;\n  let checkusername = 'kasama1';\n  if (check_username.data > 0) {\n    showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว', 'error');\n  }\n}"
+      "async () => {\n  check_username.run(() => {\n    let result = check_username.data;\n    if (result.length != 0) {\n      console.log(result);\n      showAlert('มีผู้ใช้งานบัญชีนี้อยู่เเล้ว!', 'error');\n      return;\n    }\n    let p1 = input_password1.inputText;\n    let p2 = input_password2.inputText;\n    if (p1 != p2) {\n      showAlert('รหัสผ่านไม่ตรงกัน', 'error');\n      return;\n    }\n    register.run(showAlert('สมัครสมาชิกสำเร็จ', 'success'), navigateTo('Login', 'SAMEPAGE'));\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM event_history WHERE event_history_id = {{list2.triggeredItem}}",
+      "body": "DELETE FROM event_history WHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "list2.triggeredItem"
+      "List2Copy.triggeredItem.event_history_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

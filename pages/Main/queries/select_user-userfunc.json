@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await create_trip.run();\n  await create_trip_select_user.run();\n  let trip_id = create_trip_select_user.data[0].event_trip_id;\n  storeValue('trip_id', trip_id);\n  let user_select = JSONForm1.formData.customField4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await create_trip_user_JS.run();\n  }\n}",
+      "body": "async () => {\n  let member_id = select_name_to_id.data[0].member_id;\n  storeValue('member_id', member_id);\n  await create_trip.run();\n  await create_trip_select_user.run();\n  let trip_id = create_trip_select_user.data[0].event_trip_id;\n  storeValue('trip_id', trip_id);\n  let user_select = JSONForm1.formData.customField4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await create_trip_user_JS.run();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await create_trip.run();\n  await create_trip_select_user.run();\n  let trip_id = create_trip_select_user.data[0].event_trip_id;\n  storeValue('trip_id', trip_id);\n  let user_select = JSONForm1.formData.customField4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await create_trip_user_JS.run();\n  }\n}"
+      "async () => {\n  let member_id = select_name_to_id.data[0].member_id;\n  storeValue('member_id', member_id);\n  await create_trip.run();\n  await create_trip_select_user.run();\n  let trip_id = create_trip_select_user.data[0].event_trip_id;\n  storeValue('trip_id', trip_id);\n  let user_select = JSONForm1.formData.customField4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await create_trip_user_JS.run();\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
