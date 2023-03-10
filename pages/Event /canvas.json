@@ -444,7 +444,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3Copy",
-                      "onClick": "{{closeModal('confirm_delete')}}",
+                      "onClick": "{{showModal('Edit_event')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -621,7 +621,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{Delete_event.run()}}",
+                      "onClick": "{{showModal('confirm_delete')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -753,7 +753,7 @@
                               "label": "ประเภทของกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": ""
+                              "options": "{{List2Copy.triggeredItem.event_type_id}}"
                             },
                             "customField3": {
                               "children": {},
@@ -1260,6 +1260,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField6.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.options"
                         }
                       ],
                       "borderWidth": "1",

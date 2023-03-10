@@ -1,7 +1,7 @@
 export default {
 	
 	userfunc: async () => {
-		
+		await select_name_to_id.run()
 		let member_id = select_name_to_id.data[0].member_id
 		storeValue('member_id',member_id)
 		
