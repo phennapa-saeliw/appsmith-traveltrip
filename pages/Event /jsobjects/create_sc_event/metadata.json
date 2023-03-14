@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "create_sc_event",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _create_sc_event",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_640fdd938424293fe78766bf"
+}

@@ -1755,7 +1755,7 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "#ec4899",
-                          "onClick": "{{storeValue('tab','Tab 1')\nSC_event_data.run()}}"
+                          "onClick": "{{storeValue('tab','Tab 1')\nSC_event_show_table.run()}}"
                         },
                         "groupButton2": {
                           "label": "Add",
@@ -1869,7 +1869,7 @@
                               "triggeredItemView": "{{{}}}",
                               "widgetName": "list2",
                               "requiresFlatWidgetChildren": true,
-                              "listData": "{{SC_event_data.data}}",
+                              "listData": "{{SC_event_show_table.data}}",
                               "isCanvas": true,
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -2395,7 +2395,7 @@
                               "boxShadow": "none",
                               "borderColor": "#E0DEDE",
                               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                              "onSubmit": "{{SC_event_create.run(() => showAlert('เพิ่มรายการสำเร็จ','success'), () => {})}}",
+                              "onSubmit": "{{create_sc_event.myFun2()}}",
                               "topRow": 0,
                               "type": "JSON_FORM_WIDGET",
                               "animateLoading": true,
@@ -4365,7 +4365,7 @@
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "IconButton3Copy3",
-                                              "onClick": "{{showModal('event_cost', {event_name:currentItem.event_name,\nevent_id:currentItem.event_history_id},n_select_user_join.run())}}",
+                                              "onClick": "{{showModal('event_cost', {event_name:currentItem.event_name,\nevent_id:currentItem.event_history_id},n_select_user_join.run(),SC_event_show_table.run())}}",
                                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                                               "dynamicPropertyPathList": [],
                                               "displayName": "Icon Button",
@@ -6082,16 +6082,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Event _SC_event_data",
-              "name": "SC_event_data",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Event _SC_event_type",
               "name": "SC_event_type",
               "confirmBeforeExecute": false,
@@ -6109,6 +6099,16 @@
             }
           ],
           [
+            {
+              "id": "Event _SC_event_show_table",
+              "name": "SC_event_show_table",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List2Copy.triggeredItem.event_history_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Event _event_history_trip",
               "name": "event_history_trip",

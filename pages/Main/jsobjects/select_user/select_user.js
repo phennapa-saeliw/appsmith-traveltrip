@@ -19,8 +19,7 @@ export default {
 		 //console.log(user_num);
 		 
 		 storeValue('user_id',user_num)
-		 
-		 
+
 		 await create_trip_user_JS.run()
  
 	}

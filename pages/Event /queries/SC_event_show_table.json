@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "SC_event_create",
+    "name": "SC_event_show_table",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO list_expense (name, list_type_id, list_expense_amount ,event_history_id) \n\nVALUES\n  (\n\t\t'{{SC_event_form.formData.customField1}}',\n    '{{SC_event_form.formData.customField2}}',\n\t\t'{{SC_event_form.formData.customField7}}',\n\t\t'{{List2Copy.triggeredItem.event_history_id}}'\n\t\t\n\t\t\n\t\t\n  )\n",
+      "body": "SELECT * FROM list_expense WHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,17 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_history_id",
-      "SC_event_form.formData.customField1",
-      "SC_event_form.formData.customField2",
-      "SC_event_form.formData.customField7"
+      "List2Copy.triggeredItem.event_history_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _SC_event_create",
+  "id": "Event _SC_event_show_table",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63f84d9f3b57a70f0657d409"
+  "gitSyncId": "6402c1438424293fe7876437_6410203a8424293fe78766cc"
 }
