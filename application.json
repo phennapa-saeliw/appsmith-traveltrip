@@ -23,6 +23,10 @@
     {
       "id": "Register Copy",
       "isDefault": false
+    },
+    {
+      "id": "Mapp",
+      "isDefault": false
     }
   ],
   "viewMode": false,

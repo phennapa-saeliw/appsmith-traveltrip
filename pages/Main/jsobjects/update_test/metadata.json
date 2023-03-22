@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "update_test",
+    "pageId": "Main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Main_update_test",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_64193df38424293fe787675a"
+}

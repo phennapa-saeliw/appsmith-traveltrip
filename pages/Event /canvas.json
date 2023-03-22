@@ -2007,12 +2007,12 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 57,
+                                              "leftColumn": 62,
                                               "dynamicBindingPathList": [],
                                               "isDisabled": false,
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
-                                              "rightColumn": 63,
+                                              "rightColumn": 64,
                                               "iconName": "trash",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "45skocvdy5",
@@ -2049,7 +2049,7 @@
                                                 "parentId": true,
                                                 "dynamicBindingPathList": true
                                               },
-                                              "isVisible": true,
+                                              "isVisible": false,
                                               "version": 1,
                                               "parentId": "vkmhbmrrf3",
                                               "renderMode": "CANVAS",
@@ -2085,12 +2085,12 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 48,
+                                              "leftColumn": 56,
                                               "dynamicBindingPathList": [],
                                               "isDisabled": false,
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
-                                              "rightColumn": 54,
+                                              "rightColumn": 62,
                                               "iconName": "more",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "crwqoxy5gd",
@@ -2167,13 +2167,13 @@
                                                   "key": "borderRadius"
                                                 }
                                               ],
-                                              "leftColumn": 34,
+                                              "leftColumn": 39,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                                               "text": "{{currentItem.list_expense_amount}}",
                                               "key": "4m5zf9fh67",
                                               "isDeprecated": false,
-                                              "rightColumn": 46,
+                                              "rightColumn": 53,
                                               "textAlign": "CENTER",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "uvrj9cu5ty",
@@ -2228,7 +2228,7 @@
                                               "text": "{{currentItem.name}}",
                                               "key": "4m5zf9fh67",
                                               "isDeprecated": false,
-                                              "rightColumn": 34,
+                                              "rightColumn": 39,
                                               "textAlign": "CENTER",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "veksuev4ss",
@@ -2395,7 +2395,7 @@
                               "boxShadow": "none",
                               "borderColor": "#E0DEDE",
                               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                              "onSubmit": "{{create_sc_event.myFun2()}}",
+                              "onSubmit": "{{create_sc_event.myFun2(storeValue('tab','Tab 1'),showAlert('เพิ่มรายการสำเร็จ','success'),SC_event_show_table.run())}}",
                               "topRow": 0,
                               "type": "JSON_FORM_WIDGET",
                               "animateLoading": true,
@@ -2691,7 +2691,7 @@
                                       "label": "เลือกสมาชิก",
                                       "labelTextSize": "0.875rem",
                                       "serverSideFiltering": false,
-                                      "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel : row.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}"
+                                      "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel: row.member_fullname\t,\n\t\tvalue: row.member_id\n\t}\n})\n}}"
                                     },
                                     "customField7": {
                                       "children": {},
@@ -2752,6 +2752,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                                },
+                                {
+                                  "key": "onSubmit"
                                 }
                               ],
                               "displayName": "JSON Form",
@@ -3437,7 +3440,7 @@
                               "isCustomField": false,
                               "accessor": "employee_id",
                               "identifier": "employee_id",
-                              "position": 2,
+                              "position": 11,
                               "originalIdentifier": "employee_id",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -3458,7 +3461,7 @@
                               "isCustomField": true,
                               "accessor": "customField1",
                               "identifier": "customField1",
-                              "position": 3,
+                              "position": 2,
                               "originalIdentifier": "customField1",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -3480,7 +3483,7 @@
                               "isCustomField": true,
                               "accessor": "customField2",
                               "identifier": "customField2",
-                              "position": 4,
+                              "position": 3,
                               "originalIdentifier": "customField2",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3492,7 +3495,8 @@
                               "label": "ประเภทกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{event_type.data.map(u =>({label : u.event_type, value : u.event_type_id}))}}"
+                              "options": "{{event_type.data.map(u =>({label : u.event_type, value : u.event_type_id}))}}",
+                              "onOptionChange": ""
                             },
                             "customField3": {
                               "children": {},
@@ -3503,7 +3507,7 @@
                               "isCustomField": true,
                               "accessor": "customField3",
                               "identifier": "customField3",
-                              "position": 5,
+                              "position": 4,
                               "originalIdentifier": "customField3",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3525,7 +3529,7 @@
                               "isCustomField": true,
                               "accessor": "customField4",
                               "identifier": "customField4",
-                              "position": 7,
+                              "position": 6,
                               "originalIdentifier": "customField4",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3552,7 +3556,7 @@
                               "isCustomField": true,
                               "accessor": "customField5",
                               "identifier": "customField5",
-                              "position": 8,
+                              "position": 7,
                               "originalIdentifier": "customField5",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3579,7 +3583,7 @@
                               "isCustomField": true,
                               "accessor": "customField6",
                               "identifier": "customField6",
-                              "position": 6,
+                              "position": 5,
                               "originalIdentifier": "customField6",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3603,7 +3607,7 @@
                               "isCustomField": true,
                               "accessor": "customField7",
                               "identifier": "customField7",
-                              "position": 9,
+                              "position": 8,
                               "originalIdentifier": "customField7",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3616,28 +3620,6 @@
                               "labelTextSize": "0.875rem",
                               "label": "สถานที่"
                             },
-                            "customField8": {
-                              "children": {},
-                              "dataType": "string",
-                              "defaultValue": "",
-                              "fieldType": "Text Input",
-                              "sourceData": "",
-                              "isCustomField": true,
-                              "accessor": "customField8",
-                              "identifier": "customField8",
-                              "position": 10,
-                              "originalIdentifier": "customField8",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "boxShadow": "none",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Latitude"
-                            },
                             "customField9": {
                               "children": {},
                               "dataType": "string",
@@ -3646,7 +3628,7 @@
                               "isCustomField": true,
                               "accessor": "customField9",
                               "identifier": "customField9",
-                              "position": 11,
+                              "position": 10,
                               "originalIdentifier": "customField9",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
@@ -3660,6 +3642,27 @@
                               "label": "Longitude",
                               "placeholderText": "Longitude",
                               "tooltip": ""
+                            },
+                            "customField10": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField10",
+                              "identifier": "customField10",
+                              "position": 12,
+                              "originalIdentifier": "customField10",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "lattitude"
                             }
                           },
                           "dataType": "object",
@@ -3810,13 +3813,13 @@
                           "key": "schema.__root_schema__.cellBorderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField8.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField8.borderRadius"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField6.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField10.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField10.borderRadius"
                         }
                       ],
                       "borderWidth": "1",
@@ -4179,8 +4182,8 @@
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 0,
-                              "bottomRow": 49,
-                              "pageSize": 6,
+                              "bottomRow": 48,
+                              "pageSize": 5,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET_V2",
                               "itemSpacing": "8",
@@ -4222,7 +4225,7 @@
                                   "widgetName": "Canvas8Copy",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 490,
+                                  "bottomRow": 480,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,

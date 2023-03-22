@@ -66,8 +66,9 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton2Copy",
-                      "onClick": "{{closeModal('Edit_Create_new_tripCopy')}}",
+                      "onClick": "{{closeModal('Edit_Create_new_tripCopy',event_trip.run())}}",
                       "buttonColor": "#fff",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                       "searchTags": [
@@ -496,7 +497,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{update_trip.run()}}",
+                      "onSubmit": "{{update_trip.run(() => showAlert('เเก้ไขสำเร็จ','success'), () => {})}}",
                       "topRow": 5,
                       "bottomRow": 49,
                       "fieldLimitExceeded": false,

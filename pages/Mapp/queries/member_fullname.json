@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Calculator",
+    "pageId": "Mapp",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_member_fullname",
+  "id": "Mapp_member_fullname",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63fec13a3b57a70f0657d466"
+  "gitSyncId": "6402c1438424293fe7876437_6412987d8424293fe7876712"
 }

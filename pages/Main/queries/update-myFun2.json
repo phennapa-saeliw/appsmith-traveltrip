@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "delete_trip",
-    "fullyQualifiedName": "delete_tripJS.delete_trip",
+    "name": "myFun2",
+    "fullyQualifiedName": "update.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Main",
-    "collectionId": "Main_delete_tripJS",
+    "collectionId": "Main_update",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await create_trip.run();\n  await create_trip_select_user.run();\n  await create_trip_user_JS.run();\n}",
+      "body": "async () => {\n  let user_select = JSONForm1Copy.formData.customfield4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await check_user_in_trip2.run();\n    console.log(check_user_in_trip2.data);\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await create_trip.run();\n  await create_trip_select_user.run();\n  await create_trip_user_JS.run();\n}"
+      "async () => {\n  let user_select = JSONForm1Copy.formData.customfield4;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await check_user_in_trip2.run();\n    console.log(check_user_in_trip2.data);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_delete_tripJS.delete_trip",
+  "id": "Main_update.myFun2",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63e30f543b57a70f0657d2de"
+  "gitSyncId": "6402c1438424293fe7876437_6412dd538424293fe787672c"
 }
