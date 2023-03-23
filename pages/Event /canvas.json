@@ -1871,6 +1871,7 @@
                               "requiresFlatWidgetChildren": true,
                               "listData": "{{SC_event_show_table.data}}",
                               "isCanvas": true,
+                              "dynamicPropertyPathList": [],
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 0,
@@ -1885,7 +1886,11 @@
                               "animateLoading": true,
                               "primaryKeys": "{{list2.listData.map((currentItem, currentIndex) => currentItem[\"list_expense_id\"] )}}",
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onItemClick"
+                                }
+                              ],
                               "dynamicBindingPathList": [
                                 {
                                   "key": "currentItemsView"
@@ -2346,6 +2351,7 @@
                               "itemBackgroundColor": "#FFFFFF",
                               "widgetId": "gfx2xfg5nh",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "onItemClick": "",
                               "isVisible": true,
                               "parentId": "s1yimd31ds",
                               "hasMetaWidgets": true,
@@ -2752,9 +2758,6 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-                                },
-                                {
-                                  "key": "onSubmit"
                                 }
                               ],
                               "displayName": "JSON Form",

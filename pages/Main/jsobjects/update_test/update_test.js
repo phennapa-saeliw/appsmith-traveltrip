@@ -7,6 +7,19 @@ export default {
 			//let member = UP_select_from_list_expense.data[0].member_id
 		  //	storeValue('member',member)
 			
+			update_trip.run()   // อัพเดทในส่วนของ ชื่อทริป , วันเวลาเริ่มทริปจบทริป
+		  
+			UP_check_expense.run()
+			storeValue('check_member_expense',UP_check_expense.data)
+			console.log(appsmith.store.check_member_expense)
+			
+			
+			
+		
+		
+		
+		
+		
 			let user_select  = JSONForm1Copy.formData.customfield4;
 
 			for(let i=0;i < user_select.length;i++){                         
