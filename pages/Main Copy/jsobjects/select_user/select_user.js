@@ -8,13 +8,9 @@ export default {
 		await create_trip.run()
 		await create_trip_select_user.run()
 		
-	  /*
-		
 		let trip_id = create_trip_select_user.data[0].event_trip_id
 		
 		storeValue('trip_id',trip_id)
-		
-		
 		
 	 let user_select  = JSONForm1.formData.customField4;
 	
@@ -26,7 +22,7 @@ export default {
 
 		 await create_trip_user_JS.run()
  
-	} */
+	}
 	
 }
 }

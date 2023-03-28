@@ -467,7 +467,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 37,
+                              "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -480,7 +480,7 @@
                               "isDisabled": false,
                               "key": "rtykqovv18",
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 26,
                               "isDefaultClickDisabled": true,
                               "widgetId": "r8cl1g7ehc",
                               "isVisible": true,
@@ -728,7 +728,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 0,
+                              "leftColumn": 37,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -741,7 +741,7 @@
                               "isDisabled": false,
                               "key": "rtykqovv18",
                               "isDeprecated": false,
-                              "rightColumn": 25,
+                              "rightColumn": 62,
                               "isDefaultClickDisabled": true,
                               "widgetId": "jydziauh6r",
                               "isVisible": true,

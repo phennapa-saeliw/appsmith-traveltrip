@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Main",
-    "slug": "main",
+    "name": "Main Copy",
+    "slug": "main-copy",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 690,
+          "bottomRow": 770,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -36,8 +36,8 @@
                 "popup",
                 "notification"
               ],
-              "topRow": 70,
-              "bottomRow": 760,
+              "topRow": 55,
+              "bottomRow": 745,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -103,11 +103,11 @@
                       "rightColumn": 17,
                       "isDefaultClickDisabled": true,
                       "iconName": "edit",
-                      "widgetId": "bt8ycvlqyo",
+                      "widgetId": "9wl5w82p52",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
-                      "parentId": "0q9d91srnp",
+                      "parentId": "wisdbafwbu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "disabledWhenInvalid": false,
@@ -119,7 +119,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton2CopyCopy",
-                      "onClick": "{{closeModal('show_detail',event_trip.run())}}",
+                      "onClick": "{{closeModal('Edit_Create_new_tripCopyCopy',event_trip.run())}}",
                       "buttonColor": "#fff",
                       "dynamicPropertyPathList": [],
                       "displayName": "Icon Button",
@@ -146,10 +146,10 @@
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "iconName": "cross",
-                      "widgetId": "w2n3h8uh7x",
+                      "widgetId": "wuvzwqtfof",
                       "isVisible": true,
                       "version": 1,
-                      "parentId": "0q9d91srnp",
+                      "parentId": "wisdbafwbu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "1.5rem",
@@ -179,7 +179,7 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "ชื่อทริป",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (list2.triggeredItem.name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (name_trip.text))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}"
                             },
                             "customField2": {
                               "children": {},
@@ -251,9 +251,9 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "isFilterable": true,
-                              "isRequired": false,
+                              "isRequired": true,
                               "isVisible": true,
                               "label": "เลือกสมาชิก",
                               "labelTextSize": "0.875rem",
@@ -550,12 +550,12 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{choose_member_to_trip.userfunc(() => showAlert('เเก้ไขสำเร็จ','success'), () => {})}}",
+                      "onSubmit": "{{update_trip.run(() => showAlert('เเก้ไขสำเร็จ','success'), () => {})}}",
                       "topRow": 5,
                       "bottomRow": 49,
                       "fieldLimitExceeded": false,
                       "parentRowSpace": 10,
-                      "title": "{{list2.triggeredItem.name}}",
+                      "title": "",
                       "type": "JSON_FORM_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -611,6 +611,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.defaultValue"
                         },
                         {
                           "key": "sourceData"
@@ -710,17 +713,11 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField4.options"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField1.defaultValue"
-                        },
-                        {
-                          "key": "title"
                         }
                       ],
                       "borderWidth": "1",
                       "sourceData": "{{list2.selectedItemView}}",
-                      "showReset": false,
+                      "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "ohykrv1mgj",
                       "backgroundColor": "#fff",
@@ -728,7 +725,7 @@
                       "rightColumn": 64,
                       "dynamicHeight": "FIXED",
                       "autoGenerateForm": true,
-                      "widgetId": "8e3dy5ta7p",
+                      "widgetId": "ex3lb6pxrv",
                       "resetButtonStyles": {
                         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -737,7 +734,7 @@
                       },
                       "isVisible": true,
                       "version": 1,
-                      "parentId": "0q9d91srnp",
+                      "parentId": "wisdbafwbu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "scrollContents": true,
@@ -823,7 +820,6 @@
                       "disabledWhenInvalid": true,
                       "borderRadius": "1.5rem",
                       "maxDynamicHeight": 9000,
-                      "useSourceData": false,
                       "minDynamicHeight": 4
                     },
                     {
@@ -898,12 +894,12 @@
                               "rightColumn": 61,
                               "textAlign": "CENTER",
                               "dynamicHeight": "AUTO_HEIGHT",
-                              "widgetId": "q6uqnsk6mp",
+                              "widgetId": "tpcw92518p",
                               "isVisible": true,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "version": 1,
-                              "parentId": "irepe94r2n",
+                              "parentId": "a8ru5dmhyt",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "originalTopRow": 0,
@@ -918,11 +914,11 @@
                           "isDeprecated": false,
                           "rightColumn": 155.8125,
                           "detachFromLayout": true,
-                          "widgetId": "irepe94r2n",
+                          "widgetId": "a8ru5dmhyt",
                           "containerStyle": "none",
                           "isVisible": true,
                           "version": 1,
-                          "parentId": "8xnbgdgjej",
+                          "parentId": "5s8a54el9w",
                           "renderMode": "CANVAS",
                           "isLoading": false
                         }
@@ -933,11 +929,11 @@
                       "isDeprecated": false,
                       "rightColumn": 48,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "8xnbgdgjej",
+                      "widgetId": "5s8a54el9w",
                       "containerStyle": "card",
                       "isVisible": true,
                       "version": 1,
-                      "parentId": "0q9d91srnp",
+                      "parentId": "wisdbafwbu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "1.5rem",
@@ -984,11 +980,11 @@
                       "rightColumn": 34,
                       "isDefaultClickDisabled": true,
                       "iconName": "trash",
-                      "widgetId": "9eihfcdece",
+                      "widgetId": "1885h8xxn5",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
-                      "parentId": "0q9d91srnp",
+                      "parentId": "wisdbafwbu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "disabledWhenInvalid": false,
@@ -1003,10 +999,10 @@
                   "isDeprecated": false,
                   "rightColumn": 149.25,
                   "detachFromLayout": true,
-                  "widgetId": "0q9d91srnp",
+                  "widgetId": "wisdbafwbu",
                   "isVisible": true,
                   "version": 1,
-                  "parentId": "237eyrg9t8",
+                  "parentId": "xxqq9qm7wy",
                   "renderMode": "CANVAS",
                   "isLoading": false
                 }
@@ -1018,7 +1014,7 @@
               "backgroundColor": "#fca3cc",
               "detachFromLayout": true,
               "dynamicHeight": "FIXED",
-              "widgetId": "237eyrg9t8",
+              "widgetId": "xxqq9qm7wy",
               "canOutsideClickClose": true,
               "canEscapeKeyClose": true,
               "version": 2,
@@ -1182,7 +1178,6 @@
                               "isRequired": true,
                               "isVisible": true,
                               "label": "วันและเวลา จบทริป",
-                              "maxDate": "",
                               "minDate": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
@@ -1492,9 +1487,6 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField3.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField3.maxDate"
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.minDate"
@@ -2269,7 +2261,7 @@
                                               "isDeprecated": false,
                                               "rightColumn": 46,
                                               "disableLink": false,
-                                              "textAlign": "LEFT",
+                                              "textAlign": "CENTER",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "c8yx3zl4pt",
                                               "isVisible": true,
@@ -2283,61 +2275,6 @@
                                               "maxDynamicHeight": 9000,
                                               "fontSize": "1rem",
                                               "textStyle": "HEADING",
-                                              "minDynamicHeight": 4
-                                            },
-                                            {
-                                              "boxShadow": "none",
-                                              "widgetName": "id_trip",
-                                              "displayName": "Text",
-                                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                                              "searchTags": [
-                                                "typography",
-                                                "paragraph",
-                                                "label"
-                                              ],
-                                              "topRow": 0,
-                                              "bottomRow": 6,
-                                              "type": "TEXT_WIDGET",
-                                              "hideCard": false,
-                                              "animateLoading": true,
-                                              "overflow": "NONE",
-                                              "dynamicTriggerPathList": [],
-                                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                                              "dynamicBindingPathList": [
-                                                {
-                                                  "key": "text"
-                                                },
-                                                {
-                                                  "key": "truncateButtonColor"
-                                                },
-                                                {
-                                                  "key": "fontFamily"
-                                                },
-                                                {
-                                                  "key": "borderRadius"
-                                                }
-                                              ],
-                                              "leftColumn": 2,
-                                              "shouldTruncate": false,
-                                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                              "text": "{{currentItem.event_trip_id}}",
-                                              "key": "4m5zf9fh67",
-                                              "isDeprecated": false,
-                                              "rightColumn": 10,
-                                              "textAlign": "LEFT",
-                                              "dynamicHeight": "FIXED",
-                                              "widgetId": "u3hfwcko11",
-                                              "isVisible": true,
-                                              "fontStyle": "BOLD",
-                                              "textColor": "#231F20",
-                                              "version": 1,
-                                              "parentId": "hdsvyzm0yn",
-                                              "renderMode": "CANVAS",
-                                              "isLoading": false,
-                                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                              "maxDynamicHeight": 9000,
-                                              "fontSize": "1rem",
-                                              "textStyle": "BODY",
                                               "minDynamicHeight": 4
                                             },
                                             {
@@ -2376,7 +2313,7 @@
                                               "rightColumn": 53,
                                               "iconName": "more",
                                               "dynamicHeight": "FIXED",
-                                              "widgetId": "039l35cptr",
+                                              "widgetId": "7n0s0z1jky",
                                               "logBlackList": {
                                                 "boxShadow": true,
                                                 "widgetName": true,
@@ -3146,8 +3083,8 @@
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
                               "closeOnSelection": true,
-                              "convertToISO": true,
-                              "dateFormat": "DD/MM/YYYY HH:mm",
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
                               "isDisabled": false,
                               "isRequired": true,
                               "isVisible": true,
@@ -3173,8 +3110,8 @@
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "boxShadow": "none",
                               "closeOnSelection": true,
-                              "convertToISO": true,
-                              "dateFormat": "DD/MM/YYYY HH:mm",
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
                               "isDisabled": false,
                               "isRequired": true,
                               "isVisible": true,
@@ -3201,8 +3138,8 @@
                               "boxShadow": "none",
                               "isDisabled": false,
                               "isFilterable": true,
-                              "isRequired": false,
-                              "isVisible": false,
+                              "isRequired": true,
+                              "isVisible": true,
                               "label": "เลือกสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
@@ -3747,7 +3684,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 4,
+                      "leftColumn": 38,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -3760,7 +3697,7 @@
                       "isDisabled": false,
                       "key": "300pk3963f",
                       "isDeprecated": false,
-                      "rightColumn": 20,
+                      "rightColumn": 54,
                       "isDefaultClickDisabled": true,
                       "widgetId": "kxzlbit37o",
                       "buttonStyle": "PRIMARY",
@@ -3804,7 +3741,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 43,
+                      "leftColumn": 8,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -3817,7 +3754,7 @@
                       "isDisabled": false,
                       "key": "300pk3963f",
                       "isDeprecated": false,
-                      "rightColumn": 59,
+                      "rightColumn": 24,
                       "isDefaultClickDisabled": true,
                       "widgetId": "698zrn5byt",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -3863,13 +3800,58 @@
               "maxDynamicHeight": 9000,
               "width": 381.5,
               "minDynamicHeight": 24
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "button_edit_trip",
+              "onClick": "{{showModal('Edit_Create_new_tripCopy', n_select_user_join.run(),test_picktime.run())}}",
+              "buttonColor": "#dc2626",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 71,
+              "bottomRow": 77,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 28,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "0anfnwvuje",
+              "isDeprecated": false,
+              "rightColumn": 35,
+              "iconName": "edit",
+              "dynamicHeight": "FIXED",
+              "widgetId": "1sgw6ceqd3",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "buttonVariant": "TERTIARY"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Main_member_fullname",
+              "id": "Main Copy_member_fullname",
               "name": "member_fullname",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3879,7 +3861,7 @@
           ],
           [
             {
-              "id": "Main_event_trip",
+              "id": "Main Copy_event_trip",
               "name": "event_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3891,7 +3873,7 @@
           ],
           [
             {
-              "id": "Main_n_select_user_join",
+              "id": "Main Copy_n_select_user_join",
               "name": "n_select_user_join",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3903,7 +3885,7 @@
           ],
           [
             {
-              "id": "Main_test_picktime",
+              "id": "Main Copy_test_picktime",
               "name": "test_picktime",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3916,7 +3898,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Main",
+        "id": "Main Copy",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -3927,5 +3909,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63c647ea29e6fc43b6bc555e"
+  "gitSyncId": "6402c1438424293fe7876437_642105cf8424293fe78767a0"
 }
