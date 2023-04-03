@@ -2401,7 +2401,7 @@
                               "boxShadow": "none",
                               "borderColor": "#E0DEDE",
                               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                              "onSubmit": "{{create_sc_event.myFun2(storeValue('tab','Tab 1'),showAlert('เพิ่มรายการสำเร็จ','success'),SC_event_show_table.run())}}",
+                              "onSubmit": "{{create_sc_event.myFun2(SC_event_show_table.run(),storeValue('tab','Tab 1'),showAlert('เพิ่มรายการสำเร็จ','success'),SC_event_show_table.run())}}",
                               "topRow": 0,
                               "type": "JSON_FORM_WIDGET",
                               "animateLoading": true,
@@ -2758,6 +2758,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                                },
+                                {
+                                  "key": "onSubmit"
                                 }
                               ],
                               "displayName": "JSON Form",

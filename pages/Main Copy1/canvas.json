@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Main",
-    "slug": "main",
+    "name": "Main Copy1",
+    "slug": "main-copy1",
     "layouts": [
       {
         "viewMode": false,
@@ -87,7 +87,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 16,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -100,7 +100,7 @@
                       "isDisabled": false,
                       "key": "wanf61byhi",
                       "isDeprecated": false,
-                      "rightColumn": 31,
+                      "rightColumn": 17,
                       "isDefaultClickDisabled": true,
                       "iconName": "edit",
                       "widgetId": "bt8ycvlqyo",
@@ -254,7 +254,7 @@
                               "isDisabled": false,
                               "isFilterable": true,
                               "isRequired": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "label": "เลือกสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
@@ -543,6 +543,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.minDate"
+                        },
+                        {
+                          "key": "onSubmit"
                         },
                         {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.children.isVisible.defaultValue"
@@ -968,7 +971,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 0,
+                      "leftColumn": 19,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -981,7 +984,7 @@
                       "isDisabled": false,
                       "key": "wanf61byhi",
                       "isDeprecated": false,
-                      "rightColumn": 15,
+                      "rightColumn": 34,
                       "isDefaultClickDisabled": true,
                       "iconName": "trash",
                       "widgetId": "9eihfcdece",
@@ -1069,62 +1072,9 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "Button1CopyCopyCopy",
-                      "onClick": "{{showModal('show_detail')}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 50,
-                      "bottomRow": 54,
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "buttonColor"
-                        }
-                      ],
-                      "text": "ย้อนกลับ",
-                      "isDisabled": false,
-                      "key": "wanf61byhi",
-                      "isDeprecated": false,
-                      "rightColumn": 17,
-                      "isDefaultClickDisabled": true,
-                      "iconName": "arrow-left",
-                      "widgetId": "dkjgxdjb9x",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "0bmi2ssh2z",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "iconAlign": "left",
-                      "placement": "CENTER"
-                    },
-                    {
                       "boxShadow": "none",
                       "widgetName": "IconButton2Copy",
-                      "onClick": "{{showModal('show_detail')}}",
+                      "onClick": "{{closeModal('Edit_Create_new_tripCopy',event_trip.run())}}",
                       "buttonColor": "#fff",
                       "dynamicPropertyPathList": [],
                       "displayName": "Icon Button",
@@ -3648,7 +3598,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton3",
-                      "onClick": "{{showModal('show_detail')}}",
+                      "onClick": "{{showModal('Edit_Create_new_tripCopy')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -3744,7 +3694,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{showModal('show_detail')}}",
+                      "onClick": "{{showModal('Edit_Create_new_tripCopy')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -3771,7 +3721,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "ยกเลิก",
+                      "text": "Close",
                       "isDisabled": false,
                       "key": "300pk3963f",
                       "isDeprecated": false,
@@ -3828,7 +3778,7 @@
                           "key": "buttonColor"
                         }
                       ],
-                      "text": "ยืนยัน",
+                      "text": "Confirm",
                       "isDisabled": false,
                       "key": "300pk3963f",
                       "isDeprecated": false,
@@ -3884,7 +3834,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Main_member_fullname",
+              "id": "Main Copy1_member_fullname",
               "name": "member_fullname",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3894,7 +3844,7 @@
           ],
           [
             {
-              "id": "Main_event_trip",
+              "id": "Main Copy1_event_trip",
               "name": "event_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3906,7 +3856,7 @@
           ],
           [
             {
-              "id": "Main_n_select_user_join",
+              "id": "Main Copy1_n_select_user_join",
               "name": "n_select_user_join",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3918,7 +3868,7 @@
           ],
           [
             {
-              "id": "Main_test_picktime",
+              "id": "Main Copy1_test_picktime",
               "name": "test_picktime",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -3931,7 +3881,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Main",
+        "id": "Main Copy1",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -3942,5 +3892,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63c647ea29e6fc43b6bc555e"
+  "gitSyncId": "6402c1438424293fe7876437_64240eff8424293fe787684c"
 }

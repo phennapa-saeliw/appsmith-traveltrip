@@ -31,6 +31,14 @@
     {
       "id": "Main Copy",
       "isDefault": false
+    },
+    {
+      "id": "Main Copy1",
+      "isDefault": false
+    },
+    {
+      "id": "Calculator Copy",
+      "isDefault": false
     }
   ],
   "viewMode": false,

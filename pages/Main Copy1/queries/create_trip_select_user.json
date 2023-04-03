@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "update_trip",
+    "name": "create_trip_select_user",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Main Copy1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE event_trip\n  SET name = '{{JSONForm1Copy.formData.customField1}}',\n\tevent_trip_start = '{{JSONForm1Copy.formData.customField2}}' ,\n\tevent_trip_end = '{{JSONForm1Copy.formData.customField3}}' \n\n  WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}};",
+      "body": "select event_trip_id from event_trip WHERE name = '{{JSONForm1.formData.customField1}}'\nand event_trip_start = '{{JSONForm1.formData.customField2}}'\nand event_trip_end = '{{JSONForm1.formData.customField3}}'\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,17 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField1",
-      "JSONForm1Copy.formData.customField2",
-      "JSONForm1Copy.formData.customField3",
-      "list2.triggeredItem.event_trip_id"
+      "JSONForm1.formData.customField1",
+      "JSONForm1.formData.customField2",
+      "JSONForm1.formData.customField3"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_update_trip",
+  "id": "Main Copy1_create_trip_select_user",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_640b4d418424293fe787668e"
+  "gitSyncId": "6402c1438424293fe7876437_64240eff8424293fe787684f"
 }

@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Calculator",
-    "slug": "calculator",
+    "name": "Calculator Copy",
+    "slug": "calculator-copy",
     "layouts": [
       {
         "viewMode": false,
@@ -829,11 +829,7 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onDropdownOpen"
-                                }
-                              ],
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 6,
                               "dynamicBindingPathList": [
                                 {
@@ -847,7 +843,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{n_select_event_from_member.data.map((row) => {\n\treturn {\n\t\tlabel : row.name\t,\n\t\tvalue : row.list_expense_id\n\t}\n})}}",
+                              "options": "{{n_select_event.data.map((row) => {\n\treturn {\n\t\tlabel : \trow.event_name\t,\n\t\tvalue : row.event_history_id\n\t}\n})}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -862,7 +858,6 @@
                               "isVisible": true,
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{select_expense_from_member.run(() => {}, () => showAlert('มีข้อผิดพลาด','error'))}}",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
@@ -890,11 +885,7 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onDropdownOpen"
-                                }
-                              ],
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 6,
                               "dynamicBindingPathList": [
                                 {
@@ -908,7 +899,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{n_select_event_from_member.data.map((row) => {\n\treturn {\n\t\tlabel : row.event_name\t,\n\t\tvalue : row.event_history_id\n\t}\n})}}",
+                              "options": "{{n_select_event.data.map((row) => {\n\treturn {\n\t\tlabel : row.event_name\t,\n\t\tvalue : row.event_history_id\n\t}\n})}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -923,7 +914,6 @@
                               "isVisible": true,
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{n_select_event_from_member.run()}}",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
@@ -951,11 +941,7 @@
                               "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onDropdownOpen"
-                                }
-                              ],
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 6,
                               "dynamicBindingPathList": [
                                 {
@@ -969,7 +955,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{select_member_from_trip.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}",
+                              "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel : row.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "Select option",
                               "isDisabled": false,
@@ -984,7 +970,6 @@
                               "isVisible": true,
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{select_member_from_trip.run(() => {}, () => showAlert('กรุณาเลือกสมาชิกก่อน'))}}",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
@@ -1060,9 +1045,6 @@
                                 },
                                 {
                                   "key": "onDropdownClose"
-                                },
-                                {
-                                  "key": "onDropdownOpen"
                                 }
                               ],
                               "leftColumn": 6,
@@ -1094,7 +1076,6 @@
                               "isVisible": true,
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
@@ -2241,7 +2222,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Calculator_select_trip",
+              "id": "Calculator Copy_select_trip",
               "name": "select_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2251,22 +2232,22 @@
           ],
           [
             {
-              "id": "Calculator_n_select_event_from_member",
-              "name": "n_select_event_from_member",
+              "id": "Calculator Copy_n_select_event",
+              "name": "n_select_event",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Select2.options[0].value"
+                "Select2.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Calculator_select_member_from_trip",
-              "name": "select_member_from_trip",
+              "id": "Calculator Copy_n_select_user_join",
+              "name": "n_select_user_join",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "Select1.selectedOptionValue"
+                "Select2.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -2274,7 +2255,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Calculator",
+        "id": "Calculator Copy",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -2285,5 +2266,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63c647ea29e6fc43b6bc5560"
+  "gitSyncId": "6402c1438424293fe7876437_6426ad758424293fe78768d9"
 }

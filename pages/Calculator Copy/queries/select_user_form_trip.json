@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "update_trip",
+    "name": "select_user_form_trip",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Calculator Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE event_trip\n  SET name = '{{JSONForm1Copy.formData.customField1}}',\n\tevent_trip_start = '{{JSONForm1Copy.formData.customField2}}' ,\n\tevent_trip_end = '{{JSONForm1Copy.formData.customField3}}' \n\n  WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}};",
+      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,expense_history_id , list_expense.name , list_expense.list_expense_id , event_history.event_history_id , event_history.event_name\n\nFROM member \n\ninner join expense_history \n\non member.member_id = expense_history.member_id\n\ninner join list_expense\n\non list_expense.list_expense_id = expense_history.list_expense_id\n\ninner join event_history\n\non event_history.event_history_id = list_expense.event_history_id\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,26 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField1",
-      "JSONForm1Copy.formData.customField2",
-      "JSONForm1Copy.formData.customField3",
-      "list2.triggeredItem.event_trip_id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_update_trip",
+  "id": "Calculator Copy_select_user_form_trip",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_640b4d418424293fe787668e"
+  "gitSyncId": "6402c1438424293fe7876437_6426ad758424293fe78768eb"
 }

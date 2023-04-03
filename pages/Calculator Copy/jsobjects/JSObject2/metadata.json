@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Calculator Copy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator Copy_JSObject2",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6426ad758424293fe78768f5"
+}

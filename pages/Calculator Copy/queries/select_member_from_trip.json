@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "update_trip",
+    "name": "select_member_from_trip",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Calculator Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE event_trip\n  SET name = '{{JSONForm1Copy.formData.customField1}}',\n\tevent_trip_start = '{{JSONForm1Copy.formData.customField2}}' ,\n\tevent_trip_end = '{{JSONForm1Copy.formData.customField3}}' \n\n  WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}};",
+      "body": "SELECT event_trip_id , member_id FROM event_member WHERE event_trip_id = {{Select1.selectedOptionValue}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,17 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1Copy.formData.customField1",
-      "JSONForm1Copy.formData.customField2",
-      "JSONForm1Copy.formData.customField3",
-      "list2.triggeredItem.event_trip_id"
+      "Select1.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_update_trip",
+  "id": "Calculator Copy_select_member_from_trip",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_640b4d418424293fe787668e"
+  "gitSyncId": "6402c1438424293fe7876437_6426ad758424293fe78768e1"
 }

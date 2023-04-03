@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject4",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_JSObject4",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6426b9758424293fe787690e"
+}

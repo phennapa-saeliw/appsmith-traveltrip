@@ -13,8 +13,8 @@ export default {
 			
 			storeValue('user_num',user_num)
 			
-
-		   await create_trip_user_JS_2.run()
+			
+		  await create_trip_user_JS_2.run()
 		}
 		
 	 
