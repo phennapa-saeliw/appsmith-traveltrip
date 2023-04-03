@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "n_select_event_from_member",
+    "name": "cal_expense_member_2",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member.member_id, member_firstname || ' ' || member_lastname AS member_fullname, expense_history_id, list_expense.name, list_expense.list_expense_id, event_history.event_history_id, event_history.event_name\nFROM member\nINNER JOIN expense_history ON member.member_id = expense_history.member_id\nINNER JOIN list_expense ON list_expense.list_expense_id = expense_history.list_expense_id\nINNER JOIN event_history ON event_history.event_history_id = list_expense.event_history_id\nWHERE expense_history.member_id = {{Select2.options[0].value}}\n",
+      "body": "SELECT SUM(total_expense) as total_sum\nFROM (\n  SELECT SUM(list_expense_amount) as total_expense, \n         event_history.event_history_id, \n         event_history.event_trip_id, \n         expense_history.member_id, \n         expense_history.list_expense_id\n  FROM list_expense \n  INNER JOIN event_history \n  ON list_expense.event_history_id = event_history.event_history_id\n  INNER JOIN expense_history\n  ON list_expense.list_expense_id = expense_history.list_expense_id\n  WHERE member_id = {{Select2.selectedOptionValue}}\n  GROUP BY event_history.event_history_id, event_history.event_trip_id, expense_history.member_id, expense_history.list_expense_id\n) subquery;\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select2.options[0].value"
+      "Select2.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_n_select_event_from_member",
+  "id": "Calculator_cal_expense_member_2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6406fdfc8424293fe78765e1"
+  "gitSyncId": "6402c1438424293fe7876437_642a7dd98424293fe7876935"
 }

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Cal_member",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_Cal_member",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_642a7c788424293fe7876930"
+}
