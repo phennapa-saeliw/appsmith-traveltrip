@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Calculator",
-    "slug": "calculator",
+    "name": "Calculator Copy",
+    "slug": "calculator-copy",
     "layouts": [
       {
         "viewMode": false,
@@ -1043,7 +1043,11 @@
                               "boxShadow": "none",
                               "widgetName": "Select1",
                               "isFilterable": true,
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onDropdownClose"
+                                }
+                              ],
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                               "labelText": "ทริป",
@@ -1084,7 +1088,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "onDropdownClose": "",
+                              "onDropdownClose": "{{Cal_trip.myFun2()}}",
                               "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
                               "labelStyle": "BOLD",
                               "placeholderText": "กรุณาเลือกทริป",
@@ -1100,7 +1104,7 @@
                               "isVisible": true,
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                              "onDropdownOpen": "",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
@@ -2251,7 +2255,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Calculator_select_trip",
+              "id": "Calculator Copy_select_trip",
               "name": "select_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2262,7 +2266,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Calculator",
+        "id": "Calculator Copy",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -2273,5 +2277,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63c647ea29e6fc43b6bc5560"
+  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe7876995"
 }

@@ -257,11 +257,12 @@
                               "isVisible": true,
                               "label": "เลือกสมาชิก",
                               "labelTextSize": "0.875rem",
-                              "serverSideFiltering": false,
+                              "serverSideFiltering": true,
                               "options": "{{member_fullname.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "tooltip": "",
                               "placeholderText": "ค้นหาสมาชิก",
-                              "onOptionChange": ""
+                              "onOptionChange": "",
+                              "allowSelectAll": true
                             },
                             "button_next": {
                               "children": {
@@ -514,10 +515,13 @@
                       "borderColor": "#E0DEDE",
                       "widgetName": "JSONForm1CopyCopy",
                       "submitButtonStyles": {
-                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "buttonColor": "#fca3cc",
                         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                         "boxShadow": "none",
-                        "buttonVariant": "PRIMARY"
+                        "buttonVariant": "PRIMARY",
+                        "iconName": "tick",
+                        "iconAlign": "right",
+                        "placement": "CENTER"
                       },
                       "dynamicPropertyPathList": [
                         {
@@ -1550,15 +1554,15 @@
                           "key": "schema.__root_schema__.children.customField2.minDate"
                         },
                         {
-                          "key": "onSubmit"
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.children.isVisible.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.children.isVisible.defaultValue"
+                          "key": "onSubmit"
                         }
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{update_trip.run(closeModal('Edit_Create_new_tripCopy'),showAlert('เเก้ไขทริปสำเร็จ','success'))}}",
+                      "onSubmit": "{{edit_trip.myFun2((closeModal('Edit_Create_new_tripCopy'),showAlert('เเก้ไขทริปสำเร็จ','success')))}}",
                       "topRow": 5,
                       "bottomRow": 49,
                       "fieldLimitExceeded": false,
@@ -2579,8 +2583,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 8,
-                      "bottomRow": 13,
+                      "topRow": 9,
+                      "bottomRow": 14,
                       "parentRowSpace": 10,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
@@ -2591,12 +2595,12 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 54,
+                      "leftColumn": 56,
                       "dynamicBindingPathList": [],
                       "isDisabled": false,
                       "key": "0anfnwvuje",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 64,
                       "iconName": "plus",
                       "widgetId": "xopq54fxkt",
                       "isVisible": true,
@@ -3356,7 +3360,7 @@
                       "autoGenerateForm": true,
                       "widgetId": "5pgxwxac7c",
                       "resetButtonStyles": {
-                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "buttonColor": "#fca3cc",
                         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                         "boxShadow": "none",
                         "buttonVariant": "SECONDARY"

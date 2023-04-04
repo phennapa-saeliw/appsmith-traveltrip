@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "a2_member",
-    "pageId": "Calculator",
+    "name": "a4_expense",
+    "pageId": "Calculator Copy",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Calculator_a2_member",
+  "id": "Calculator Copy_a4_expense",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6426869f8424293fe78768cf"
+  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe78769c5"
 }

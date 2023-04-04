@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "a3_event",
-    "pageId": "Calculator",
+    "name": "Cal_member",
+    "pageId": "Calculator Copy",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Calculator_a3_event",
+  "id": "Calculator Copy_Cal_member",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6426b32f8424293fe78768ff"
+  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe78769c7"
 }

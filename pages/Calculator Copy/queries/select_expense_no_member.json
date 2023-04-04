@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "check_user_in_trip",
+    "name": "select_expense_no_member",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Calculator Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_member WHERE member_id = {{}}",
+      "body": "SELECT event_trip_id, member.member_id, member_firstname || ' ' || member_lastname AS member_fullname \nFROM event_member \nINNER JOIN member \nON member.member_id = event_member.member_id\nWHERE event_trip_id = {{Select1.selectedOptionValue}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      ""
+      "Select1.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_check_user_in_trip",
+  "id": "Calculator Copy_select_expense_no_member",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6413f1ae8424293fe7876737"
+  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe78769a8"
 }

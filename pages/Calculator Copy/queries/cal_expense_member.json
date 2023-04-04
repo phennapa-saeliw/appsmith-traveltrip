@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "check_user_in_trip",
+    "name": "cal_expense_member",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Calculator Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_member WHERE member_id = {{}}",
+      "body": "SELECT SUM(list_expense_amount) as total_expense, \n       event_history.event_history_id, \n       event_history.event_trip_id, \n       expense_history.member_id, \n       expense_history.list_expense_id\nFROM list_expense \nINNER JOIN event_history \nON list_expense.event_history_id = event_history.event_history_id\nINNER JOIN expense_history\nON list_expense.list_expense_id = expense_history.list_expense_id\nWHERE event_history.event_trip_id = {{Select1.selectedOptionValue}}\n\nGROUP BY event_history.event_history_id, event_history.event_trip_id, expense_history.member_id, expense_history.list_expense_id;\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      ""
+      "Select1.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_check_user_in_trip",
+  "id": "Calculator Copy_cal_expense_member",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6413f1ae8424293fe7876737"
+  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe78769b8"
 }

@@ -1,12 +1,7 @@
 export default {
  
 	myFun2: async () => {
-    
-			
-			//UP_select_from_list_expense.run()
-			//let member = UP_select_from_list_expense.data[0].member_id
-		  //	storeValue('member',member)
-			
+
 			update_trip.run()   // อัพเดทในส่วนของ ชื่อทริป , วันเวลาเริ่มทริปจบทริป
 		  
 			UP_check_expense.run()
