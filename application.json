@@ -31,6 +31,10 @@
     {
       "id": "Calculator Copy",
       "isDefault": false
+    },
+    {
+      "id": "Event  Copy",
+      "isDefault": false
     }
   ],
   "viewMode": false,

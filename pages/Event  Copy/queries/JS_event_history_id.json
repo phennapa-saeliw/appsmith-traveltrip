@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "SC_event_create",
+    "name": "JS_event_history_id",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Event  Copy",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO list_expense (name, list_type_id, list_expense_amount ,event_history_id , \"calculate_type (1 = split, 2 = individual)\") \n\nVALUES\n  (\n\t\t'{{SC_event_form.formData.customField1}}',\n    '{{SC_event_form.formData.customField2}}',\n\t\t'{{SC_event_form.formData.customField7}}',\n\t\t'{{List2Copy.triggeredItem.event_history_id}}',\n\t\t'{{appsmith.store.one_or_two}}'\n\t\t\n\t\t\n\t\t\n  )\n",
+      "body": "select event_history_id from event_history WHERE \nevent_type_id = {{JSONForm1Copy.formData.customField2}} and \nevent_name = {{JSONForm1Copy.formData.customField1}} and \nevent_detail = {{JSONForm1Copy.formData.customField3}} and \nevent_start = {{JSONForm1Copy.formData.customField4}} and \nevent_end = {{JSONForm1Copy.formData.customField5}} and \nevent_trip_id = {{appsmith.URL.queryParams.list_id}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,18 +36,19 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_history_id",
-      "SC_event_form.formData.customField1",
-      "SC_event_form.formData.customField2",
-      "SC_event_form.formData.customField7",
-      "appsmith.store.one_or_two"
+      "JSONForm1Copy.formData.customField1",
+      "JSONForm1Copy.formData.customField2",
+      "JSONForm1Copy.formData.customField3",
+      "JSONForm1Copy.formData.customField4",
+      "JSONForm1Copy.formData.customField5",
+      "appsmith.URL.queryParams.list_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _SC_event_create",
+  "id": "Event  Copy_JS_event_history_id",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63f84d9f3b57a70f0657d409"
+  "gitSyncId": "6402c1438424293fe7876437_642be65e8424293fe7876a30"
 }
