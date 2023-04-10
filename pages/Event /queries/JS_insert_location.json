@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO event_location (event_location,  event_location_start_lat , event_location_start_lon, event_history_id)\t\n\nVALUES\n  (\n\t\t'{{JSONForm1Copy.formData.customField7}}',\n\t\t'{{JSONForm1Copy.formData.customField8}}',\n\t\t'{{JSONForm1Copy.formData.customField9}}',\n\t\t'{{appsmith.store.history_id}}'\n\t\t\n\t\n  )\n",
+      "body": "INSERT INTO event_location (event_location,  event_location_start_lat , event_location_start_lon, event_history_id)\t\n\nVALUES\n  (\n\t\t'{{JSONForm1Copy.formData.customField7}}',\n\t\t'{{JSONForm1Copy.formData.customField9}}',\n\t\t'{{JSONForm1Copy.formData.customField10}}',\n\t\t'{{appsmith.store.history_id}}'\n\t\t\n\t\n  )\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,8 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "JSONForm1Copy.formData.customField10",
       "JSONForm1Copy.formData.customField7",
-      "JSONForm1Copy.formData.customField8",
       "JSONForm1Copy.formData.customField9",
       "appsmith.store.history_id"
     ],

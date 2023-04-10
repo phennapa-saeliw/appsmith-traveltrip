@@ -2184,7 +2184,11 @@
                                               "widgetName": "button_next",
                                               "onClick": "{{navigateTo('Event ',{list_name:currentItem.name,\nlist_id:currentItem.event_trip_id}, 'SAME_WINDOW')}}",
                                               "buttonColor": "#ec4899",
-                                              "dynamicPropertyPathList": [],
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
                                               "displayName": "Icon Button",
                                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                                               "searchTags": [

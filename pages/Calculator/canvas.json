@@ -2255,7 +2255,9 @@
               "name": "select_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.member_username"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

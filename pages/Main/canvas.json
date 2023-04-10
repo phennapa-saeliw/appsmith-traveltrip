@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 690,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -375,73 +375,6 @@
                               "labelTextSize": "0.875rem",
                               "label": "Name Trip"
                             },
-                            "id_trip": {
-                              "children": {
-                                "isVisible": {
-                                  "children": {},
-                                  "dataType": "boolean",
-                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip.isVisible))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                                  "fieldType": "Switch",
-                                  "sourceData": true,
-                                  "isCustomField": false,
-                                  "accessor": "isVisible",
-                                  "identifier": "isVisible",
-                                  "position": 0,
-                                  "originalIdentifier": "isVisible",
-                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                                  "boxShadow": "none",
-                                  "alignWidget": "LEFT",
-                                  "isDisabled": false,
-                                  "isRequired": false,
-                                  "isVisible": true,
-                                  "labelTextSize": "0.875rem",
-                                  "label": "Is Visible"
-                                },
-                                "text": {
-                                  "children": {},
-                                  "dataType": "string",
-                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip.text))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                                  "fieldType": "Text Input",
-                                  "sourceData": "74",
-                                  "isCustomField": false,
-                                  "accessor": "text",
-                                  "identifier": "text",
-                                  "position": 1,
-                                  "originalIdentifier": "text",
-                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                                  "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                                  "boxShadow": "none",
-                                  "iconAlign": "left",
-                                  "isDisabled": false,
-                                  "isRequired": false,
-                                  "isSpellCheck": false,
-                                  "isVisible": true,
-                                  "labelTextSize": "0.875rem",
-                                  "label": "Text"
-                                }
-                              },
-                              "dataType": "object",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_trip))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "fieldType": "Object",
-                              "sourceData": {
-                                "isVisible": true,
-                                "text": "74"
-                              },
-                              "isCustomField": false,
-                              "accessor": "id_trip",
-                              "identifier": "id_trip",
-                              "position": 6,
-                              "originalIdentifier": "id_trip",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "boxShadow": "none",
-                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "cellBoxShadow": "none",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isVisible": false,
-                              "labelTextSize": "0.875rem",
-                              "label": "Id Trip"
-                            },
                             "IconButton3CopyCopy1CopyCopy": {
                               "children": {
                                 "isVisible": {
@@ -485,6 +418,50 @@
                               "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Icon Button 3 Copy Copy 1 Copy Copy"
+                            },
+                            "IconButton3CopyCopy1CopyCopyCopy": {
+                              "children": {
+                                "isVisible": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IconButton3CopyCopy1CopyCopyCopy.isVisible))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": true,
+                                  "isCustomField": false,
+                                  "accessor": "isVisible",
+                                  "identifier": "isVisible",
+                                  "position": 0,
+                                  "originalIdentifier": "isVisible",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Is Visible"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IconButton3CopyCopy1CopyCopyCopy))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "isVisible": true
+                              },
+                              "isCustomField": false,
+                              "accessor": "IconButton3CopyCopy1CopyCopyCopy",
+                              "identifier": "IconButton3CopyCopy1CopyCopyCopy",
+                              "position": 7,
+                              "originalIdentifier": "IconButton3CopyCopy1CopyCopyCopy",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Icon Button 3 Copy Copy 1 Copy Copy Copy"
                             }
                           },
                           "dataType": "object",
@@ -531,9 +508,6 @@
                           "key": "schema.__root_schema__.children.name_trip.children.isVisible.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.defaultValue"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField2.defaultValue"
                         },
                         {
@@ -550,6 +524,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.children.isVisible.defaultValue"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -662,30 +639,6 @@
                           "key": "schema.__root_schema__.children.name_trip.cellBorderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.children.isVisible.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.children.text.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.children.text.accentColor"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.children.text.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.borderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.id_trip.cellBorderRadius"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField2.defaultValue"
                         },
                         {
@@ -720,6 +673,21 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.children.isVisible.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.children.isVisible.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopyCopy.cellBorderRadius"
                         }
                       ],
                       "borderWidth": "1",
@@ -1211,7 +1179,6 @@
                               "isVisible": true,
                               "label": "วันและเวลา เริ่มทริป",
                               "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
@@ -1240,7 +1207,7 @@
                               "isVisible": true,
                               "label": "วันและเวลา จบทริป",
                               "maxDate": "",
-                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (JSONForm1Copy.formData.customField2))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
@@ -1551,9 +1518,6 @@
                           "key": "schema.__root_schema__.children.customField3.maxDate"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField2.minDate"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.children.isVisible.defaultValue"
                         },
                         {
@@ -1703,12 +1667,6 @@
                           "key": "schema.__root_schema__.children.customField3.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField3.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField2.minDate"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField4.options"
                         },
                         {
@@ -1725,6 +1683,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.minDate"
                         }
                       ],
                       "borderWidth": "1",
@@ -2132,6 +2093,7 @@
                                 }
                               ],
                               "leftColumn": 0,
+                              "serverSidePagination": false,
                               "gridType": "vertical",
                               "enhancements": true,
                               "children": [
@@ -2208,9 +2170,13 @@
                                             {
                                               "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                               "widgetName": "button_next",
-                                              "onClick": "{{navigateTo('Event ',{list_name:currentItem.name,\nlist_id:currentItem.event_trip_id}, 'SAME_WINDOW')}}",
+                                              "onClick": "{{check_member_to_next_page.myFun2()}}",
                                               "buttonColor": "#ec4899",
-                                              "dynamicPropertyPathList": [],
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
                                               "displayName": "Icon Button",
                                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                                               "searchTags": [
@@ -2304,61 +2270,6 @@
                                               "minDynamicHeight": 4
                                             },
                                             {
-                                              "boxShadow": "none",
-                                              "widgetName": "id_trip",
-                                              "displayName": "Text",
-                                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                                              "searchTags": [
-                                                "typography",
-                                                "paragraph",
-                                                "label"
-                                              ],
-                                              "topRow": 0,
-                                              "bottomRow": 6,
-                                              "type": "TEXT_WIDGET",
-                                              "hideCard": false,
-                                              "animateLoading": true,
-                                              "overflow": "NONE",
-                                              "dynamicTriggerPathList": [],
-                                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                                              "dynamicBindingPathList": [
-                                                {
-                                                  "key": "text"
-                                                },
-                                                {
-                                                  "key": "truncateButtonColor"
-                                                },
-                                                {
-                                                  "key": "fontFamily"
-                                                },
-                                                {
-                                                  "key": "borderRadius"
-                                                }
-                                              ],
-                                              "leftColumn": 2,
-                                              "shouldTruncate": false,
-                                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                              "text": "{{currentItem.event_trip_id}}",
-                                              "key": "4m5zf9fh67",
-                                              "isDeprecated": false,
-                                              "rightColumn": 10,
-                                              "textAlign": "LEFT",
-                                              "dynamicHeight": "FIXED",
-                                              "widgetId": "u3hfwcko11",
-                                              "isVisible": true,
-                                              "fontStyle": "BOLD",
-                                              "textColor": "#231F20",
-                                              "version": 1,
-                                              "parentId": "hdsvyzm0yn",
-                                              "renderMode": "CANVAS",
-                                              "isLoading": false,
-                                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                              "maxDynamicHeight": 9000,
-                                              "fontSize": "1rem",
-                                              "textStyle": "BODY",
-                                              "minDynamicHeight": 4
-                                            },
-                                            {
                                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                                               "widgetName": "IconButton3CopyCopy1CopyCopy",
                                               "onClick": "{{showModal('show_detail', n_select_user_join.run(),test_picktime.run())}}",
@@ -2435,6 +2346,84 @@
                                               "isLoading": false,
                                               "borderRadius": "1.5rem",
                                               "buttonVariant": "TERTIARY"
+                                            },
+                                            {
+                                              "boxShadow": "none",
+                                              "widgetName": "IconButton3CopyCopy1CopyCopyCopy",
+                                              "onClick": "",
+                                              "buttonColor": "#dc2626",
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "displayName": "Icon Button",
+                                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 0,
+                                              "bottomRow": 6,
+                                              "parentRowSpace": 10,
+                                              "type": "ICON_BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "animateLoading": true,
+                                              "parentColumnSpace": 5.78125,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 2,
+                                              "dynamicBindingPathList": [],
+                                              "isDisabled": false,
+                                              "key": "p9jgkzye50",
+                                              "isDeprecated": false,
+                                              "rightColumn": 8,
+                                              "iconName": "warning-sign",
+                                              "dynamicHeight": "FIXED",
+                                              "widgetId": "7cwvmpia0z",
+                                              "logBlackList": {
+                                                "boxShadow": true,
+                                                "widgetName": true,
+                                                "buttonColor": true,
+                                                "displayName": true,
+                                                "iconSVG": true,
+                                                "searchTags": true,
+                                                "topRow": true,
+                                                "bottomRow": true,
+                                                "parentRowSpace": true,
+                                                "type": true,
+                                                "hideCard": true,
+                                                "animateLoading": true,
+                                                "parentColumnSpace": true,
+                                                "dynamicTriggerPathList": true,
+                                                "leftColumn": true,
+                                                "dynamicBindingPathList": true,
+                                                "isDisabled": true,
+                                                "key": true,
+                                                "isDeprecated": true,
+                                                "rightColumn": true,
+                                                "iconName": true,
+                                                "dynamicHeight": true,
+                                                "widgetId": true,
+                                                "logBlackList": true,
+                                                "isVisible": true,
+                                                "version": true,
+                                                "parentId": true,
+                                                "renderMode": true,
+                                                "isLoading": true,
+                                                "borderRadius": true,
+                                                "buttonVariant": true
+                                              },
+                                              "isVisible": true,
+                                              "version": 1,
+                                              "parentId": "hdsvyzm0yn",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "borderRadius": "1.5rem",
+                                              "buttonVariant": "PRIMARY"
                                             }
                                           ],
                                           "key": "mjlh0wh9v2"

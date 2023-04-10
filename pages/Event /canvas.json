@@ -1674,7 +1674,7 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "ชื่อกิจกรรม",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (List2Copy.triggeredItem.event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
                             },
                             "customField2": {
                               "children": {},
@@ -1697,12 +1697,12 @@
                               "label": "ประเภทของกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{List2Copy.selectedItem.event_type_id}}"
+                              "options": ""
                             },
                             "customField3": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (List2Copy.triggeredItem.event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
                               "fieldType": "Multiline Text Input",
                               "sourceData": "",
                               "isCustomField": true,
@@ -1724,7 +1724,6 @@
                             "customField4": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -1742,16 +1741,15 @@
                               "isRequired": true,
                               "isVisible": true,
                               "label": "เวลาเริ่มของกิจกรรม",
-                              "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "1920-12-31T18:30:00.000Z",
                               "shortcuts": false,
                               "timePrecision": "minute",
-                              "labelTextSize": "0.875rem"
+                              "labelTextSize": "0.875rem",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
                             },
                             "customField5": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -2055,7 +2053,14 @@
                         "boxShadow": "none",
                         "buttonVariant": "PRIMARY"
                       },
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        }
+                      ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
                       "topRow": 6,
@@ -2191,9 +2196,6 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "sourceData"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField1.defaultValue"
                         },
                         {
@@ -2206,11 +2208,17 @@
                           "key": "schema.__root_schema__.children.customField3.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField2.options"
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        },
+                        {
+                          "key": "sourceData"
                         }
                       ],
                       "borderWidth": "1",
-                      "sourceData": "{{List2Copy.triggeredItem}}",
+                      "sourceData": "{{SC_detail.data}}",
                       "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "ohykrv1mgj",
@@ -4471,7 +4479,6 @@
                             "customField4": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -4489,11 +4496,12 @@
                               "isRequired": true,
                               "isVisible": true,
                               "label": "เวลาเริ่มของกิจกรรม",
-                              "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (appsmith.store.trip_detail[0].event_trip_end))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (appsmith.store.trip_detail[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
-                              "labelTextSize": "0.875rem"
+                              "labelTextSize": "0.875rem",
+                              "defaultValue": ""
                             },
                             "customField5": {
                               "children": {},
@@ -4516,8 +4524,8 @@
                               "isRequired": true,
                               "isVisible": true,
                               "label": "เวลาจบของกิจกรรม",
-                              "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (appsmith.store.trip_detail[0].event_trip_end))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (appsmith.store.trip_detail[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem"
@@ -4652,6 +4660,21 @@
                         },
                         {
                           "key": "onSubmit"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -4768,6 +4791,18 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField10.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
                         }
                       ],
                       "borderWidth": "1",
@@ -5243,8 +5278,13 @@
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "IconButton3CopyCopyCopy",
-                                              "onClick": "{{showModal('Edit_event')}}",
+                                              "onClick": "{{SC_detail.run(showModal('Edit_event'))}}",
                                               "buttonColor": "#dc2626",
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
                                               "displayName": "Icon Button",
                                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                                               "searchTags": [
@@ -5695,7 +5735,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "บันทึกกิจกรรม\n{{appsmith.URL.queryParams.list_name}}",
+                      "text": "บันทึกกิจกรรม\n{{appsmith.store.event_trip_detail.name}}",
                       "key": "sf3r6zjw7q",
                       "isDeprecated": false,
                       "rightColumn": 54,
@@ -7140,12 +7180,23 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.URL.queryParams.list_id"
+                "appsmith.store.event_trip_detail.event_trip_id"
               ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
+            {
+              "id": "Event _SC_detail",
+              "name": "SC_detail",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List2Copy.triggeredItem.event_history_id",
+                "List2Copy.triggeredItem.event_trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Event _n_select_user_join",
               "name": "n_select_user_join",
