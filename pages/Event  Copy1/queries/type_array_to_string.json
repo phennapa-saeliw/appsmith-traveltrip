@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "test_picktime_in_trip",
+    "name": "type_array_to_string",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Event  Copy1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_trip where event_trip_id = {{List2Copy.triggeredItem.event_trip_id}}\n",
+      "body": "SELECT event_history.*, event_type.event_type \nFROM event_history \nINNER JOIN event_type ON event_type.event_type_id = event_type.event_type_id\nWHERE event_type.event_type_id = {{SC_detail.data[0].event_type_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_trip_id"
+      "SC_detail.data[0].event_type_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _test_picktime_in_trip",
+  "id": "Event  Copy1_type_array_to_string",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6433c3e28424293fe7876a84"
+  "gitSyncId": "6402c1438424293fe7876437_6433e2e48424293fe7876af4"
 }

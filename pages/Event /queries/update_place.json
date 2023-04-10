@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "test_picktime_in_trip",
+    "name": "update_place",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_trip where event_trip_id = {{List2Copy.triggeredItem.event_trip_id}}\n",
+      "body": "UPDATE event_location\n  SET event_location = {{JSONForm1CopyCopy.formData.customField7}},\n\t\t\tevent_location_start_lat = {{JSONForm1CopyCopy.formData.customField8}},\n\t\t\tevent_location_start_lon = {{JSONForm1CopyCopy.formData.customField9}}\n\t\t\t\t\nWHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,14 +36,17 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_trip_id"
+      "JSONForm1CopyCopy.formData.customField7",
+      "JSONForm1CopyCopy.formData.customField8",
+      "JSONForm1CopyCopy.formData.customField9",
+      "List2Copy.triggeredItem.event_history_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _test_picktime_in_trip",
+  "id": "Event _update_place",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6433c3e28424293fe7876a84"
+  "gitSyncId": "6402c1438424293fe7876437_6433e89a8424293fe7876b12"
 }

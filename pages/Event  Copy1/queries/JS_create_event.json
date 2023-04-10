@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "event_type_to_string",
+    "name": "JS_create_event",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Event  Copy1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_type\nwhere event_type_id = {{List2Copy.triggeredItem.event_type_id}}\n",
+      "body": "INSERT INTO event_history (event_type_id, event_name, event_detail, event_start, event_end , event_trip_id ) \n\nVALUES\n  (\n\t\t'{{JSONForm1Copy.formData.customField2}}',\n    '{{JSONForm1Copy.formData.customField1}}',\n\t\t'{{JSONForm1Copy.formData.customField3}}',\n\t\t'{{JSONForm1Copy.formData.customField4}}',\n\t\t'{{JSONForm1Copy.formData.customField5}}',\n\t\t'{{appsmith.store.trip_detail[0].event_trip_id}}'\n  )\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,19 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_type_id"
+      "JSONForm1Copy.formData.customField1",
+      "JSONForm1Copy.formData.customField2",
+      "JSONForm1Copy.formData.customField3",
+      "JSONForm1Copy.formData.customField4",
+      "JSONForm1Copy.formData.customField5",
+      "appsmith.store.trip_detail[0].event_trip_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _event_type_to_string",
+  "id": "Event  Copy1_JS_create_event",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_642bf4bb8424293fe7876a41"
+  "gitSyncId": "6402c1438424293fe7876437_6433e2e48424293fe7876ad0"
 }

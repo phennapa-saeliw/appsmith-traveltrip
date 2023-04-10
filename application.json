@@ -35,6 +35,10 @@
     {
       "id": "Event  Copy",
       "isDefault": false
+    },
+    {
+      "id": "Event  Copy1",
+      "isDefault": false
     }
   ],
   "viewMode": false,

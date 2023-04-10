@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -1183,7 +1183,8 @@
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
                               "defaultValue": "{{((sourceData, formData, fieldState) => (test_picktime.data[0].event_trip_start))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
-                              "onDateSelected": "{{test_picktime.run()}}"
+                              "onDateSelected": "{{test_picktime.run()}}",
+                              "minDate": ""
                             },
                             "customField3": {
                               "children": {},
@@ -1207,7 +1208,7 @@
                               "isVisible": true,
                               "label": "วันและเวลา จบทริป",
                               "maxDate": "",
-                              "minDate": "{{((sourceData, formData, fieldState) => (JSONForm1Copy.formData.customField2))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "minDate": "",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
@@ -1522,6 +1523,9 @@
                         },
                         {
                           "key": "onSubmit"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.minDate"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -1683,9 +1687,6 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.IconButton3CopyCopy1CopyCopy.cellBorderRadius"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField3.minDate"
                         }
                       ],
                       "borderWidth": "1",

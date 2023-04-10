@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "test_picktime_in_trip",
+    "name": "JS_select_trip_id",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Event  Copy1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_trip where event_trip_id = {{List2Copy.triggeredItem.event_trip_id}}\n",
+      "body": "select event_history_id from event_history WHERE event_type_id = '{{JSONForm1Copy.formData.customField2}}'\nand event_name = '{{JSONForm1Copy.formData.customField1}}'\nand event_detail = '{{JSONForm1Copy.formData.customField3}}'\nand event_start = '{{JSONForm1Copy.formData.customField4}}'\nand event_end = '{{JSONForm1Copy.formData.customField5}}'\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,14 +36,18 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_trip_id"
+      "JSONForm1Copy.formData.customField1",
+      "JSONForm1Copy.formData.customField2",
+      "JSONForm1Copy.formData.customField3",
+      "JSONForm1Copy.formData.customField4",
+      "JSONForm1Copy.formData.customField5"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _test_picktime_in_trip",
+  "id": "Event  Copy1_JS_select_trip_id",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6433c3e28424293fe7876a84"
+  "gitSyncId": "6402c1438424293fe7876437_6433e2e38424293fe7876ac1"
 }

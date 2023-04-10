@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "create_event",
+    "pageId": "Event  Copy1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event  Copy1_create_event",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6433e2e48424293fe7876afc"
+}

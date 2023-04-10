@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Event ",
-    "slug": "event",
+    "name": "Event  Copy1",
+    "slug": "event-copy1",
     "layouts": [
       {
         "viewMode": false,
@@ -52,13 +52,13 @@
                   "widgetName": "Canvas5CopyCopy1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 580,
+                  "bottomRow": 610,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 586,
+                  "minHeight": 610,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -571,7 +571,6 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{showModal('Edit_event')}}",
                       "topRow": 6,
                       "bottomRow": 52,
                       "fieldLimitExceeded": false,
@@ -581,11 +580,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onSubmit"
-                        }
-                      ],
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -983,7 +978,7 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 586,
+              "height": 610,
               "isDeprecated": false,
               "rightColumn": 25,
               "backgroundColor": "#fca3cc",
@@ -1324,7 +1319,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton3Copy1",
-                      "onClick": "{{showModal('see_event_deteil')}}",
+                      "onClick": "{{showModal('Edit_Create_new_tripCopy')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1420,7 +1415,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3Copy",
-                      "onClick": "{{showModal('see_event_deteil')}}",
+                      "onClick": "{{showModal('Edit_event')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1472,9 +1467,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button4Copy",
-                      "onClick": "{{Delete_event.run(() => showAlert('ลบกิจกรรมเรียบร้อย','success'), () => showAlert('มีข้อผิดพลาด !','error'))}}",
+                      "onClick": "{{Delete_event.run()\nshowAlert('ลบกิจกรรมสำเร็จ','success')\ncloseModal('confirm_delete')\nevent_history_trip.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1578,13 +1577,13 @@
                   "widgetName": "Canvas5CopyCopy1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 580,
+                  "bottomRow": 610,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 586,
+                  "minHeight": 610,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -1592,8 +1591,8 @@
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopyCopy",
-                      "onClick": "{{showModal('see_event_deteil')}}",
+                      "widgetName": "Button1",
+                      "onClick": "{{showModal('confirm_delete')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1602,7 +1601,7 @@
                         "submit"
                       ],
                       "topRow": 53,
-                      "bottomRow": 57,
+                      "bottomRow": 58,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1616,20 +1615,19 @@
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
-                          "key": "borderRadius"
+                          "key": "buttonColor"
                         },
                         {
-                          "key": "buttonColor"
+                          "key": "borderRadius"
                         }
                       ],
-                      "text": "ย้อนกลับ",
+                      "text": "Delete",
                       "isDisabled": false,
                       "key": "wanf61byhi",
                       "isDeprecated": false,
-                      "rightColumn": 17,
+                      "rightColumn": 15,
                       "isDefaultClickDisabled": true,
-                      "iconName": "arrow-left",
-                      "widgetId": "j9s36c4kbg",
+                      "widgetId": "ndtfrrzrog",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
@@ -1639,7 +1637,6 @@
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
-                      "iconAlign": "left",
                       "placement": "CENTER"
                     },
                     {
@@ -1727,7 +1724,7 @@
                               "label": "ประเภทของกิจกรรม",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{event_type.data.map((row) => {\n\treturn {\n\t\tlabel: row.event_type,\n\t\tvalue: row.event_type_id\n\t}\n})\n}}\n"
+                              "options": "{{ type_array_to_string.data.map((row) => { \n      return { label: row.event_type, value: row.event_type_id } \n   }) \n}}"
                             },
                             "customField3": {
                               "children": {},
@@ -1764,7 +1761,7 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": true,
+                              "closeOnSelection": false,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DD HH:mm",
                               "isDisabled": false,
@@ -1774,9 +1771,7 @@
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
                             },
                             "customField5": {
                               "children": {},
@@ -1792,15 +1787,15 @@
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
                               "boxShadow": "none",
-                              "closeOnSelection": true,
+                              "closeOnSelection": false,
                               "convertToISO": false,
                               "dateFormat": "YYYY-MM-DD HH:mm",
                               "isDisabled": false,
                               "isRequired": true,
                               "isVisible": true,
                               "label": "เวลาจบของกิจกรรม",
-                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
-                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem"
@@ -2092,23 +2087,10 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField5.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.maxDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.maxDate"
                         }
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{Update_event_trip.myFun2()}}",
                       "topRow": 6,
                       "bottomRow": 52,
                       "fieldLimitExceeded": false,
@@ -2118,11 +2100,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.4921875,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onSubmit"
-                        }
-                      ],
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -2277,18 +2255,6 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField4.maxDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.minDate"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.customField5.maxDate"
                         }
                       ],
                       "borderWidth": "1",
@@ -2300,7 +2266,7 @@
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "dynamicHeight": "FIXED",
-                      "autoGenerateForm": false,
+                      "autoGenerateForm": true,
                       "widgetId": "41wdsxnj4e",
                       "resetButtonStyles": {
                         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2464,11 +2430,11 @@
                               "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "เเก้ไขกิจกรรม",
+                              "text": "เเก้ไขรายละเอียดของกิจกรรม",
                               "key": "1ojvgm3hgy",
                               "isDeprecated": false,
-                              "rightColumn": 63,
-                              "textAlign": "CENTER",
+                              "rightColumn": 64,
+                              "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "1x9omcx27u",
                               "isVisible": true,
@@ -2531,7 +2497,7 @@
                 }
               ],
               "key": "iivvnmztan",
-              "height": 586,
+              "height": 610,
               "isDeprecated": false,
               "rightColumn": 25,
               "backgroundColor": "#fca3cc",
@@ -5351,6 +5317,80 @@
                                           "children": [
                                             {
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                                              "widgetName": "IconButton3CopyCopyCopy",
+                                              "onClick": "{{JSObject1.myFun2()}}",
+                                              "buttonColor": "#dc2626",
+                                              "dynamicPropertyPathList": [],
+                                              "displayName": "Icon Button",
+                                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 0,
+                                              "bottomRow": 6,
+                                              "parentRowSpace": 10,
+                                              "type": "ICON_BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "animateLoading": true,
+                                              "parentColumnSpace": 5.78125,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 56,
+                                              "dynamicBindingPathList": [],
+                                              "isDisabled": false,
+                                              "key": "p9jgkzye50",
+                                              "isDeprecated": false,
+                                              "rightColumn": 62,
+                                              "iconName": "edit",
+                                              "dynamicHeight": "FIXED",
+                                              "widgetId": "geosd1dele",
+                                              "logBlackList": {
+                                                "isVisible": true,
+                                                "iconName": true,
+                                                "buttonVariant": true,
+                                                "isDisabled": true,
+                                                "widgetName": true,
+                                                "version": true,
+                                                "animateLoading": true,
+                                                "searchTags": true,
+                                                "type": true,
+                                                "hideCard": true,
+                                                "isDeprecated": true,
+                                                "replacement": true,
+                                                "displayName": true,
+                                                "key": true,
+                                                "iconSVG": true,
+                                                "isCanvas": true,
+                                                "minHeight": true,
+                                                "widgetId": true,
+                                                "renderMode": true,
+                                                "buttonColor": true,
+                                                "borderRadius": true,
+                                                "boxShadow": true,
+                                                "isLoading": true,
+                                                "parentColumnSpace": true,
+                                                "parentRowSpace": true,
+                                                "leftColumn": true,
+                                                "rightColumn": true,
+                                                "topRow": true,
+                                                "bottomRow": true,
+                                                "parentId": true,
+                                                "dynamicBindingPathList": true
+                                              },
+                                              "isVisible": true,
+                                              "version": 1,
+                                              "parentId": "24jgikhpiz",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "borderRadius": "1.5rem",
+                                              "buttonVariant": "TERTIARY"
+                                            },
+                                            {
+                                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "IconButton3Copy3",
                                               "onClick": "{{showModal('event_cost', {event_name:currentItem.event_name,\nevent_id:currentItem.event_history_id},n_select_user_join.run(),SC_event_show_table.run())}}",
                                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -5374,7 +5414,7 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 45,
+                                              "leftColumn": 49,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "buttonColor"
@@ -5383,7 +5423,7 @@
                                               "isDisabled": false,
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
-                                              "rightColumn": 51,
+                                              "rightColumn": 55,
                                               "iconName": "shopping-cart",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "2hgd0py1wk",
@@ -5541,7 +5581,7 @@
                                             {
                                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                                               "widgetName": "IconButton3CopyCopy1CopyCopyCopy",
-                                              "onClick": "{{see_detail.myFun2()}}",
+                                              "onClick": "{{JSObject1.myFun2()}}",
                                               "buttonColor": "#dc2626",
                                               "dynamicPropertyPathList": [],
                                               "displayName": "Icon Button",
@@ -5562,12 +5602,12 @@
                                                   "key": "onClick"
                                                 }
                                               ],
-                                              "leftColumn": 55,
+                                              "leftColumn": 41,
                                               "dynamicBindingPathList": [],
                                               "isDisabled": false,
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
-                                              "rightColumn": 61,
+                                              "rightColumn": 47,
                                               "iconName": "more",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "9cw49qzfzl",
@@ -7143,7 +7183,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Event _SC_event_type",
+              "id": "Event  Copy1_SC_event_type",
               "name": "SC_event_type",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7151,7 +7191,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Event _event_type",
+              "id": "Event  Copy1_event_type",
               "name": "event_type",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7161,7 +7201,7 @@
           ],
           [
             {
-              "id": "Event _SC_event_show_table",
+              "id": "Event  Copy1_SC_event_show_table",
               "name": "SC_event_show_table",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7171,7 +7211,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Event _event_history_trip",
+              "id": "Event  Copy1_event_history_trip",
               "name": "event_history_trip",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7183,7 +7223,7 @@
           ],
           [
             {
-              "id": "Event _n_select_user_join",
+              "id": "Event  Copy1_n_select_user_join",
               "name": "n_select_user_join",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7193,7 +7233,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Event _n_select_user_join_form_store",
+              "id": "Event  Copy1_n_select_user_join_form_store",
               "name": "n_select_user_join_form_store",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7205,7 +7245,7 @@
           ],
           [
             {
-              "id": "Event _SC_detail",
+              "id": "Event  Copy1_SC_detail",
               "name": "SC_detail",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7216,7 +7256,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Event _select_place_and_lat_lon",
+              "id": "Event  Copy1_select_place_and_lat_lon",
               "name": "select_place_and_lat_lon",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7224,21 +7264,11 @@
                 "List2Copy.triggeredItem.event_history_id"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Event _test_picktime_in_trip",
-              "name": "test_picktime_in_trip",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "List2Copy.triggeredItem.event_trip_id"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Event _type_array_to_string",
+              "id": "Event  Copy1_type_array_to_string",
               "name": "type_array_to_string",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -7251,7 +7281,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Event ",
+        "id": "Event  Copy1",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -7262,5 +7292,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63c647ea29e6fc43b6bc555c"
+  "gitSyncId": "6402c1438424293fe7876437_6433e2e38424293fe7876ab6"
 }

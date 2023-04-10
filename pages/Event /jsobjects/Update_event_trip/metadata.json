@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Update_event_trip",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _Update_event_trip",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6433e86d8424293fe7876b10"
+}
