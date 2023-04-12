@@ -4,18 +4,17 @@ export default {
 
     // --------------------- check member  ------------------------ //
 
-    if (SC_event_form.formData.customField6 !== '') {
+    if (SC_event_form.formData.customField6 != '') {
 
-      showAlert('เข้า1');
-      let one_or_two = 1;
-      storeValue('one_or_two', one_or_two);
+      showAlert('เข้า1')
+      let one_or_two = 1
+      storeValue('one_or_two', one_or_two)
       await SC_event_create.run();
 
     } else {
-
-      showAlert('เข้า 2');
-      let one_or_two = 2;
-      storeValue('one_or_two', one_or_two);
+      showAlert('เข้า 2')
+      let one_or_two = 2
+      storeValue('one_or_two', one_or_two)
       await SC_event_create.run();
 
     }
@@ -39,5 +38,13 @@ export default {
 
       }
     }
+		
+		await SC_event_show_table.run()
+		
+		storeValue('tab','Tab 1')
+		showAlert('เพิ่มรายการสำเร็จ','success')
+		
+		
+		
   }
 }

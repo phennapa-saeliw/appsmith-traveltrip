@@ -1130,7 +1130,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 5,
                               "dynamicBindingPathList": [
@@ -1153,6 +1157,7 @@
                               "validation": "",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
+                              "onTextChanged": "",
                               "isDeprecated": false,
                               "rightColumn": 58,
                               "dynamicHeight": "FIXED",

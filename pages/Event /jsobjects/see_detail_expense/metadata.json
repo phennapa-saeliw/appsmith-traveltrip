@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "see_detail_expense",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _see_detail_expense",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6434e0628424293fe7876b2c"
+}

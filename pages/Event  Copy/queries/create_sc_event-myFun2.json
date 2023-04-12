@@ -22,7 +22,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await SC_event_create.run();\n  let user_select = SC_event_form.formData.customField6;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await SC_select_id_for_member.run();\n    let id_expense = SC_select_id_for_member.data[0].list_expense_id;\n    storeValue('id_expense', id_expense);\n    await SC_select_id_for_member.run();\n    await SC_create_expense_for_member.run();\n  }\n}",
+      "body": "async () => {\n  if (SC_event_form.formData.customField6 !== '') {\n    showAlert('เข้า1');\n    let one_or_two = 1;\n    storeValue('one_or_two', one_or_two);\n    await SC_event_create.run();\n  } else {\n    showAlert('เข้า 2');\n    let one_or_two = 2;\n    storeValue('one_or_two', one_or_two);\n    await SC_event_create.run();\n  }\n  let user_select = SC_event_form.formData.customField6;\n  for (let i = 0; i < user_select.length; i++) {\n    const user_num = user_select[i];\n    storeValue('user_id', user_num);\n    await SC_select_id_for_member.run();\n    if (await SC_select_id_for_member.run()) {\n      let id_expense = SC_select_id_for_member.data[0].list_expense_id;\n      storeValue('id_expense', id_expense);\n      await SC_create_expense_for_member.run();\n    }\n  }\n  SC_event_show_table.run();\n  storeValue('tab', 'Tab 1');\n  showAlert('เพิ่มรายการสำเร็จ', 'success');\n  await SC_event_show_table.run();\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -45,5 +45,5 @@
   },
   "id": "Event  Copy_create_sc_event.myFun2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_642be65e8424293fe7876a36"
+  "gitSyncId": "6402c1438424293fe7876437_6435090d8424293fe7876b79"
 }
