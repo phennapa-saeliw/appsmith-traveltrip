@@ -3168,12 +3168,12 @@
                               "minDate": "1920-12-31T18:30:00.000Z",
                               "shortcuts": false,
                               "timePrecision": "minute",
-                              "labelTextSize": "0.875rem"
+                              "labelTextSize": "0.875rem",
+                              "onDateSelected": "{{JSONForm1.formData.customField2}}"
                             },
                             "customField3": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "",
                               "fieldType": "Datepicker",
                               "sourceData": "",
                               "isCustomField": true,
@@ -3192,7 +3192,7 @@
                               "isVisible": true,
                               "label": "วันและเวลา จบทริป",
                               "maxDate": "2121-12-31T18:29:00.000Z",
-                              "minDate": "2023-01-13T16:42:02.022+07:00",
+                              "minDate": "",
                               "shortcuts": false,
                               "timePrecision": "minute",
                               "labelTextSize": "0.875rem"
@@ -3259,6 +3259,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.minDate"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -3282,6 +3285,9 @@
                         },
                         {
                           "key": "onSubmit"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.onDateSelected"
                         }
                       ],
                       "leftColumn": 0,

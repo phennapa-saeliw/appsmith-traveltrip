@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT list_expense.* , event_history.*\nFROM list_expense \ninner join event_history on event_history.event_history_id = list_expense.event_history_id\n\nWHERE \"calculate_type (1 = split, 2 = individual)\" = 2\n",
+      "body": "SELECT list_expense.list_expense_id , list_expense.list_type_id ,\nlist_expense.event_history_id , list_expense.name , list_expense.list_expense_amount , list_expense.\"calculate_type (1 = split, 2 = individual)\" ,\n\nevent_history.event_history_id as event_history_id_from_event \n\nFROM list_expense \ninner join event_history on event_history.event_history_id = list_expense.event_history_id\n\nWHERE \"calculate_type (1 = split, 2 = individual)\" = 2 and event_trip_id = {{Select1.selectedOptionValue}}\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Select1.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

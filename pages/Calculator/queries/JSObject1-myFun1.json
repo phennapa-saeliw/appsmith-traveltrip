@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "see_detail_expense.myFun2",
+    "name": "myFun1",
+    "fullyQualifiedName": "JSObject1.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,16 +13,16 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
-    "collectionId": "Event _see_detail_expense",
+    "pageId": "Calculator",
+    "collectionId": "Calculator_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}",
+      "body": "() => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}"
+      "() => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _see_detail_expense.myFun2",
+  "id": "Calculator_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6434e0628424293fe7876b2a"
+  "gitSyncId": "6402c1438424293fe7876437_643e6f1a8424293fe7876bf4"
 }

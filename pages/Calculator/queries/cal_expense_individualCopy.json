@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "n_select_user_join",
+    "name": "cal_expense_individualCopy",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event ",
+    "pageId": "Calculator",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,event_trip_id\n\nFROM member \n\ninner join event_member\n\non member.member_id = event_member.member_id\n\nwhere event_trip_id = {{List2Copy.triggeredItem.event_trip_id}}\n",
+      "body": "select SUM(list_expense_amount) / {{appsmith.store.member_in_event}} AS expense_per_member from list_expense\n\nWHERE \"calculate_type (1 = split, 2 = individual)\" = 2 \nand event_history_id = {{appsmith.store.expense_history_id_from_trip}} ",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_trip_id"
+      "appsmith.store.expense_history_id_from_trip",
+      "appsmith.store.member_in_event"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _n_select_user_join",
+  "id": "Calculator_cal_expense_individualCopy",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6407faec8424293fe78765f9"
+  "gitSyncId": "6402c1438424293fe7876437_643e7a258424293fe7876c07"
 }

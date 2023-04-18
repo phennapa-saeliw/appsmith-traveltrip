@@ -811,7 +811,7 @@
                           "children": [
                             {
                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                              "widgetName": "Input1CopyCopy",
+                              "widgetName": "Input_individual",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -855,7 +855,7 @@
                               "widgetId": "2135a716f6",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "label": "หารจ่าย ยังไม่ได้ทำ\n",
+                              "label": "หารจ่ายแต่ละคน\n",
                               "version": 2,
                               "parentId": "blirrmmdhu",
                               "labelAlignment": "left",
@@ -864,7 +864,7 @@
                               "borderRadius": "1.5rem",
                               "maxDynamicHeight": 9000,
                               "iconAlign": "right",
-                              "defaultText": "{{appsmith.store.expense_member}}",
+                              "defaultText": "{{appsmith.store.expense_individual}}",
                               "minDynamicHeight": 4
                             },
                             {
@@ -1387,6 +1387,7 @@
                               "widgetName": "Button2Copy3",
                               "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fff",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -1453,7 +1454,7 @@
                               "displayName": "Menu Button",
                               "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "MENU_BUTTON_WIDGET",
                               "hideCard": false,

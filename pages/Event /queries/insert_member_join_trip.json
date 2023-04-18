@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "n_select_user_join",
+    "name": "insert_member_join_trip",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,event_trip_id\n\nFROM member \n\ninner join event_member\n\non member.member_id = event_member.member_id\n\nwhere event_trip_id = {{List2Copy.triggeredItem.event_trip_id}}\n",
+      "body": "INSERT INTO member_join_event (event_history_id, member_id)\t\n\nVALUES\n  (\n\t\t'{{appsmith.store.history_id}}',\n\t\t'{{appsmith.store.user_id}}'\n\n  )\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "List2Copy.triggeredItem.event_trip_id"
+      "appsmith.store.history_id",
+      "appsmith.store.user_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _n_select_user_join",
+  "id": "Event _insert_member_join_trip",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6407faec8424293fe78765f9"
+  "gitSyncId": "6402c1438424293fe7876437_643647258424293fe7876bc7"
 }

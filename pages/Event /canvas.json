@@ -1472,7 +1472,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button4Copy",
-                      "onClick": "{{Delete_event.run(() => showAlert('ลบกิจกรรมเรียบร้อย','success'), () => showAlert('มีข้อผิดพลาด !','error'))}}",
+                      "onClick": "{{delete_event.myFun2()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
@@ -2580,7 +2580,7 @@
                   "widgetName": "Canvas5CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 640,
+                  "bottomRow": 630,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -3608,8 +3608,9 @@
                                       "label": "เลือกสมาชิก",
                                       "labelTextSize": "0.875rem",
                                       "serverSideFiltering": false,
-                                      "options": "{{n_select_user_join.data.map((row) => {\n\treturn {\n\t\tlabel: row.member_fullname\t,\n\t\tvalue: row.member_id\n\t}\n})\n}}",
-                                      "allowSelectAll": true
+                                      "options": "{{n_select_user_join_from_trip.data.map((row) => {\n\treturn {\n\t\tlabel: row.member_fullname\t,\n\t\tvalue: row.member_id\n\t}\n})\n}}",
+                                      "allowSelectAll": true,
+                                      "tooltip": "หากต้องการหารจ่ายกับสมาชิกภายในกิจกรรม ไม่จำเป็นต้องเลือกสมาชิก"
                                     },
                                     "customField7": {
                                       "children": {},
@@ -7101,22 +7102,22 @@
           ],
           [
             {
-              "id": "Event _n_select_user_join",
-              "name": "n_select_user_join",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "List2Copy.triggeredItem.event_trip_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Event _n_select_user_join_form_store",
               "name": "n_select_user_join_form_store",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _n_select_user_join_from_trip",
+              "name": "n_select_user_join_from_trip",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List2Copy.triggeredItem.event_history_id"
               ],
               "timeoutInMillisecond": 10000
             },
