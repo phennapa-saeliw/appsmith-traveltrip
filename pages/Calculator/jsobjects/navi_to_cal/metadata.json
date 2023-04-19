@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "navi_to_cal",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_navi_to_cal",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_643fc1408424293fe7876cc1"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Cal_tripCopy1",
+    "pageId": "Calculator Copy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator Copy_Cal_tripCopy1",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_643f95aa8424293fe7876c57"
+}

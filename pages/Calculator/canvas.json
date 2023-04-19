@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 690,
+          "bottomRow": 1110,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -810,156 +810,22 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                              "widgetName": "Input_individual",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 38,
-                              "bottomRow": 45,
+                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "widgetName": "Tabs1",
+                              "borderColor": "#ec4899",
+                              "isCanvas": true,
+                              "displayName": "Tabs",
+                              "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
+                              "topRow": 6,
+                              "bottomRow": 48,
                               "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
+                              "type": "TABS_WIDGET",
                               "hideCard": false,
+                              "shouldScrollContents": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 5,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "defaultText"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "maxChars": "",
-                              "isDisabled": false,
-                              "key": "pdo53cb6x9",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 58,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "2135a716f6",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "label": "หารจ่ายแต่ละคน\n",
-                              "version": 2,
-                              "parentId": "blirrmmdhu",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "1.5rem",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "right",
-                              "defaultText": "{{appsmith.store.expense_individual}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                              "widgetName": "Input1Copy",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 30,
-                              "bottomRow": 37,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 5,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "label"
-                                },
-                                {
-                                  "key": "defaultText"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "maxChars": "",
-                              "isDisabled": false,
-                              "key": "pdo53cb6x9",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 58,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "93x3fbisco",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "label": "ค่าใช้จ่ายทั้งหมดของ {{Select2.selectedOptionLabel}}",
-                              "version": 2,
-                              "parentId": "blirrmmdhu",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "1.5rem",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "right",
-                              "defaultText": "{{appsmith.store.expense_member}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "Select2",
-                              "isFilterable": true,
-                              "displayName": "Select",
-                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                              "labelText": "สมาชิก",
-                              "searchTags": [
-                                "dropdown"
-                              ],
-                              "topRow": 12,
-                              "bottomRow": 16,
-                              "parentRowSpace": 10,
-                              "labelWidth": "10",
-                              "type": "SELECT_WIDGET",
-                              "serverSideFiltering": false,
-                              "hideCard": false,
-                              "defaultOptionValue": "",
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onDropdownOpen"
-                                },
-                                {
-                                  "key": "onDropdownClose"
-                                },
-                                {
-                                  "key": "onOptionChange"
-                                }
-                              ],
-                              "leftColumn": 6,
+                              "leftColumn": 3,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "accentColor"
@@ -968,213 +834,803 @@
                                   "key": "borderRadius"
                                 },
                                 {
-                                  "key": "options"
+                                  "key": "boxShadow"
+                                },
+                                {
+                                  "key": "defaultTab"
                                 }
                               ],
-                              "labelPosition": "Left",
-                              "onDropdownClose": "{{Cal_member.myFun2()}}",
-                              "options": "{{select_member_from_trip.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
-                              "labelStyle": "BOLD",
-                              "placeholderText": "Select option",
-                              "isDisabled": false,
-                              "key": "ouai8fownt",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
+                              "children": [
+                                {
+                                  "tabId": "tab1",
+                                  "widgetName": "Canvas7",
+                                  "displayName": "Canvas",
+                                  "bottomRow": 380,
+                                  "topRow": 0,
+                                  "parentRowSpace": 1,
+                                  "type": "CANVAS_WIDGET",
+                                  "canExtend": true,
+                                  "hideCard": true,
+                                  "shouldScrollContents": false,
+                                  "minHeight": 150,
+                                  "parentColumnSpace": 1,
+                                  "leftColumn": 0,
+                                  "dynamicBindingPathList": [],
+                                  "children": [
+                                    {
+                                      "widgetName": "Text7Copy",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 21,
+                                      "bottomRow": 25,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "fontFamily"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "text"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "{{appsmith.store.expense_all}} บาท",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "my297kje8i",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "rrm7l3sc0k",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 21,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 25,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "boxShadow": "none",
+                                      "widgetName": "Select1",
+                                      "isFilterable": true,
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "ทริป",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 6,
+                                      "bottomRow": 10,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": "10",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onDropdownOpen"
+                                        }
+                                      ],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "",
+                                      "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
+                                      "labelStyle": "BOLD",
+                                      "placeholderText": "กรุณาเลือกทริป",
+                                      "isDisabled": false,
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "dynamicHeight": "FIXED",
+                                      "widgetId": "0esmd0jpao",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "rrm7l3sc0k",
+                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "onOptionChange": "{{Cal_from_trip.myFun2()}}",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text6",
+                                      "borderColor": "transparent",
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 1,
+                                      "bottomRow": 5,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "Poppins",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "ค่าใช้จ่ายทั้งทริป",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "254h2fc1c2",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#ec4899",
+                                      "version": 1,
+                                      "parentId": "rrm7l3sc0k",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text7",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 16,
+                                      "bottomRow": 20,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "fontFamily"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "ค่าใช้จ่ายทั้งหมดของทริปนี้",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "piqy2yd6sc",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "rrm7l3sc0k",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 21,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 25,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    }
+                                  ],
+                                  "isDisabled": false,
+                                  "key": "4q7kitrjsw",
+                                  "isDeprecated": false,
+                                  "tabName": "Tab 1",
+                                  "rightColumn": 149.25,
+                                  "detachFromLayout": true,
+                                  "widgetId": "rrm7l3sc0k",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "bx3qds2f50",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false
+                                },
+                                {
+                                  "tabId": "tab2",
+                                  "widgetName": "Canvas8",
+                                  "displayName": "Canvas",
+                                  "bottomRow": 380,
+                                  "topRow": 0,
+                                  "parentRowSpace": 1,
+                                  "type": "CANVAS_WIDGET",
+                                  "canExtend": true,
+                                  "hideCard": true,
+                                  "shouldScrollContents": false,
+                                  "minHeight": 150,
+                                  "parentColumnSpace": 1,
+                                  "leftColumn": 0,
+                                  "dynamicBindingPathList": [],
+                                  "children": [
+                                    {
+                                      "boxShadow": "none",
+                                      "widgetName": "Select_event",
+                                      "isFilterable": true,
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "กิจกรรม",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 12,
+                                      "bottomRow": 16,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": "15",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onDropdownOpen"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "",
+                                      "options": "{{select_event_form_trip_id.data.map((row) => {\n\treturn{\n\n\t\t\tlabel : row.event_name,\n\t\tvalue : row.event_history_id\n\t\t\n\t}\n})}}\n\n",
+                                      "labelStyle": "BOLD",
+                                      "placeholderText": "กรุณาเลือกกิจกรรม",
+                                      "isDisabled": false,
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "dynamicHeight": "FIXED",
+                                      "widgetId": "oyydqc5sct",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "orl5f9a3jd",
+                                      "onDropdownOpen": "",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "onOptionChange": "{{Cal_from_event.myFun2()}}",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text6Copy",
+                                      "borderColor": "transparent",
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 1,
+                                      "bottomRow": 5,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "Poppins",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "ค่าใช้จ่ายตามกิจกรรม ภายในทริป",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "ce9iuvsnjn",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#ec4899",
+                                      "version": 1,
+                                      "parentId": "orl5f9a3jd",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "boxShadow": "none",
+                                      "widgetName": "Select_trip",
+                                      "isFilterable": true,
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "ทริป",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 6,
+                                      "bottomRow": 10,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": "10",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onDropdownOpen"
+                                        }
+                                      ],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "",
+                                      "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
+                                      "labelStyle": "BOLD",
+                                      "placeholderText": "กรุณาเลือกทริป",
+                                      "isDisabled": false,
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "dynamicHeight": "FIXED",
+                                      "widgetId": "ymxwke1hjg",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "orl5f9a3jd",
+                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "onOptionChange": "{{Cal_from_event.myFun2()}}",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text7Copy1",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 20,
+                                      "bottomRow": 24,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "fontFamily"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "ค่าใช้จ่ายทั้งหมดของกิจกรรมนี้",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "68fyyl0mdu",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "orl5f9a3jd",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 21,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 25,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text7CopyCopy",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 24,
+                                      "bottomRow": 28,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "fontFamily"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "text"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "{{appsmith.store.cal_from_event_total}} บาท",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "un1f0d983o",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "orl5f9a3jd",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 21,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 25,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    }
+                                  ],
+                                  "isDisabled": false,
+                                  "key": "4q7kitrjsw",
+                                  "isDeprecated": false,
+                                  "tabName": "Tab 2",
+                                  "rightColumn": 149.25,
+                                  "detachFromLayout": true,
+                                  "widgetId": "orl5f9a3jd",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "bx3qds2f50",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false
+                                },
+                                {
+                                  "tabId": "taboxwjcqvdnd",
+                                  "widgetName": "Canvas9",
+                                  "displayName": "Canvas",
+                                  "topRow": 1,
+                                  "bottomRow": 380,
+                                  "parentRowSpace": 1,
+                                  "type": "CANVAS_WIDGET",
+                                  "canExtend": false,
+                                  "hideCard": true,
+                                  "minHeight": 420,
+                                  "parentColumnSpace": 1,
+                                  "leftColumn": 0,
+                                  "dynamicBindingPathList": [],
+                                  "children": [],
+                                  "key": "1wigeext70",
+                                  "isDeprecated": false,
+                                  "tabName": "Tab 3",
+                                  "rightColumn": 360.6875,
+                                  "detachFromLayout": true,
+                                  "widgetId": "892454fxm0",
+                                  "containerStyle": "none",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "bx3qds2f50",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false
+                                },
+                                {
+                                  "tabId": "tabdgehl9i44s",
+                                  "widgetName": "Canvas10",
+                                  "displayName": "Canvas",
+                                  "topRow": 1,
+                                  "bottomRow": 380,
+                                  "parentRowSpace": 1,
+                                  "type": "CANVAS_WIDGET",
+                                  "canExtend": false,
+                                  "hideCard": true,
+                                  "minHeight": 420,
+                                  "parentColumnSpace": 1,
+                                  "leftColumn": 0,
+                                  "dynamicBindingPathList": [],
+                                  "children": [],
+                                  "key": "1wigeext70",
+                                  "isDeprecated": false,
+                                  "tabName": "Tab 4",
+                                  "rightColumn": 360.6875,
+                                  "detachFromLayout": true,
+                                  "widgetId": "nw8xg05th8",
+                                  "containerStyle": "none",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "bx3qds2f50",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false
+                                }
+                              ],
+                              "borderWidth": 1,
+                              "key": "k1esmbb4gv",
+                              "backgroundColor": "transparent",
                               "isDeprecated": false,
-                              "rightColumn": 58,
+                              "rightColumn": 61,
                               "dynamicHeight": "FIXED",
-                              "widgetId": "1u02p6rm1a",
+                              "widgetId": "bx3qds2f50",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "defaultTab": "{{appsmith.store.tabb}}",
+                              "shouldShowTabs": true,
+                              "tabsObj": {
+                                "tab1": {
+                                  "label": "Tab 1",
+                                  "id": "tab1",
+                                  "widgetId": "rrm7l3sc0k",
+                                  "isVisible": true,
+                                  "index": 0
+                                },
+                                "tab2": {
+                                  "label": "Tab 2",
+                                  "id": "tab2",
+                                  "widgetId": "orl5f9a3jd",
+                                  "isVisible": true,
+                                  "index": 1
+                                },
+                                "taboxwjcqvdnd": {
+                                  "id": "taboxwjcqvdnd",
+                                  "index": 2,
+                                  "label": "Tab 3",
+                                  "widgetId": "892454fxm0",
+                                  "isVisible": true
+                                },
+                                "tabdgehl9i44s": {
+                                  "id": "tabdgehl9i44s",
+                                  "index": 3,
+                                  "label": "Tab 4",
+                                  "widgetId": "nw8xg05th8",
+                                  "isVisible": true
+                                }
+                              },
                               "isVisible": true,
-                              "version": 1,
+                              "version": 3,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "",
-                              "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "onOptionChange": "{{Cal_member.myFun2()}}",
-                              "minDynamicHeight": 4
+                              "minDynamicHeight": 15
                             },
                             {
-                              "widgetName": "Text2Copy",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
+                              "isCompact": false,
+                              "boxShadow": "none",
+                              "widgetName": "MenuButton2",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Menu Button",
+                              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
                               "topRow": 1,
-                              "bottomRow": 6,
+                              "bottomRow": 5,
                               "parentRowSpace": 10,
-                              "type": "TEXT_WIDGET",
+                              "type": "MENU_BUTTON_WIDGET",
                               "hideCard": false,
-                              "animateLoading": true,
-                              "overflow": "NONE",
-                              "fontFamily": "Poppins",
-                              "parentColumnSpace": 6.53125,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "คำนวณค่าใช้จ่าย",
-                              "key": "sf3r6zjw7q",
-                              "isDeprecated": false,
-                              "rightColumn": 64,
-                              "textAlign": "CENTER",
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "s0zo53x2kb",
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "blirrmmdhu",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "fontSize": "1rem",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "Select1",
-                              "isFilterable": true,
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Select",
-                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                              "labelText": "ทริป",
-                              "searchTags": [
-                                "dropdown"
-                              ],
-                              "topRow": 7,
-                              "bottomRow": 11,
-                              "parentRowSpace": 10,
-                              "labelWidth": "10",
-                              "type": "SELECT_WIDGET",
-                              "serverSideFiltering": false,
-                              "hideCard": false,
-                              "defaultOptionValue": "",
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [
                                 {
-                                  "key": "onOptionChange"
+                                  "key": "menuItems.menuItem1.onClick"
                                 },
                                 {
-                                  "key": "onDropdownClose"
-                                },
-                                {
-                                  "key": "onDropdownOpen"
+                                  "key": "menuItems.menuItem2.onClick"
                                 }
                               ],
-                              "leftColumn": 6,
+                              "leftColumn": 3,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "menuColor"
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "options"
                                 }
                               ],
-                              "labelPosition": "Left",
-                              "onDropdownClose": "",
-                              "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
-                              "labelStyle": "BOLD",
-                              "placeholderText": "กรุณาเลือกทริป",
                               "isDisabled": false,
-                              "key": "ouai8fownt",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
+                              "key": "5aqyl4b1u6",
                               "isDeprecated": false,
-                              "rightColumn": 58,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "0esmd0jpao",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "rightColumn": 61,
+                              "menuVariant": "PRIMARY",
+                              "widgetId": "wt2bv9py94",
+                              "menuItems": {
+                                "menuItem1": {
+                                  "label": "ค่าใช้จ่ายทั้งทริป",
+                                  "id": "menuItem1",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 0,
+                                  "onClick": "{{storeValue('tabb','Tab 1')}}"
+                                },
+                                "menuItem2": {
+                                  "label": "ค่าใช้จ่ายตามกิจกรรม ภายในทริป",
+                                  "id": "menuItem2",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 1,
+                                  "onClick": "{{storeValue('tabb','Tab 2')}}"
+                                },
+                                "menuItem3": {
+                                  "label": "Third Menu Item",
+                                  "id": "menuItem3",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 2
+                                }
+                              },
                               "isVisible": true,
+                              "label": "Open Menu",
                               "version": 1,
                               "parentId": "blirrmmdhu",
-                              "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
-                              "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "onOptionChange": "{{Cal_trip.myFun2()}}",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-                              "widgetName": "Input1",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 21,
-                              "bottomRow": 28,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onTextChanged"
-                                }
-                              ],
-                              "resetOnSubmit": true,
-                              "leftColumn": 5,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "label"
-                                },
-                                {
-                                  "key": "defaultText"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "maxChars": "",
-                              "isDisabled": false,
-                              "key": "pdo53cb6x9",
-                              "validation": "",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "onTextChanged": "",
-                              "isDeprecated": false,
-                              "rightColumn": 58,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "rhsqj2k968",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "label": "รวมรายการค่าใช้จ่ายทั้งหมดของ {{Select1.selectedOptionLabel}}",
-                              "version": 2,
-                              "parentId": "blirrmmdhu",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "1.5rem",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "right",
-                              "defaultText": "{{appsmith.store.expense_all}}",
-                              "minDynamicHeight": 4
+                              "menuItemsSource": "STATIC",
+                              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "placement": "CENTER"
                             }
                           ],
                           "key": "bgsg7ph85k",
@@ -1192,7 +1648,7 @@
                       ],
                       "borderWidth": "1",
                       "key": "dud65iiq2v",
-                      "backgroundColor": "#fff",
+                      "backgroundColor": "#ffffff",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "dynamicHeight": "FIXED",
@@ -1233,7 +1689,7 @@
                       "text": "Calculator Expense",
                       "key": "sf3r6zjw7q",
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 55,
                       "textAlign": "CENTER",
                       "dynamicHeight": "FIXED",
                       "widgetId": "6nf9ehpqus",
@@ -1385,7 +1841,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2Copy3",
-                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{clearStore()}}",
                               "buttonColor": "#fff",
                               "dynamicPropertyPathList": [],
                               "displayName": "Button",
@@ -2251,6 +2707,264 @@
               "maxDynamicHeight": 9000,
               "width": 427.5,
               "minDynamicHeight": 24
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "Input1",
+              "dynamicPropertyPathList": [],
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 72,
+              "bottomRow": 79,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onTextChanged"
+                }
+              ],
+              "resetOnSubmit": true,
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "label"
+                },
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "BOLD",
+              "inputType": "TEXT",
+              "maxChars": "",
+              "isDisabled": false,
+              "key": "pdo53cb6x9",
+              "validation": "",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "onTextChanged": "",
+              "isDeprecated": false,
+              "rightColumn": 58,
+              "dynamicHeight": "FIXED",
+              "widgetId": "rhsqj2k968",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "รวมรายการค่าใช้จ่ายทั้งหมดของ {{Select1.selectedOptionLabel}}",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "right",
+              "defaultText": "{{appsmith.store.expense_all}}",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "Input1Copy",
+              "dynamicPropertyPathList": [],
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 89,
+              "bottomRow": 96,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "label"
+                },
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "BOLD",
+              "inputType": "TEXT",
+              "maxChars": "",
+              "isDisabled": false,
+              "key": "pdo53cb6x9",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 58,
+              "dynamicHeight": "FIXED",
+              "widgetId": "93x3fbisco",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "ค่าใช้จ่ายทั้งหมดของ {{Select2.selectedOptionLabel}}",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "right",
+              "defaultText": "{{appsmith.store.expense_member}}",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Select2",
+              "isFilterable": true,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "สมาชิก",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 81,
+              "bottomRow": 85,
+              "parentRowSpace": 10,
+              "labelWidth": "10",
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "defaultOptionValue": "",
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onDropdownOpen"
+                },
+                {
+                  "key": "onDropdownClose"
+                },
+                {
+                  "key": "onOptionChange"
+                }
+              ],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                }
+              ],
+              "labelPosition": "Left",
+              "onDropdownClose": "{{Cal_member.myFun2()}}",
+              "options": "{{select_member_from_trip.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
+              "labelStyle": "BOLD",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "ouai8fownt",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "dynamicHeight": "FIXED",
+              "widgetId": "1u02p6rm1a",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "onDropdownOpen": "",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "onOptionChange": "{{Cal_member.myFun2()}}",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "widgetName": "Input_individual",
+              "dynamicPropertyPathList": [],
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 104,
+              "bottomRow": 111,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 4,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "defaultText"
+                },
+                {
+                  "key": "label"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "BOLD",
+              "inputType": "TEXT",
+              "maxChars": "",
+              "isDisabled": false,
+              "key": "pdo53cb6x9",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "dynamicHeight": "FIXED",
+              "widgetId": "2135a716f6",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "รวมเงินที่ต้องจ่าย จำนวนคนที่เข้าร่วมกิจกรรม {{appsmith.store.member_in_event}} คน",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "right",
+              "defaultText": "{{appsmith.store.expense_individual}}",
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -2263,6 +2977,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.member_username"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Calculator_select_event_form_trip_id",
+              "name": "select_event_form_trip_id",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "select_trip.data[0].event_trip_id"
               ],
               "timeoutInMillisecond": 10000
             }

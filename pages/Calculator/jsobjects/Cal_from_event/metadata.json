@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Cal_from_event",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_Cal_from_event",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_643f90bd8424293fe7876c18"
+}

@@ -22,7 +22,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (Select2.selectedOptionValue == '') {\n    showAlert('ไม่ได้เลือกสมาชิก');\n    let expense_member = 0;\n    storeValue('expense_member', expense_member);\n  } else {\n    showAlert('เลือกสมาชิกแล้ว');\n    cal_expense_member_2.run();\n    let expense_member = cal_expense_member_2.data[0].total_sum;\n    storeValue('expense_member', expense_member);\n    select_member_from_trip.run();\n  }\n}",
+      "body": "async () => {\n  if (Select2.selectedOptionValue == '') {\n    showAlert('ไม่ได้เลือกสมาชิก');\n    let expense_member = 0;\n    storeValue('expense_member', expense_member);\n  } else {\n    showAlert('เลือกสมาชิกแล้ว');\n    cal_expense_member_2.run().then(() => {\n      if (cal_expense_member_2.data.length != 0) {\n        let expense_member = cal_expense_member_2.data[0].total_sum;\n        storeValue('expense_member', expense_member);\n        select_member_from_trip.run();\n      } else {\n        showAlert('ข้อมูลเท่ากับ 0');\n      }\n    }, () => {\n      showAlert('คิวรี่ไม่ได้');\n    });\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -45,5 +45,5 @@
   },
   "id": "Calculator Copy_Cal_member.myFun2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_642b901e8424293fe78769aa"
+  "gitSyncId": "6402c1438424293fe7876437_643f95aa8424293fe7876c39"
 }

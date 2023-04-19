@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT list_expense.list_expense_id , list_expense.list_type_id ,\nlist_expense.event_history_id , list_expense.name , list_expense.list_expense_amount , list_expense.\"calculate_type (1 = split, 2 = individual)\" ,\n\nevent_history.event_history_id as event_history_id_from_event \n\nFROM list_expense \ninner join event_history on event_history.event_history_id = list_expense.event_history_id\n\nWHERE \"calculate_type (1 = split, 2 = individual)\" = 2 and event_trip_id = {{Select1.selectedOptionValue}}\n\n",
+      "body": "SELECT SUM(list_expense_amount) \nFROM list_expense \n\nINNER JOIN event_history \n\nON list_expense.event_history_id = event_history.event_history_id\n\nWHERE event_trip_id = {{Select_trip.selectedOptionValue}}\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select1.selectedOptionValue"
+      "Select_trip.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -45,5 +45,5 @@
   },
   "id": "Calculator_cal_expense_individual",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6426b44f8424293fe7876902"
+  "gitSyncId": "6402c1438424293fe7876437_643e7a258424293fe7876c07"
 }
