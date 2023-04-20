@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_event_form_trip_id",
+    "name": "cal_expense3",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select * from event_history WHERE event_trip_id = {{Select_trip.selectedOptionValue}} ",
+      "body": "SELECT SUM(list_expense_amount) \nFROM list_expense \n\nINNER JOIN event_history \n\nON list_expense.event_history_id = event_history.event_history_id\n\nWHERE event_trip_id = {{Select_trip3.selectedOptionValue}}\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select_trip.selectedOptionValue"
+      "Select_trip3.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_select_event_form_trip_id",
+  "id": "Calculator_cal_expense3",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_643faa258424293fe7876ca1"
+  "gitSyncId": "6402c1438424293fe7876437_64411f818424293fe7876cf6"
 }

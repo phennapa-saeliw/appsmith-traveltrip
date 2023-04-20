@@ -1,6 +1,30 @@
 export default {
   myFun2: async () => {
 		
+		
+		if(Select_trip3.selectedOptionValue.length != 0){
+			await select_event_form_trip_id3.run()
+			await select_member_from_trip3.run()
+			
+		}
+		
+		 if(Select_trip3.selectedOptionValue == ''){
+			 
+			 resetWidget("Select_event3", true);
+			 resetWidget("Select_member3", true);
+
+			 
+		 }
+		
+		 if (Select_event.selectedOptionValue == '') {
+      
+			let cal_from_event_total = 0
+			storeValue('cal_from_event_total',cal_from_event_total) 
+			
+			
+		 
+		 }
+	
     if (Select_trip.selectedOptionValue == '') {
       //showAlert('ไม่ได้เลือกทริป');
       resetWidget("Select2", true);
@@ -13,16 +37,15 @@ export default {
       storeValue('expense_individual',expense_individual)
 			
 			let cal_from_event_total = 0
-			storeValue('cal_from_event_total',cal_from_event_total) 
-			
-			return;
-			
-    } else {
-      //showAlert('เลือกทริป');
-			
-			await select_event_form_trip_id.run()
+			storeValue('cal_from_event_total',cal_from_event_total)  
 			
 		
+			
+    } else {
+      //showAlert('เลือกทริป')
+			
+			await select_event_form_trip_id.run()
+
 			await cal_expense2.run().then(()=>{
 				if(cal_expense2.data.length != 0){
 
@@ -31,8 +54,10 @@ export default {
 
 				}
 			})
+
 					if(Select_event.selectedOptionLabel != ''){
 						
+					await select_event_form_trip_id.run()	
 					await check_member_join_event.run()
 					let member_in_event = check_member_join_event.data[0].count;
           storeValue('member_in_event', member_in_event);
@@ -41,6 +66,7 @@ export default {
 						showAlert('กรุณาเลือกกิจกรรม')
 						return;
 					}
+					
 
 					await cal_expense_individual.run() 
           let expense_individual = cal_expense_individual.data[0].expense_per_member
@@ -50,6 +76,19 @@ export default {
 					await cal_expense2_but_from_event.run()
 					let cal_from_event_total = cal_expense2_but_from_event.data[0].sum
 					storeValue('cal_from_event_total',cal_from_event_total)
+			
+					await select_member_from_trip.run()
+					await select_member_from_trip3.run()
+			
+					if(Select_member3 != ''){
+						await resetWidget("Select_member3", true)
+						
+						let expense_member = 0
+						storeValue('expense_member',expense_member)
+						
+						
+					}
+			
 			
     }
   }

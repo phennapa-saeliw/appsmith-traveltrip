@@ -1,24 +1,15 @@
 {
   "unpublishedCollection": {
-    "name": "JSObject1",
+    "name": "reset_sum",
     "pageId": "Calculator",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [
-      {
-        "name": "myVar1",
-        "value": "[]"
-      },
-      {
-        "name": "myVar2",
-        "value": "{}"
-      }
-    ],
+    "variables": [],
     "userPermissions": []
   },
-  "id": "Calculator_JSObject1",
+  "id": "Calculator_reset_sum",
   "deleted": false,
   "gitSyncId": "6402c1438424293fe7876437_643e6f1a8424293fe7876bf8"
 }

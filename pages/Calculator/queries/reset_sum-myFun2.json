@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "myFun2",
+    "fullyQualifiedName": "reset_sum.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,15 +14,15 @@
       "userPermissions": []
     },
     "pageId": "Calculator",
-    "collectionId": "Calculator_JSObject1",
+    "collectionId": "Calculator_reset_sum",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_JSObject1.myFun1",
+  "id": "Calculator_reset_sum.myFun2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_643e6f1a8424293fe7876bf4"
+  "gitSyncId": "6402c1438424293fe7876437_643e6f1a8424293fe7876bf5"
 }

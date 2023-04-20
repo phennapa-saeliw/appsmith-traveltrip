@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(total_expense) as total_sum\nFROM (\n  SELECT SUM(list_expense_amount) as total_expense, \n         event_history.event_history_id, \n         event_history.event_trip_id, \n         expense_history.member_id, \n         expense_history.list_expense_id\n  FROM list_expense \n  INNER JOIN event_history \n  ON list_expense.event_history_id = event_history.event_history_id\n  INNER JOIN expense_history\n  ON list_expense.list_expense_id = expense_history.list_expense_id\n  WHERE member_id = {{Select2.selectedOptionValue}}\n  GROUP BY event_history.event_history_id, event_history.event_trip_id, expense_history.member_id, expense_history.list_expense_id\n) subquery;\n",
+      "body": "SELECT SUM(total_expense) as total_sum\nFROM (\n  SELECT SUM(list_expense_amount)  as total_expense, \n         event_history.event_history_id, \n         event_history.event_trip_id, \n         expense_history.member_id, \n         expense_history.list_expense_id \n  FROM list_expense \n  INNER JOIN event_history \n  ON list_expense.event_history_id = event_history.event_history_id\n  INNER JOIN expense_history\n  ON list_expense.list_expense_id = expense_history.list_expense_id\n  WHERE expense_history.member_id = {{Select_member3.selectedOptionValue}} AND event_history.event_history_id = {{Select_event3.selectedOptionValue}}\n  GROUP BY event_history.event_history_id, event_history.event_trip_id, expense_history.member_id, expense_history.list_expense_id\n) subquery\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select2.selectedOptionValue"
+      "Select_event3.selectedOptionValue",
+      "Select_member3.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

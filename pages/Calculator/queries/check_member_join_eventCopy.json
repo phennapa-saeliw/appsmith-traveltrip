@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_event_form_trip_id",
+    "name": "check_member_join_eventCopy",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select * from event_history WHERE event_trip_id = {{Select_trip.selectedOptionValue}} ",
+      "body": "SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{Select_event3.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select_trip.selectedOptionValue"
+      "Select_event3.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_select_event_form_trip_id",
+  "id": "Calculator_check_member_join_eventCopy",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_643faa258424293fe7876ca1"
+  "gitSyncId": "6402c1438424293fe7876437_64411fef8424293fe7876cf9"
 }

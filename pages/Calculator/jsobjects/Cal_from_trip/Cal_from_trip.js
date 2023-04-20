@@ -21,6 +21,9 @@ export default {
 					let expense_all = cal_expense.data[0].sum
 					storeValue('expense_all',expense_all)
 					
+				
+					
+			
 				}else{
 					showAlert('ข้อมูลเท่ากับ 0')
 				}
@@ -28,8 +31,8 @@ export default {
 				showAlert('คิวรี่ไม่ได้')
 			})
 
-
-		}
+	
+		}  	
 
 	}
 
