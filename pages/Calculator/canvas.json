@@ -845,7 +845,7 @@
                                   "tabId": "tab1",
                                   "widgetName": "Canvas7",
                                   "displayName": "Canvas",
-                                  "bottomRow": 380,
+                                  "bottomRow": 420,
                                   "topRow": 0,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
@@ -1113,7 +1113,7 @@
                                   "tabId": "tab2",
                                   "widgetName": "Canvas8",
                                   "displayName": "Canvas",
-                                  "bottomRow": 380,
+                                  "bottomRow": 420,
                                   "topRow": 0,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
@@ -1312,7 +1312,7 @@
                                       "isVisible": true,
                                       "version": 1,
                                       "parentId": "orl5f9a3jd",
-                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                                      "onDropdownOpen": "",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
@@ -1455,7 +1455,7 @@
                                   "widgetName": "Canvas9",
                                   "displayName": "Canvas",
                                   "topRow": 1,
-                                  "bottomRow": 380,
+                                  "bottomRow": 420,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -1710,7 +1710,7 @@
                                       "originalTopRow": 23,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 30,
+                                      "originalBottomRow": 28,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -1766,10 +1766,10 @@
                                       "parentId": "892454fxm0",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 31,
+                                      "originalTopRow": 29,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 35,
+                                      "originalBottomRow": 33,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -1861,7 +1861,7 @@
                                   "widgetName": "Canvas10",
                                   "displayName": "Canvas",
                                   "topRow": 1,
-                                  "bottomRow": 380,
+                                  "bottomRow": 420,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -2185,7 +2185,7 @@
                                       "originalTopRow": 24,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 28,
+                                      "originalBottomRow": 29,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2241,10 +2241,10 @@
                                       "parentId": "nw8xg05th8",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 29,
+                                      "originalTopRow": 30,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 33,
+                                      "originalBottomRow": 34,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
@@ -2272,7 +2272,7 @@
                               "widgetId": "bx3qds2f50",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "defaultTab": "{{appsmith.store.tabb}}",
-                              "shouldShowTabs": true,
+                              "shouldShowTabs": false,
                               "tabsObj": {
                                 "tab1": {
                                   "label": "Tab 1",
@@ -2336,6 +2336,12 @@
                                 },
                                 {
                                   "key": "menuItems.menuItem2.onClick"
+                                },
+                                {
+                                  "key": "menuItems.menuItem3.onClick"
+                                },
+                                {
+                                  "key": "menuItems.menuItemjcrwfga72u.onClick"
                                 }
                               ],
                               "leftColumn": 3,
@@ -2361,7 +2367,7 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 0,
-                                  "onClick": "{{storeValue('tabb','Tab 1')}}"
+                                  "onClick": "{{navi_to_tabb.tabb1()}}"
                                 },
                                 "menuItem2": {
                                   "label": "ค่าใช้จ่ายตามกิจกรรม ภายในทริป",
@@ -2370,7 +2376,7 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 1,
-                                  "onClick": "{{storeValue('tabb','Tab 2')}}"
+                                  "onClick": "{{navi_to_tabb.tabb2()}}"
                                 },
                                 "menuItem3": {
                                   "label": "ค่าใช้จ่ายของแต่ละคน ตามกิจกรรม",
@@ -2378,15 +2384,17 @@
                                   "widgetId": "",
                                   "isVisible": true,
                                   "isDisabled": false,
-                                  "index": 2
+                                  "index": 2,
+                                  "onClick": "{{navi_to_tabb.tabb3()}}"
                                 },
                                 "menuItemjcrwfga72u": {
                                   "id": "menuItemjcrwfga72u",
                                   "index": 3,
-                                  "label": "Menu Item 1",
+                                  "label": "หารค่าใช้จ่ายตามกิจกรรม",
                                   "widgetId": "7oooq8frmm",
                                   "isDisabled": false,
-                                  "isVisible": true
+                                  "isVisible": true,
+                                  "onClick": "{{navi_to_tabb.tabb4()}}"
                                 }
                               },
                               "isVisible": true,

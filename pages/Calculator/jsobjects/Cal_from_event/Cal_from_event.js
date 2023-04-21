@@ -1,9 +1,6 @@
 export default {
   myFun2: async () => {
 		
-		
-		
-		
 		 if (Select_event.selectedOptionValue == '') {
       
 			let cal_from_event_total = 0
@@ -27,8 +24,7 @@ export default {
 			
 			let cal_from_event_total = 0
 			storeValue('cal_from_event_total',cal_from_event_total)  
-			
-		
+
 			
     } else {
       //showAlert('เลือกทริป')
@@ -46,7 +42,7 @@ export default {
 
 					if(Select_event.selectedOptionLabel != ''){
 						
-					await select_event_form_trip_id.run()	
+					//await select_event_form_trip_id.run()	
 					await check_member_join_event.run()
 					let member_in_event = check_member_join_event.data[0].count;
           storeValue('member_in_event', member_in_event);
@@ -54,6 +50,7 @@ export default {
 					}else{
 						showAlert('กรุณาเลือกกิจกรรม')
 						return;
+						
 					}
 					
 

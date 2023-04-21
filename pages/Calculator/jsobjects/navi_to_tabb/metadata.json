@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "navi_to_tabb",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_navi_to_tabb",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_64427eb18424293fe7876d80"
+}
