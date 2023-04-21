@@ -2143,7 +2143,7 @@
                                         "label"
                                       ],
                                       "topRow": 24,
-                                      "bottomRow": 29,
+                                      "bottomRow": 28,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2182,10 +2182,10 @@
                                       "parentId": "nw8xg05th8",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 24,
+                                      "originalTopRow": 23,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 29,
+                                      "originalBottomRow": 27,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2198,8 +2198,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 30,
-                                      "bottomRow": 34,
+                                      "topRow": 29,
+                                      "bottomRow": 33,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2241,10 +2241,10 @@
                                       "parentId": "nw8xg05th8",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 30,
+                                      "originalTopRow": 28,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 34,
+                                      "originalBottomRow": 32,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
@@ -2379,7 +2379,7 @@
                                   "onClick": "{{navi_to_tabb.tabb2()}}"
                                 },
                                 "menuItem3": {
-                                  "label": "ค่าใช้จ่ายของแต่ละคน ตามกิจกรรม",
+                                  "label": "ค่าใช้จ่ายของสมาชิก ตามกิจกรรม",
                                   "id": "menuItem3",
                                   "widgetId": "",
                                   "isVisible": true,
@@ -2390,7 +2390,7 @@
                                 "menuItemjcrwfga72u": {
                                   "id": "menuItemjcrwfga72u",
                                   "index": 3,
-                                  "label": "หารค่าใช้จ่ายตามกิจกรรม",
+                                  "label": "หารค่าใช้จ่ายของสมาชิก ตามกิจกรรม",
                                   "widgetId": "7oooq8frmm",
                                   "isDisabled": false,
                                   "isVisible": true,
@@ -2698,7 +2698,11 @@
                                 }
                               ],
                               "leftColumn": 56,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "menuItems.menuItem1.backgroundColor"
+                                }
+                              ],
                               "isDisabled": false,
                               "sourceData": "[]",
                               "key": "bu74nu1clm",
@@ -2718,7 +2722,7 @@
                                   "index": 0,
                                   "iconColor": "transparent",
                                   "textColor": "#fff",
-                                  "backgroundColor": "#3b82f6",
+                                  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
                                   "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}"
                                 }
                               },

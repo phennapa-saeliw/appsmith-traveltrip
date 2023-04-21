@@ -19,18 +19,6 @@
     {
       "id": "Calculator",
       "isDefault": false
-    },
-    {
-      "id": "Register Copy",
-      "isDefault": false
-    },
-    {
-      "id": "Calculator Copy",
-      "isDefault": false
-    },
-    {
-      "id": "Calculator Copy1",
-      "isDefault": false
     }
   ],
   "viewMode": false,
