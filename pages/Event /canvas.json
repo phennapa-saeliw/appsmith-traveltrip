@@ -5464,7 +5464,7 @@
                                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                                               "widgetName": "IconButton3Copy3Copy",
                                               "onClick": "",
-                                              "buttonColor": "#dc2626",
+                                              "buttonColor": "#ef4444",
                                               "dynamicPropertyPathList": [],
                                               "displayName": "Icon Button",
                                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -5491,7 +5491,7 @@
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
                                               "rightColumn": 8,
-                                              "iconName": "warning-sign",
+                                              "iconName": "timeline-events",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "7bxfd3g1ty",
                                               "logBlackList": {
@@ -5821,7 +5821,7 @@
                                 }
                               ],
                               "text": "Map",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
                               "rightColumn": 36,

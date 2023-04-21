@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -2549,7 +2549,7 @@
                                 }
                               ],
                               "text": "Map",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
                               "rightColumn": 36,

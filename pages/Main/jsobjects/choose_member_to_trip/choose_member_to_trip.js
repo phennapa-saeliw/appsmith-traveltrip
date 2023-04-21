@@ -31,6 +31,8 @@ export default {
     });
 		
 		
+		closeModal('show_detail')
+		
 		
 		
 		

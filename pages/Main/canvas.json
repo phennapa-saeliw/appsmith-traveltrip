@@ -2385,7 +2385,7 @@
                                               "key": "p9jgkzye50",
                                               "isDeprecated": false,
                                               "rightColumn": 8,
-                                              "iconName": "warning-sign",
+                                              "iconName": "paperclip",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "7cwvmpia0z",
                                               "logBlackList": {
@@ -2698,10 +2698,11 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 0,
-                                  "iconColor": "transparent",
+                                  "iconColor": "#18181b",
                                   "textColor": "#fff",
                                   "backgroundColor": "#ec4899",
-                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}"
+                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}",
+                                  "iconAlign": "left"
                                 }
                               },
                               "isVisible": true,
@@ -2742,7 +2743,7 @@
                                 }
                               ],
                               "text": "Map",
-                              "isDisabled": false,
+                              "isDisabled": true,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
                               "rightColumn": 35,
