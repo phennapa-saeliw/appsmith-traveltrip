@@ -4570,7 +4570,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Longitude",
                               "placeholderText": "Longitude",
@@ -4593,9 +4593,9 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
-                              "label": "lattitude"
+                              "label": "Lattitude"
                             }
                           },
                           "dataType": "object",

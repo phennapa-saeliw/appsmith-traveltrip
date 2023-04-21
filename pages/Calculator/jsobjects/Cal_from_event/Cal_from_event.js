@@ -2,26 +2,15 @@ export default {
   myFun2: async () => {
 		
 		
-		if(Select_trip3.selectedOptionValue.length != 0){
-			await select_event_form_trip_id3.run()
-			await select_member_from_trip3.run()
-			
-		}
 		
-		 if(Select_trip3.selectedOptionValue == ''){
-			 
-			 resetWidget("Select_event3", true);
-			 resetWidget("Select_member3", true);
-
-			 
-		 }
 		
 		 if (Select_event.selectedOptionValue == '') {
       
 			let cal_from_event_total = 0
 			storeValue('cal_from_event_total',cal_from_event_total) 
-			
-			
+			resetWidget("Select_member3", true);
+			let expense_member = 0
+			 storeValue('expense_member',expense_member)
 		 
 		 }
 	
@@ -78,16 +67,9 @@ export default {
 					storeValue('cal_from_event_total',cal_from_event_total)
 			
 					await select_member_from_trip.run()
-					await select_member_from_trip3.run()
+					
 			
-					if(Select_member3 != ''){
-						await resetWidget("Select_member3", true)
-						
-						let expense_member = 0
-						storeValue('expense_member',expense_member)
-						
-						
-					}
+					
 			
 			
     }

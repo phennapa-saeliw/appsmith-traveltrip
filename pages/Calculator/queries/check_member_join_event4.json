@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_member_from_trip3",
+    "name": "check_member_join_event4",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT event_trip_id, member.member_id, member_firstname || ' ' || member_lastname AS member_fullname \nFROM event_member \nINNER JOIN member \nON member.member_id = event_member.member_id\nWHERE event_trip_id = {{Select_trip3.selectedOptionValue}};\n",
+      "body": "SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{Select_event4.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select_trip3.selectedOptionValue"
+      "Select_event4.selectedOptionValue"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_select_member_from_trip3",
+  "id": "Calculator_check_member_join_event4",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_64411e968424293fe7876cf4"
+  "gitSyncId": "6402c1438424293fe7876437_644247fc8424293fe7876d50"
 }
