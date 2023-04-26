@@ -22,14 +22,33 @@ export default {
       if (select_from_detail.data.length != 0) {	
         let trip_id = select_from_detail.data[0].event_trip_id;
         storeValue('trip_id', trip_id);
-	
+				
         let user_select = JSONForm1CopyCopy.formData.customfield4;
         for (let i = 0; i < user_select.length; i++) {
           const user_num = user_select[i];
           storeValue('user_num', user_num);
-					await create_trip_user_JS_2.run();
+					console.log(user_num)
+					await check_member_form_user_num.run()
 					
-        }
+					if(check_member_form_user_num.data.length == 0){
+						create_trip_user_JS_2.run()
+						let name_same = check_member_form_user_num.data[0].member_fullname
+						storeValue('name_same',name_same)
+					  
+						continue }
+						
+					if(check_member_form_user_num.data.length =! 0){
+					let name_same = check_member_form_user_num.data[0].member_fullname
+					storeValue('name_same',name_same)
+					showAlert('มีผู้ใช้งาน '+ name_same + ' ในทริปอยู่เเล้ว','error') 
+					
+					} 
+						
+					
+					
+				
+				}
+
       }
     });
 		

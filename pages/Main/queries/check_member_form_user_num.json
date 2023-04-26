@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_from_detail",
+    "name": "check_member_form_user_num",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM event_trip WHERE name = {{JSONForm1CopyCopy.formData.customField1}} \n",
+      "body": "SELECT event_member.* , member.member_firstname || ' ' || member.member_lastname AS member_fullname FROM event_member \ninner join member\non member.member_id = event_member.member_id\n\nwhere event_member.event_trip_id = {{appsmith.store.trip_id}} and event_member.member_id = \n\n{{appsmith.store.user_num}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1CopyCopy.formData.customField1"
+      "appsmith.store.trip_id",
+      "appsmith.store.user_num"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_select_from_detail",
+  "id": "Main_check_member_form_user_num",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6422bc968424293fe7876811"
+  "gitSyncId": "6402c1438424293fe7876437_644776478424293fe7876db8"
 }
