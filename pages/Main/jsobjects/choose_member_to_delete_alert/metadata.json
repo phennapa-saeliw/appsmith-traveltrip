@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "choose_member_to_delete_alert",
+    "pageId": "Main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Main_choose_member_to_delete_alert",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6449fe5a8424293fe7876eac"
+}

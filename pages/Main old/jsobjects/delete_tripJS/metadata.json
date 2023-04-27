@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "choose_member_to_tripCopy",
-    "pageId": "Main",
+    "name": "delete_tripJS",
+    "pageId": "Main old",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Main_choose_member_to_tripCopy",
+  "id": "Main old_delete_tripJS",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_644776238424293fe7876db6"
+  "gitSyncId": "63c647e929e6fc43b6bc5555_63e30f433b57a70f0657d2d6"
 }

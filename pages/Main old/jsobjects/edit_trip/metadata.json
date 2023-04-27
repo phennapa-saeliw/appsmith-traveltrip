@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "edit_trip",
+    "pageId": "Main old",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Main old_edit_trip",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6412dd458424293fe787672a"
+}

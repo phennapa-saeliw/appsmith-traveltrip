@@ -32,10 +32,11 @@ export default {
 					
 					if(check_member_form_user_num.data.length == 0){
 						create_trip_user_JS_2.run()
+						await check_member_form_user_num.run()
 						let name_same = check_member_form_user_num.data[0].member_fullname
-						storeValue('name_same',name_same)
-					  
-						continue }
+						await showAlert('เพิ่มสมาชิก '+ name_same  +' สำเร็จ','success')
+						continue
+						 }
 						
 					if(check_member_form_user_num.data.length =! 0){
 					let name_same = check_member_form_user_num.data[0].member_fullname
@@ -44,9 +45,6 @@ export default {
 					
 					} 
 						
-					
-					
-				
 				}
 
       }

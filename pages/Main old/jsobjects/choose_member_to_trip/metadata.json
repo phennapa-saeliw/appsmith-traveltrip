@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "choose_member_to_trip",
+    "pageId": "Main old",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Main old_choose_member_to_trip",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_6422bb538424293fe787680e"
+}
