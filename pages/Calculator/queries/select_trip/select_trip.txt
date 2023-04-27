@@ -1,0 +1,4 @@
+SELECT event_trip.* , member.member_username FROM event_trip 
+inner join member
+on member.member_id = event_trip.member_id
+WHERE member_username = {{appsmith.store.member_username}}

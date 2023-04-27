@@ -1,0 +1,1 @@
+SELECT * FROM event_member where event_trip_id = {{appsmith.store.trip_id}}

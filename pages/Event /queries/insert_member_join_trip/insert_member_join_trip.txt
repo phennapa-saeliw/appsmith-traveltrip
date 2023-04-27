@@ -1,0 +1,8 @@
+INSERT INTO member_join_event (event_history_id, member_id)	
+
+VALUES
+  (
+		'{{appsmith.store.history_id}}',
+		'{{appsmith.store.user_id}}'
+
+  )

@@ -1,0 +1,5 @@
+SELECT expense_history.expense_history_id , expense_history.member_id , expense_history.list_expense_id , member.member_firstname || ' ' || member_lastname as member_fullname , list_expense.* FROM expense_history
+inner join member on member.member_id = expense_history.member_id
+inner join list_expense on list_expense.list_expense_id =  expense_history.list_expense_id
+
+where list_expense.list_expense_id = {{list2.triggeredItem.list_expense_id}}

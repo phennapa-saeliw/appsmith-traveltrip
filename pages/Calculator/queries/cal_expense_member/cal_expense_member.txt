@@ -1,0 +1,13 @@
+SELECT SUM(list_expense_amount) as total_expense, 
+       event_history.event_history_id, 
+       event_history.event_trip_id, 
+       expense_history.member_id, 
+       expense_history.list_expense_id
+FROM list_expense 
+INNER JOIN event_history 
+ON list_expense.event_history_id = event_history.event_history_id
+INNER JOIN expense_history
+ON list_expense.list_expense_id = expense_history.list_expense_id
+WHERE event_history.event_trip_id = {{Select1.selectedOptionValue}}
+
+GROUP BY event_history.event_history_id, event_history.event_trip_id, expense_history.member_id, expense_history.list_expense_id;

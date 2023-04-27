@@ -1,0 +1,1 @@
+DELETE FROM event_trip WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}}

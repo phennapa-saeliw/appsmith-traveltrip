@@ -1,0 +1,1 @@
+SELECT * FROM event_history where event_history_id = {{List2Copy.triggeredItem.event_history_id}}

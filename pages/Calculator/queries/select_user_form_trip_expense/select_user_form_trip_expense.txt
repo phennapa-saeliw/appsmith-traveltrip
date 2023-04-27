@@ -1,0 +1,16 @@
+SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,expense_history_id , list_expense.name , list_expense.list_expense_id , event_history.event_history_id , event_history.event_name
+
+FROM member 
+
+inner join expense_history 
+
+on member.member_id = expense_history.member_id
+
+inner join list_expense
+
+on list_expense.list_expense_id = expense_history.list_expense_id
+
+inner join event_history
+
+on event_history.event_history_id = list_expense.event_history_id
+

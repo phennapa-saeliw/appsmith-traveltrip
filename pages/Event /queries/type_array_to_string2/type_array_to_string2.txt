@@ -1,0 +1,4 @@
+SELECT list_expense.*, list_type.*
+FROM list_expense 
+INNER JOIN list_type ON list_type.list_type_id = list_expense.list_type_id
+WHERE list_expense_id = {{list2.triggeredItem.list_expense_id}}

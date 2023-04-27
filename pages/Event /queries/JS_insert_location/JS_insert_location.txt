@@ -1,0 +1,9 @@
+INSERT INTO event_location (event_location, event_history_id)	
+
+VALUES
+  (
+		'{{JSONForm1Copy.formData.customField7}}',
+		'{{appsmith.store.history_id}}'
+		
+	
+  )

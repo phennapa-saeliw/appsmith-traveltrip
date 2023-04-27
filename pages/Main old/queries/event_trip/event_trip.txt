@@ -1,0 +1,17 @@
+
+SELECT member.member_id , member_username , event_trip.event_trip_id , event_trip.name
+
+FROM member 
+
+inner join event_trip
+
+on member.member_id = event_trip.member_id 
+
+
+where member_username = {{appsmith.store.member_username}}
+
+order by event_trip_id desc
+
+
+
+

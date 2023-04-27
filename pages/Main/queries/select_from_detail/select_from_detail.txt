@@ -1,0 +1,1 @@
+SELECT * FROM event_trip WHERE name = {{JSONForm1CopyCopy.formData.customField1}} 

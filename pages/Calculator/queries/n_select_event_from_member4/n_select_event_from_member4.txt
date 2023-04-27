@@ -1,0 +1,6 @@
+SELECT member.member_id, member_firstname || ' ' || member_lastname AS member_fullname, expense_history_id, list_expense.name, list_expense.list_expense_id, event_history.event_history_id, event_history.event_name
+FROM member
+INNER JOIN expense_history ON member.member_id = expense_history.member_id
+INNER JOIN list_expense ON list_expense.list_expense_id = expense_history.list_expense_id
+INNER JOIN event_history ON event_history.event_history_id = list_expense.event_history_id
+WHERE expense_history.member_id = {{Select_member4.options[0].value}}

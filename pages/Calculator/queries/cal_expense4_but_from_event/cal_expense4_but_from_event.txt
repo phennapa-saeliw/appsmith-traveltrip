@@ -1,0 +1,8 @@
+SELECT  {{appsmith.store.expense2}} / {{appsmith.store.member_join_event4}} + {{appsmith.store.expense_member4}} as SUM
+
+from list_expense
+
+inner join expense_history
+on expense_history.list_expense_id = list_expense.list_expense_id
+
+WHERE expense_history.member_id = {{Select_member4.selectedOptionValue}}

@@ -1,0 +1,7 @@
+INSERT INTO expense_history
+  (list_expense_id , member_id)
+VALUES
+  (
+    {{appsmith.store.id_expense}},
+    {{appsmith.store.user_id}}
+  );

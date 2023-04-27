@@ -1,0 +1,2 @@
+SELECT * FROM event_type
+where event_type_id = {{List2Copy.triggeredItem.event_type_id}}

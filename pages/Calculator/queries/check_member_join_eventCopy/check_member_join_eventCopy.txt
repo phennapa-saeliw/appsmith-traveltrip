@@ -1,0 +1,1 @@
+SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{Select_event3.selectedOptionValue}}

@@ -1,0 +1,12 @@
+INSERT INTO list_expense (name, list_type_id, list_expense_amount ,event_history_id) 
+
+VALUES
+  (
+		'{{SC_event_form.formData.customField1}}',
+    '{{SC_event_form.formData.customField2}}',
+		'{{SC_event_form.formData.customField7}}',
+		'{{List2Copy.triggeredItem.event_history_id}}'
+		
+		
+		
+  )

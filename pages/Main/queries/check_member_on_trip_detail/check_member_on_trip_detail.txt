@@ -1,0 +1,8 @@
+SELECT event_member.* , 
+member.member_firstname || ' ' || member.member_lastname as member_fullname 
+FROM event_member 
+inner join member
+on member.member_id = event_member.member_id
+
+
+WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}}

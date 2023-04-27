@@ -1,0 +1,8 @@
+UPDATE event_history
+  SET event_name = '{{JSONForm1CopyCopy.formData.customField1}}',
+	event_detail = '{{JSONForm1CopyCopy.formData.customField3}}' ,
+	event_start = '{{JSONForm1CopyCopy.formData.customField4}}',
+	event_end = '{{JSONForm1CopyCopy.formData.customField5}}',
+	event_type_id = '{{JSONForm1CopyCopy.formData.customField2}}'
+
+  WHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}};

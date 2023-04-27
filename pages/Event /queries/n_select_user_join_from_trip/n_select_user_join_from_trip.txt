@@ -1,0 +1,9 @@
+SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,member_join_event.member_join_event_id
+
+FROM member 
+
+inner join member_join_event
+
+on member.member_id = member_join_event.member_id
+
+where event_history_id = {{List2Copy.triggeredItem.event_history_id}} 

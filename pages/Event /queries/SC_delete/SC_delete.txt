@@ -1,0 +1,1 @@
+DELETE FROM list_expense WHERE  list_expense_id = {{list2.triggeredItem.list_expense_id}}

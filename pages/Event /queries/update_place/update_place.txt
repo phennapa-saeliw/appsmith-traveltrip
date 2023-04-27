@@ -1,0 +1,4 @@
+UPDATE event_location
+  SET event_location = {{JSONForm1CopyCopy.formData.customField7}}
+			
+WHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}};

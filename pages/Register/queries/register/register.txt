@@ -1,0 +1,12 @@
+INSERT INTO member ( member_username , member_password , member_firstname , member_lastname  )
+
+VALUES
+  (
+    '{{input_username.inputText}}',
+		'{{input_password1.inputText}}',
+		'{{input_firstname.inputText}}',
+		'{{input_lastname.inputText}}'
+		
+		
+  )
+

@@ -1,0 +1,11 @@
+INSERT INTO event_history (event_type_id, event_name, event_detail, event_start, event_end , event_trip_id ) 
+
+VALUES
+  (
+		'{{JSONForm1Copy.formData.customField2}}',
+    '{{JSONForm1Copy.formData.customField1}}',
+		'{{JSONForm1Copy.formData.customField3}}',
+		'{{JSONForm1Copy.formData.customField4}}',
+		'{{JSONForm1Copy.formData.customField5}}',
+		'{{appsmith.store.trip_detail[0].event_trip_id}}'
+  )

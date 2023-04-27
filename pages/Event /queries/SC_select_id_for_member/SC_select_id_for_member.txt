@@ -1,0 +1,2 @@
+select * from list_expense where name = {{SC_event_form.formData.customField1}} and list_type_id = {{SC_event_form.formData.customField2}} and list_expense_amount = {{SC_event_form.formData.customField7}}
+and event_history_id = {{List2Copy.triggeredItem.event_history_id}}

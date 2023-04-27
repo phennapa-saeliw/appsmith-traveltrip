@@ -1,0 +1,2 @@
+select event_type_id from event_type WHERE event_type_id = {{JSONForm1Copy.formData.customField2}}
+

@@ -1,0 +1,7 @@
+select event_history_id from event_history WHERE 
+event_type_id = {{JSONForm1Copy.formData.customField2}} and 
+event_name = {{JSONForm1Copy.formData.customField1}} and 
+event_detail = {{JSONForm1Copy.formData.customField3}} and 
+event_start = {{JSONForm1Copy.formData.customField4}} and 
+event_end = {{JSONForm1Copy.formData.customField5}} and 
+event_trip_id = {{appsmith.store.trip_detail[0].event_trip_id}}

@@ -1,0 +1,2 @@
+DELETE FROM event_member
+WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}} and member_id = {{appsmith.store.user_num}}

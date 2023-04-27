@@ -1,0 +1,6 @@
+UPDATE event_trip
+  SET name = '{{JSONForm1Copy.formData.customField1}}',
+	event_trip_start = '{{JSONForm1Copy.formData.customField2}}' ,
+	event_trip_end = '{{JSONForm1Copy.formData.customField3}}' 
+
+  WHERE event_trip_id = {{list2.triggeredItem.event_trip_id}};

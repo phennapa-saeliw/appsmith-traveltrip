@@ -1,0 +1,12 @@
+SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,event_trip_id ,event_history_id
+FROM member 
+
+inner join event_member
+on member.member_id = event_member.member_id
+
+inner join member_join_event
+on member_join_event.member_id = event_member.member_id
+
+where event_trip_id = {{appsmith.store.trip_id}} and
+
+event_history_id = {{List2Copy.triggeredItem.event_history_id}}

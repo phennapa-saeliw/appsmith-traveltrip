@@ -1,0 +1,3 @@
+SELECT * FROM event_history WHERE event_trip_id = {{appsmith.store.event_trip_detail.event_trip_id}} 
+
+order by event_start asc

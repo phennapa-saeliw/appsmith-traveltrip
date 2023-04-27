@@ -1,0 +1,1 @@
+DELETE FROM event_trip WHERE member_id = {{appsmith.store.member_in_JS}}

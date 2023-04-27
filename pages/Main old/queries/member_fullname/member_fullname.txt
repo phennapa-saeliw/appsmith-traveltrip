@@ -1,0 +1,2 @@
+SELECT member_id,member_firstname || ' ' || member_lastname AS member_fullname 
+FROM member ORDER BY member_id 

@@ -1,0 +1,7 @@
+INSERT INTO member_join_event
+  (event_history_id, member_id)
+VALUES
+  (
+    {{ List2Copy.triggeredItem.event_history_id }},
+    {{ appsmith.store.user_num }}
+  );

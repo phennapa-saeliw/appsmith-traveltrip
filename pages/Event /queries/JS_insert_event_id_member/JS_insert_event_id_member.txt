@@ -1,0 +1,7 @@
+update event_member 
+
+set event_history_id = {{appsmith.store.history_id}}
+
+where event_trip_id = {{appsmith.store.trip_id}} and member_id = {{appsmith.store.member_id}}
+
+	

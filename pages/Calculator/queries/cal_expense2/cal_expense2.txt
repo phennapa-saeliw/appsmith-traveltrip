@@ -1,0 +1,9 @@
+SELECT SUM(list_expense_amount) 
+FROM list_expense 
+
+INNER JOIN event_history 
+
+ON list_expense.event_history_id = event_history.event_history_id
+
+WHERE event_trip_id = {{Select_trip.selectedOptionValue}}
+

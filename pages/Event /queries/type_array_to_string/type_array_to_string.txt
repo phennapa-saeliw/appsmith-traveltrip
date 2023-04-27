@@ -1,0 +1,6 @@
+SELECT event_history.*, event_type.event_type 
+FROM event_history 
+INNER JOIN event_type ON event_type.event_type_id = event_type.event_type_id
+WHERE event_type.event_type_id = {{SC_detail.data[0].event_type_id}}
+and event_trip_id = {{SC_detail.data[0].event_trip_id}}
+and event_history_id = {{List2Copy.triggeredItem.event_history_id}}

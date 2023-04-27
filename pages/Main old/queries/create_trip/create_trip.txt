@@ -1,0 +1,13 @@
+INSERT INTO event_trip (name, event_trip_start, event_trip_end , member_id) 
+
+VALUES
+  (
+    '{{JSONForm1.formData.customField1}}',
+		'{{JSONForm1.formData.customField2}}',
+		'{{JSONForm1.formData.customField3}}',
+		'{{appsmith.store.member_id}}'
+		
+  )
+
+
+

@@ -1,0 +1,2 @@
+DELETE FROM member_join_event
+WHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}} and member_id = {{appsmith.store.user_num}}
