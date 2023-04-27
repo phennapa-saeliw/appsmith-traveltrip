@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (Select1.selectedOptionValue == '') {\n    showAlert('ไม่ได้เลือกทริป if');\n    {\n      {\n        resetWidget(\"Select2\", true);\n      }\n    }\n    let expense_all = 0;\n    storeValue('expense_all', expense_all);\n    let expense_individual = 0;\n    storeValue('expense_individual', expense_individual);\n    let member_in_event = 0;\n    storeValue('member_in_event', member_in_event);\n  } else {\n    showAlert('เลือกทริป else');\n    await cal_expense.run().then(() => {\n      if (cal_expense.data.length != 0) {\n        let expense_all = cal_expense.data[0].sum;\n        storeValue('expense_all', expense_all);\n      } else {\n        showAlert('ข้อมูลเท่ากับ 0');\n      }\n    }, () => {\n      showAlert('คิวรี่ไม่ได้');\n    });\n  }\n}",
+      "body": "async () => {\n  if (Select1.selectedOptionValue == '') {\n    {\n      {\n        resetWidget(\"Select2\", true);\n      }\n    }\n    let expense_all = 0;\n    storeValue('expense_all', expense_all);\n    let expense_individual = 0;\n    storeValue('expense_individual', expense_individual);\n    let member_in_event = 0;\n    storeValue('member_in_event', member_in_event);\n  } else {\n    await cal_expense.run().then(() => {\n      if (cal_expense.data.length != 0) {\n        let expense_all = cal_expense.data[0].sum;\n        storeValue('expense_all', expense_all);\n      } else {\n        showAlert('ข้อมูลเท่ากับ 0');\n      }\n    }, () => {\n      showAlert('คิวรี่ไม่ได้');\n    });\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (Select1.selectedOptionValue == '') {\n    showAlert('ไม่ได้เลือกทริป if');\n    {\n      {\n        resetWidget(\"Select2\", true);\n      }\n    }\n    let expense_all = 0;\n    storeValue('expense_all', expense_all);\n    let expense_individual = 0;\n    storeValue('expense_individual', expense_individual);\n    let member_in_event = 0;\n    storeValue('member_in_event', member_in_event);\n  } else {\n    showAlert('เลือกทริป else');\n    await cal_expense.run().then(() => {\n      if (cal_expense.data.length != 0) {\n        let expense_all = cal_expense.data[0].sum;\n        storeValue('expense_all', expense_all);\n      } else {\n        showAlert('ข้อมูลเท่ากับ 0');\n      }\n    }, () => {\n      showAlert('คิวรี่ไม่ได้');\n    });\n  }\n}"
+      "async () => {\n  if (Select1.selectedOptionValue == '') {\n    {\n      {\n        resetWidget(\"Select2\", true);\n      }\n    }\n    let expense_all = 0;\n    storeValue('expense_all', expense_all);\n    let expense_individual = 0;\n    storeValue('expense_individual', expense_individual);\n    let member_in_event = 0;\n    storeValue('member_in_event', member_in_event);\n  } else {\n    await cal_expense.run().then(() => {\n      if (cal_expense.data.length != 0) {\n        let expense_all = cal_expense.data[0].sum;\n        storeValue('expense_all', expense_all);\n      } else {\n        showAlert('ข้อมูลเท่ากับ 0');\n      }\n    }, () => {\n      showAlert('คิวรี่ไม่ได้');\n    });\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

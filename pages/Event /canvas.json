@@ -2224,7 +2224,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton2CopyCopy1Copy",
-                      "onClick": "{{closeModal('Edit_eventCopy')}}",
+                      "onClick": "{{closeModal('see_event_deteil')}}",
                       "buttonColor": "#fff",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -6236,7 +6236,7 @@
                               "key": "ohykrv1mgj",
                               "backgroundColor": "#fff",
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 64,
                               "widgetId": "8tuocj11l2",
                               "parentId": "f4bpsc5ow0",
                               "renderMode": "CANVAS",

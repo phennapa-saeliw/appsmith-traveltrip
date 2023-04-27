@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}",
+      "body": "async () => {\n  await check_member_to_expese.run();\n  if (check_member_to_expese.data == '') {\n    showAlert('กรุณาเพิ่มสมาชิกในกิจกรรมก่อน !', 'warning');\n    return;\n  }\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}"
+      "async () => {\n  await check_member_to_expese.run();\n  if (check_member_to_expese.data == '') {\n    showAlert('กรุณาเพิ่มสมาชิกในกิจกรรมก่อน !', 'warning');\n    return;\n  }\n  await SC_event_show_table.run();\n  await type_array_to_string2.run();\n  await select_member_on_expense.run();\n  await n_select_user_join.run();\n  await n_select_user_join_from_trip.run();\n  showModal('event_cost', 'SAMEPAGE');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

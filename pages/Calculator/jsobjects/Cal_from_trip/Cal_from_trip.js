@@ -1,7 +1,7 @@
 export default {
 	myFun2: async () => {
 		if (Select1.selectedOptionValue == '') {
-			showAlert('ไม่ได้เลือกทริป if');
+			//showAlert('ไม่ได้เลือกทริป ');
 			
 			{{resetWidget("Select2",true)}}
 			let expense_all = 0
@@ -13,7 +13,7 @@ export default {
 
 		} else {
 
-			showAlert('เลือกทริป else');
+			//showAlert('เลือกทริป else');
 
 			await cal_expense.run().then(()=>{
 				if(cal_expense.data.length != 0){
