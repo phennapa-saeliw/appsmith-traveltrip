@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "UPDATE_add_member",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _UPDATE_add_member",
+  "deleted": false,
+  "gitSyncId": "6402c1438424293fe7876437_644a30d48424293fe7876ee9"
+}
