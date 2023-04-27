@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "update_place",
+    "name": "n_select_user_join_form_event",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE event_location\n  SET event_location = {{JSONForm1CopyCopy.formData.customField7}}\n\t\t\t\nWHERE event_history_id = {{List2Copy.triggeredItem.event_history_id}};\n",
+      "body": "SELECT member.member_id , member_firstname || ' ' || member_lastname AS member_fullname  ,event_trip_id ,event_history_id\nFROM member \n\ninner join event_member\non member.member_id = event_member.member_id\n\ninner join member_join_event\non member_join_event.member_id = event_member.member_id\n\nwhere event_trip_id = {{appsmith.store.trip_id}} and\n\nevent_history_id = {{List2Copy.triggeredItem.event_history_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,15 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1CopyCopy.formData.customField7",
-      "List2Copy.triggeredItem.event_history_id"
+      "List2Copy.triggeredItem.event_history_id",
+      "appsmith.store.trip_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _update_place",
+  "id": "Event _n_select_user_join_form_event",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6433e89a8424293fe7876b12"
+  "gitSyncId": "6402c1438424293fe7876437_644a27688424293fe7876ed5"
 }

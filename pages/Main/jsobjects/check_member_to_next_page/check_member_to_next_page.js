@@ -7,7 +7,7 @@ export default {
 		storeValue('trip_detail',check_trip.data);
 
     if (check_array != 0) {
-      showAlert('มีสมาชิกอยู่ในทริปเรียบร้อยแล้ว ไปหน้าถัดไปได้เลย!');
+      //showAlert('มีสมาชิกอยู่ในทริปเรียบร้อยแล้ว ไปหน้าถัดไปได้เลย!');
 			storeValue('event_trip_detail',list2.triggeredItem)
       navigateTo('Event ', 'SAME_WINDOW');
     } else {

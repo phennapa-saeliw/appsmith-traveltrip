@@ -27,6 +27,2004 @@
           "children": [
             {
               "boxShadow": "none",
+              "widgetName": "Edit_event_delete_member",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 58,
+              "bottomRow": 748,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy1Copy1Copy",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 580,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 586,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1CopyCopyCopyCopyCopy",
+                      "onClick": "{{showModal('see_event_deteil')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 53,
+                      "bottomRow": 57,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
+                      "text": "ย้อนกลับ",
+                      "isDisabled": false,
+                      "key": "wanf61byhi",
+                      "isDeprecated": false,
+                      "rightColumn": 17,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "arrow-left",
+                      "widgetId": "gwjazzddym",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "4ef01v28lr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton2CopyCopy1Copy1Copy",
+                      "onClick": "{{closeModal('Edit_eventCopy')}}",
+                      "buttonColor": "#fff",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 57,
+                      "dynamicBindingPathList": [],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "olfubc1pok",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "iconName": "cross",
+                      "widgetId": "hz6qozevp7",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4ef01v28lr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "1.5rem",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "customField1": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField1",
+                              "identifier": "customField1",
+                              "position": 3,
+                              "originalIdentifier": "customField1",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": true,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "ชื่อกิจกรรม",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "customField2": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (type_array_to_string.data[0].event_type_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Select",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField2",
+                              "identifier": "customField2",
+                              "position": 4,
+                              "originalIdentifier": "customField2",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "ประเภทของกิจกรรม",
+                              "labelTextSize": "0.875rem",
+                              "serverSideFiltering": false,
+                              "options": "{{event_type.data.map((row) => {\n\treturn {\n\t\tlabel: row.event_type,\n\t\tvalue: row.event_type_id\n\t}\n})\n}}\n"
+                            },
+                            "customField3": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Multiline Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField3",
+                              "identifier": "customField3",
+                              "position": 5,
+                              "originalIdentifier": "customField3",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "ข้อมูลกิจกรรม"
+                            },
+                            "customField4": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField4",
+                              "identifier": "customField4",
+                              "position": 7,
+                              "originalIdentifier": "customField4",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "เวลาเริ่มของกิจกรรม",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "customField5": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField5",
+                              "identifier": "customField5",
+                              "position": 8,
+                              "originalIdentifier": "customField5",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "เวลาจบของกิจกรรม",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem"
+                            },
+                            "customField6": {
+                              "children": {},
+                              "dataType": "array",
+                              "defaultValue": "",
+                              "fieldType": "Multiselect",
+                              "sourceData": [],
+                              "isCustomField": true,
+                              "accessor": "customField6",
+                              "identifier": "customField6",
+                              "position": 6,
+                              "originalIdentifier": "customField6",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "ลบสมาชิก",
+                              "labelTextSize": "0.875rem",
+                              "serverSideFiltering": false,
+                              "options": "{{n_select_user_join_form_event.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
+                              "placeholderText": "เลือกสมาชิก",
+                              "allowSelectAll": true
+                            },
+                            "customField7": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField7",
+                              "identifier": "customField7",
+                              "position": 9,
+                              "originalIdentifier": "customField7",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "สถานที่"
+                            },
+                            "customField8": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location_start_lat))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField8",
+                              "identifier": "customField8",
+                              "position": 10,
+                              "originalIdentifier": "customField8",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Latitude",
+                              "placeholderText": "Latitude"
+                            },
+                            "customField9": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField9",
+                              "identifier": "customField9",
+                              "position": 11,
+                              "originalIdentifier": "customField9",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Longitude",
+                              "placeholderText": "Longitude",
+                              "tooltip": "",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location_start_lon))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "event_history_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_history_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_history_id",
+                              "identifier": "event_history_id",
+                              "position": 9,
+                              "originalIdentifier": "event_history_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event History Id"
+                            },
+                            "event_type_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_type_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_type_id",
+                              "identifier": "event_type_id",
+                              "position": 10,
+                              "originalIdentifier": "event_type_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Type Id"
+                            },
+                            "event_name": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "ที่พัก A",
+                              "isCustomField": false,
+                              "accessor": "event_name",
+                              "identifier": "event_name",
+                              "position": 11,
+                              "originalIdentifier": "event_name",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Name"
+                            },
+                            "event_detail": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "พักที่พัก A จำนวน 3 วัน 2 คืน",
+                              "isCustomField": false,
+                              "accessor": "event_detail",
+                              "identifier": "event_detail",
+                              "position": 12,
+                              "originalIdentifier": "event_detail",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Detail"
+                            },
+                            "event_start": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "2023-01-10T14:59:56Z",
+                              "isCustomField": false,
+                              "accessor": "event_start",
+                              "identifier": "event_start",
+                              "position": 13,
+                              "originalIdentifier": "event_start",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Start"
+                            },
+                            "event_end": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "2023-01-10T15:00:02Z",
+                              "isCustomField": false,
+                              "accessor": "event_end",
+                              "identifier": "event_end",
+                              "position": 14,
+                              "originalIdentifier": "event_end",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event End"
+                            },
+                            "event_trip_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_trip_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_trip_id",
+                              "identifier": "event_trip_id",
+                              "position": 16,
+                              "originalIdentifier": "event_trip_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Trip Id"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "name": "John",
+                            "date_of_birth": "20/02/1990",
+                            "employee_id": 1001
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "widgetName": "JSONForm_event_add_memberCopy",
+                      "submitButtonStyles": {
+                        "buttonColor": "#fdcfdf",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconName": "saved",
+                        "iconAlign": "right",
+                        "placement": "CENTER"
+                      },
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 6,
+                      "bottomRow": 52,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.accentColor"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
+                        }
+                      ],
+                      "borderWidth": "1",
+                      "sourceData": "",
+                      "showReset": true,
+                      "resetButtonLabel": "Reset",
+                      "key": "ohykrv1mgj",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "autoGenerateForm": false,
+                      "widgetId": "nrxn2qd4mj",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4ef01v28lr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": true,
+                      "submitButtonLabel": "บันทึก",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "1.5rem",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "Container4CopyCopy1Copy1Copy",
+                      "borderColor": "#E0DEDE",
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+                      "searchTags": [
+                        "div",
+                        "parent",
+                        "group"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "widgetName": "Canvas6CopyCopy1Copy1Copy",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 50,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 60,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "widgetName": "Text5CopyCopy1Copy1Copy",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "shouldScrollContents": true,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "Poppins",
+                              "parentColumnSpace": 6.4921875,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "ลบสมาชิกออกจากกิจกรรม",
+                              "key": "1ojvgm3hgy",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "CENTER",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "38drcnm4gk",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "jg4a5gl46d",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 0,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 6,
+                              "fontSize": "1.25rem",
+                              "minDynamicHeight": 4
+                            }
+                          ],
+                          "key": "xwp4t4uufl",
+                          "isDeprecated": false,
+                          "rightColumn": 155.8125,
+                          "detachFromLayout": true,
+                          "widgetId": "jg4a5gl46d",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "0wrp9j4kaq",
+                          "renderMode": "CANVAS",
+                          "isLoading": false
+                        }
+                      ],
+                      "borderWidth": "0",
+                      "key": "9d2fslvmpg",
+                      "backgroundColor": "#FFFFFF",
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "0wrp9j4kaq",
+                      "containerStyle": "card",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4ef01v28lr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "1.5rem",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 10
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "xwp4t4uufl",
+                  "isDeprecated": false,
+                  "rightColumn": 149.25,
+                  "detachFromLayout": true,
+                  "widgetId": "4ef01v28lr",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "srlei4uabt",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "iivvnmztan",
+              "height": 586,
+              "isDeprecated": false,
+              "rightColumn": 25,
+              "backgroundColor": "#fca3cc",
+              "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
+              "widgetId": "srlei4uabt",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "maxDynamicHeight": 9000,
+              "width": 427.5,
+              "minDynamicHeight": 24
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Edit_event_add_member",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 49,
+              "bottomRow": 739,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 6.21875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas5CopyCopy1Copy1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 580,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 586,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1CopyCopyCopyCopy",
+                      "onClick": "{{showModal('see_event_deteil')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 53,
+                      "bottomRow": 57,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
+                      "text": "ย้อนกลับ",
+                      "isDisabled": false,
+                      "key": "wanf61byhi",
+                      "isDeprecated": false,
+                      "rightColumn": 17,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "arrow-left",
+                      "widgetId": "e9f1aky40m",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "cfrbed33am",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton2CopyCopy1Copy1",
+                      "onClick": "{{closeModal('Edit_eventCopy')}}",
+                      "buttonColor": "#fff",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 57,
+                      "dynamicBindingPathList": [],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "olfubc1pok",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "iconName": "cross",
+                      "widgetId": "0vhlad0gfy",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "cfrbed33am",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "1.5rem",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "customField1": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField1",
+                              "identifier": "customField1",
+                              "position": 3,
+                              "originalIdentifier": "customField1",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": true,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "ชื่อกิจกรรม",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "customField2": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (type_array_to_string.data[0].event_type_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Select",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField2",
+                              "identifier": "customField2",
+                              "position": 4,
+                              "originalIdentifier": "customField2",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "ประเภทของกิจกรรม",
+                              "labelTextSize": "0.875rem",
+                              "serverSideFiltering": false,
+                              "options": "{{event_type.data.map((row) => {\n\treturn {\n\t\tlabel: row.event_type,\n\t\tvalue: row.event_type_id\n\t}\n})\n}}\n"
+                            },
+                            "customField3": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Multiline Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField3",
+                              "identifier": "customField3",
+                              "position": 5,
+                              "originalIdentifier": "customField3",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "ข้อมูลกิจกรรม"
+                            },
+                            "customField4": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField4",
+                              "identifier": "customField4",
+                              "position": 7,
+                              "originalIdentifier": "customField4",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "เวลาเริ่มของกิจกรรม",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "customField5": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (SC_detail.data[0].event_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField5",
+                              "identifier": "customField5",
+                              "position": 8,
+                              "originalIdentifier": "customField5",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": false,
+                              "label": "เวลาจบของกิจกรรม",
+                              "maxDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "minDate": "{{((sourceData, formData, fieldState) => (test_picktime_in_trip.data[0].event_trip_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem"
+                            },
+                            "customField6": {
+                              "children": {},
+                              "dataType": "array",
+                              "defaultValue": "",
+                              "fieldType": "Multiselect",
+                              "sourceData": [],
+                              "isCustomField": true,
+                              "accessor": "customField6",
+                              "identifier": "customField6",
+                              "position": 6,
+                              "originalIdentifier": "customField6",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "เพิ่มสมาชิก",
+                              "labelTextSize": "0.875rem",
+                              "serverSideFiltering": false,
+                              "options": "{{n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
+                              "placeholderText": "เลือกสมาชิก",
+                              "allowSelectAll": true
+                            },
+                            "customField7": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField7",
+                              "identifier": "customField7",
+                              "position": 9,
+                              "originalIdentifier": "customField7",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "สถานที่"
+                            },
+                            "customField8": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location_start_lat))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField8",
+                              "identifier": "customField8",
+                              "position": 10,
+                              "originalIdentifier": "customField8",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Latitude",
+                              "placeholderText": "Latitude"
+                            },
+                            "customField9": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField9",
+                              "identifier": "customField9",
+                              "position": 11,
+                              "originalIdentifier": "customField9",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1Copy.sourceData, JSONForm1Copy.formData, JSONForm1Copy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Longitude",
+                              "placeholderText": "Longitude",
+                              "tooltip": "",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location_start_lon))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}"
+                            },
+                            "event_history_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_history_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_history_id",
+                              "identifier": "event_history_id",
+                              "position": 9,
+                              "originalIdentifier": "event_history_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event History Id"
+                            },
+                            "event_type_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_type_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_type_id",
+                              "identifier": "event_type_id",
+                              "position": 10,
+                              "originalIdentifier": "event_type_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Type Id"
+                            },
+                            "event_name": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_name))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "ที่พัก A",
+                              "isCustomField": false,
+                              "accessor": "event_name",
+                              "identifier": "event_name",
+                              "position": 11,
+                              "originalIdentifier": "event_name",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Name"
+                            },
+                            "event_detail": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_detail))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "พักที่พัก A จำนวน 3 วัน 2 คืน",
+                              "isCustomField": false,
+                              "accessor": "event_detail",
+                              "identifier": "event_detail",
+                              "position": 12,
+                              "originalIdentifier": "event_detail",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Detail"
+                            },
+                            "event_start": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_start))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "2023-01-10T14:59:56Z",
+                              "isCustomField": false,
+                              "accessor": "event_start",
+                              "identifier": "event_start",
+                              "position": 13,
+                              "originalIdentifier": "event_start",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Start"
+                            },
+                            "event_end": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_end))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "2023-01-10T15:00:02Z",
+                              "isCustomField": false,
+                              "accessor": "event_end",
+                              "identifier": "event_end",
+                              "position": 14,
+                              "originalIdentifier": "event_end",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event End"
+                            },
+                            "event_trip_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.event_trip_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "event_trip_id",
+                              "identifier": "event_trip_id",
+                              "position": 16,
+                              "originalIdentifier": "event_trip_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Event Trip Id"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "name": "John",
+                            "date_of_birth": "20/02/1990",
+                            "employee_id": 1001
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "borderColor": "#E0DEDE",
+                      "widgetName": "JSONForm_event_add_member",
+                      "submitButtonStyles": {
+                        "buttonColor": "#fdcfdf",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconName": "saved",
+                        "iconAlign": "right",
+                        "placement": "CENTER"
+                      },
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 6,
+                      "bottomRow": 52,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_trip_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_end.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_start.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_detail.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_name.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_type_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.event_history_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.accentColor"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField6.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField8.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField9.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField4.maxDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField5.maxDate"
+                        }
+                      ],
+                      "borderWidth": "1",
+                      "sourceData": "",
+                      "showReset": true,
+                      "resetButtonLabel": "Reset",
+                      "key": "ohykrv1mgj",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "autoGenerateForm": false,
+                      "widgetId": "85fdpz6nnb",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "cfrbed33am",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": true,
+                      "submitButtonLabel": "บันทึก",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "1.5rem",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "Container4CopyCopy1Copy1",
+                      "borderColor": "#E0DEDE",
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
+                      "searchTags": [
+                        "div",
+                        "parent",
+                        "group"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "widgetName": "Canvas6CopyCopy1Copy1",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 50,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 60,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [],
+                          "children": [
+                            {
+                              "widgetName": "Text5CopyCopy1Copy1",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "shouldScrollContents": true,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "Poppins",
+                              "parentColumnSpace": 6.4921875,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "เพิ่มสมาชิกในกิจกรรม",
+                              "key": "1ojvgm3hgy",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "CENTER",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "lrw3hrermh",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "bvhtb6hkbg",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 0,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "originalBottomRow": 6,
+                              "fontSize": "1.25rem",
+                              "minDynamicHeight": 4
+                            }
+                          ],
+                          "key": "xwp4t4uufl",
+                          "isDeprecated": false,
+                          "rightColumn": 155.8125,
+                          "detachFromLayout": true,
+                          "widgetId": "bvhtb6hkbg",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "mrbuew2z59",
+                          "renderMode": "CANVAS",
+                          "isLoading": false
+                        }
+                      ],
+                      "borderWidth": "0",
+                      "key": "9d2fslvmpg",
+                      "backgroundColor": "#FFFFFF",
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "mrbuew2z59",
+                      "containerStyle": "card",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "cfrbed33am",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "1.5rem",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 10
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "xwp4t4uufl",
+                  "isDeprecated": false,
+                  "rightColumn": 149.25,
+                  "detachFromLayout": true,
+                  "widgetId": "cfrbed33am",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "tgi2ohrznx",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "iivvnmztan",
+              "height": 586,
+              "isDeprecated": false,
+              "rightColumn": 25,
+              "backgroundColor": "#fca3cc",
+              "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
+              "widgetId": "tgi2ohrznx",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "maxDynamicHeight": 9000,
+              "width": 427.5,
+              "minDynamicHeight": 24
+            },
+            {
+              "boxShadow": "none",
               "widgetName": "see_event_deteil",
               "isCanvas": true,
               "displayName": "Modal",
@@ -41,7 +2039,7 @@
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": false,
+              "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 6.21875,
               "dynamicTriggerPathList": [],
@@ -63,6 +2061,113 @@
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1CopyCopy2",
+                      "onClick": "{{showModal('Edit_event_delete_member')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 53,
+                      "bottomRow": 57,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 41,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "ลบสมาชิก",
+                      "isDisabled": false,
+                      "key": "wanf61byhi",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "blocked-person",
+                      "widgetId": "h2ko9rjkgs",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "35c3px6jop",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1CopyCopy",
+                      "onClick": "{{showModal('Edit_event')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 53,
+                      "bottomRow": 57,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.4921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 15,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
+                      "text": "แก้ไขข้อมูลกิจกรรม",
+                      "isDisabled": false,
+                      "key": "wanf61byhi",
+                      "isDeprecated": false,
+                      "rightColumn": 41,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "edit",
+                      "widgetId": "u50mg1cldp",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "35c3px6jop",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
@@ -102,6 +2207,7 @@
                       "isDeprecated": false,
                       "rightColumn": 15,
                       "isDefaultClickDisabled": true,
+                      "iconName": "trash",
                       "widgetId": "dykqjugjl4",
                       "isVisible": true,
                       "recaptchaType": "V3",
@@ -112,6 +2218,7 @@
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
                       "placement": "CENTER"
                     },
                     {
@@ -181,7 +2288,7 @@
                             "customField2": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (type_array_to_string.data[0].event_type_id))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (type_array_to_string.data[0].event_type))(JSONForm1CopyCopyCopy.sourceData, JSONForm1CopyCopyCopy.formData, JSONForm1CopyCopyCopy.fieldState)}}",
                               "fieldType": "Select",
                               "sourceData": "",
                               "isCustomField": true,
@@ -278,7 +2385,7 @@
                             "customField6": {
                               "children": {},
                               "dataType": "array",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (n_select_user_join_form_event.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})))(JSONForm1CopyCopyCopy.sourceData, JSONForm1CopyCopyCopy.formData, JSONForm1CopyCopyCopy.fieldState)}}",
                               "fieldType": "Multiselect",
                               "sourceData": [],
                               "isCustomField": true,
@@ -296,14 +2403,14 @@
                               "label": "สมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
-                              "options": "{{n_select_user_join_form_store.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
+                              "options": "{{n_select_user_join_form_event.data.map((row) => {\n\treturn {\n\t\tlabel : \t\trow.member_fullname\t,\n\t\tvalue : row.member_id\n\t}\n})}}",
                               "placeholderText": "เลือกสมาชิก",
                               "allowSelectAll": false
                             },
                             "customField7": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location))(JSONForm1CopyCopy.sourceData, JSONForm1CopyCopy.formData, JSONForm1CopyCopy.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (select_place_and_lat_lon.data[0].event_location))(JSONForm1CopyCopyCopy.sourceData, JSONForm1CopyCopyCopy.formData, JSONForm1CopyCopyCopy.fieldState)}}",
                               "fieldType": "Text Input",
                               "sourceData": "",
                               "isCustomField": true,
@@ -557,7 +2664,7 @@
                         "borderRadius": "0.375rem",
                         "boxShadow": "none",
                         "buttonVariant": "PRIMARY",
-                        "iconName": "edit",
+                        "iconName": "new-person",
                         "iconAlign": "left",
                         "placement": "CENTER"
                       },
@@ -571,7 +2678,7 @@
                       ],
                       "displayName": "JSON Form",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-                      "onSubmit": "{{showModal('Edit_event')}}",
+                      "onSubmit": "{{showModal('Edit_event_add_member')}}",
                       "topRow": 6,
                       "bottomRow": 52,
                       "fieldLimitExceeded": false,
@@ -727,9 +2834,6 @@
                           "key": "schema.__root_schema__.children.customField5.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.customField7.defaultValue"
-                        },
-                        {
                           "key": "schema.__root_schema__.children.customField8.defaultValue"
                         },
                         {
@@ -737,6 +2841,9 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField7.defaultValue"
                         },
                         {
                           "key": "schema.__root_schema__.children.customField2.defaultValue"
@@ -766,7 +2873,7 @@
                       "isLoading": false,
                       "scrollContents": true,
                       "fixedFooter": true,
-                      "submitButtonLabel": "แก้ไข",
+                      "submitButtonLabel": "เพิ่มสมาชิก",
                       "childStylesheet": {
                         "ARRAY": {
                           "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1822,7 +3929,7 @@
                               "isDisabled": false,
                               "isFilterable": false,
                               "isRequired": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "label": "เพิ่มสมาชิก",
                               "labelTextSize": "0.875rem",
                               "serverSideFiltering": false,
@@ -1869,7 +3976,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Latitude",
                               "placeholderText": "Latitude"
@@ -1891,7 +3998,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Longitude",
                               "placeholderText": "Longitude",
@@ -7102,6 +9209,17 @@
           ],
           [
             {
+              "id": "Event _n_select_user_join_form_event",
+              "name": "n_select_user_join_form_event",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "List2Copy.triggeredItem.event_history_id",
+                "appsmith.store.trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Event _n_select_user_join_form_store",
               "name": "n_select_user_join_form_store",
               "confirmBeforeExecute": false,
@@ -7128,6 +9246,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "list2.triggeredItem.list_expense_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _type_array_to_string",
+              "name": "type_array_to_string",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SC_detail.data[0].event_type_id",
+                "List2Copy.triggeredItem.event_history_id",
+                "SC_detail.data[0].event_trip_id"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -7171,18 +9301,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "List2Copy.triggeredItem.event_trip_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Event _type_array_to_string",
-              "name": "type_array_to_string",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SC_detail.data[0].event_type_id"
               ],
               "timeoutInMillisecond": 10000
             }

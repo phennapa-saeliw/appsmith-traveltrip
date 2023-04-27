@@ -34,6 +34,7 @@ export default {
 						create_trip_user_JS_2.run()
 						check_member_form_user_num.run()
 						
+						
 						let name_not_same = check_member_form_user_num.data[0].member_fullname	 //--------------------ไม่ทำงาน ?
 						storeValue('name_not_same',name_not_same)		//--------------------ไม่ทำงาน ?
 						await showAlert('เพิ่มสมาชิก '+ name_not_same  +' สำเร็จ','success')	//--------------------ไม่ทำงาน ?
@@ -54,12 +55,8 @@ export default {
       }
     });
 		
-		
-		closeModal('show_detail')
-		
-		
-		
-		
+		check_member_on_trip_detail.run()
+		showModal('show_detail')
 		
   }
 }

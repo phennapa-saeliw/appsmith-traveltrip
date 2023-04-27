@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await SC_detail.run();\n  await type_array_to_string.run();\n  await select_place_and_lat_lon.run();\n  await test_picktime_in_trip.run();\n  showModal('see_event_deteil');\n}",
+      "body": "async () => {\n  await SC_detail.run();\n  await type_array_to_string.run();\n  await select_place_and_lat_lon.run();\n  await test_picktime_in_trip.run();\n  await n_select_user_join_form_event.run();\n  showModal('see_event_deteil');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await SC_detail.run();\n  await type_array_to_string.run();\n  await select_place_and_lat_lon.run();\n  await test_picktime_in_trip.run();\n  showModal('see_event_deteil');\n}"
+      "async () => {\n  await SC_detail.run();\n  await type_array_to_string.run();\n  await select_place_and_lat_lon.run();\n  await test_picktime_in_trip.run();\n  await n_select_user_join_form_event.run();\n  showModal('see_event_deteil');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

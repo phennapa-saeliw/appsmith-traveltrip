@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await update_event_trip.run();\n  await update_place.run();\n  showAlert('แก้ไขกิจกรรมสำเร็จ', 'success');\n}",
+      "body": "async () => {\n  await update_event_trip.run();\n  await update_place.run();\n  await event_history_trip.run();\n  await SC_detail.run();\n  showAlert('แก้ไขกิจกรรมสำเร็จ', 'success');\n  showModal('see_event_deteil');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await update_event_trip.run();\n  await update_place.run();\n  showAlert('แก้ไขกิจกรรมสำเร็จ', 'success');\n}"
+      "async () => {\n  await update_event_trip.run();\n  await update_place.run();\n  await event_history_trip.run();\n  await SC_detail.run();\n  showAlert('แก้ไขกิจกรรมสำเร็จ', 'success');\n  showModal('see_event_deteil');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
