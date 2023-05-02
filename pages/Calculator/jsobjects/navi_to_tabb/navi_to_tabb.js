@@ -41,5 +41,17 @@ export default {
 		
 		{{storeValue('tabb','Tab 4')}}
 		
+	},
+	tabb5: async () => {
+
+		resetWidget('Select_trip5','true')
+		resetWidget('Select_event5','true')
+		resetWidget('Select_member5','true')
+		
+		let expesne_form_event5 = 0
+		storeValue('expesne_form_event5',expesne_form_event5)
+		
+		{{storeValue('tabb','Tab 5')}}
+		
 	}
 }

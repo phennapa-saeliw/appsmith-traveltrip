@@ -1,10 +1,13 @@
 export default {
 
 	myFun2: async () => {
+		
+			
+			
 
 			if(Select_trip4.selectedOptionValue.length != 0){
 			await select_event_form_trip_id4.run()
-			await select_member_from_trip4.run()
+			await select_member_from_event4.run()
 	
 			
 		}
@@ -65,9 +68,17 @@ export default {
 			await cal_expense_member_4.run().then(()=>{
 				if(cal_expense_member_4.data.length != 0){
 					let expense_member4 = cal_expense_member_4.data[0].total_sum
-					storeValue('expense_member4',expense_member4)
-					console.log(expense_member4)      // <----------------- คำนวณจ่ายคนเดียวตามสมาชิกที่เลือก
-					
+					if(expense_member4 == null){
+						//showAlert('it null')
+						let expense_member4 = 0
+						storeValue('expense_member4',expense_member4)
+						
+						
+					}else{
+						storeValue('expense_member4',expense_member4)
+						console.log(expense_member4)
+						
+					}					
 					//select_member_from_trip3.run()
 				} else {
 					showAlert('ข้อมูลเท่ากับ 0')

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "userfunc",
-    "fullyQualifiedName": "select_user.userfunc",
+    "name": "myFun2",
+    "fullyQualifiedName": "check_member_to_next_page.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,10 +13,10 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
-    "collectionId": "Main_select_user",
+    "pageId": "Main old",
+    "collectionId": "Main old_check_member_to_next_page",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_select_user.userfunc",
+  "id": "Main old_check_member_to_next_page.myFun2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6449e5cf8424293fe7876e3f"
+  "gitSyncId": "644a56e901e69b53ba6da885_644a5a425fde903bd9cad5bc"
 }

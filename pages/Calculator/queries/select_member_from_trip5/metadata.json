@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "cal_expense4_but_from_event",
+    "name": "select_member_from_trip5",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT  {{appsmith.store.expense2}} / {{appsmith.store.member_join_event4}} + {{appsmith.store.expense_member4}} as SUM\n\nfrom list_expense\n\ninner join expense_history\non expense_history.list_expense_id = list_expense.list_expense_id\n",
+      "body": "SELECT event_trip_id, member.member_id, member_firstname || ' ' || member_lastname AS member_fullname \nFROM event_member \nINNER JOIN member \nON member.member_id = event_member.member_id\nWHERE event_trip_id = {{Select_trip5.selectedOptionValue}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,16 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.expense2",
-      "appsmith.store.expense_member4",
-      "appsmith.store.member_join_event4"
+      "Select_trip5.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_cal_expense4_but_from_event",
+  "id": "Calculator_select_member_from_trip5",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6442464d8424293fe7876d48"
+  "gitSyncId": "644a56e901e69b53ba6da885_644fdd3dfa5a4058b8774f63"
 }

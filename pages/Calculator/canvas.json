@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 690,
+          "bottomRow": 770,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 78,
           "minHeight": 690,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -821,7 +821,7 @@
                               "parentRowSpace": 10,
                               "type": "TABS_WIDGET",
                               "hideCard": false,
-                              "shouldScrollContents": false,
+                              "shouldScrollContents": true,
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [],
@@ -1668,7 +1668,7 @@
                                         "label"
                                       ],
                                       "topRow": 23,
-                                      "bottomRow": 27,
+                                      "bottomRow": 28,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -1723,8 +1723,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 28,
-                                      "bottomRow": 32,
+                                      "topRow": 29,
+                                      "bottomRow": 33,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -1817,7 +1817,7 @@
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "onDropdownClose": "{{Cal_member.myFun2()}}",
+                                      "onDropdownClose": "",
                                       "options": "{{select_member_from_trip3.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
                                       "labelStyle": "BOLD",
                                       "placeholderText": "Select option",
@@ -1904,7 +1904,7 @@
                                       "shouldTruncate": false,
                                       "borderWidth": "",
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "คำนวณค่าใช้จ่าย ของแต่ละคน",
+                                      "text": "คำนวณค่าใช้จ่ายแบบหารต่อกิจกรรม",
                                       "key": "osq6l8lqxh",
                                       "isDeprecated": false,
                                       "rightColumn": 63,
@@ -2109,7 +2109,7 @@
                                       ],
                                       "labelPosition": "Left",
                                       "onDropdownClose": "",
-                                      "options": "{{select_member_from_trip4.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
+                                      "options": "{{select_member_from_event4.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
                                       "labelStyle": "BOLD",
                                       "placeholderText": "Select option",
                                       "isDisabled": false,
@@ -2117,7 +2117,7 @@
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "isDeprecated": false,
-                                      "rightColumn": 61,
+                                      "rightColumn": 63,
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "ehf9mcg2yg",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2142,8 +2142,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 24,
-                                      "bottomRow": 28,
+                                      "topRow": 26,
+                                      "bottomRow": 31,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2170,7 +2170,7 @@
                                       "text": "ค่าใช้จ่ายของสมาชิก\n{{Select_member4.selectedOptionLabel}}",
                                       "key": "osq6l8lqxh",
                                       "isDeprecated": false,
-                                      "rightColumn": 64,
+                                      "rightColumn": 63,
                                       "backgroundColor": "transparent",
                                       "textAlign": "CENTER",
                                       "dynamicHeight": "AUTO_HEIGHT",
@@ -2182,10 +2182,10 @@
                                       "parentId": "nw8xg05th8",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 23,
+                                      "originalTopRow": 26,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 27,
+                                      "originalBottomRow": 31,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2198,8 +2198,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 29,
-                                      "bottomRow": 33,
+                                      "topRow": 32,
+                                      "bottomRow": 36,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2229,7 +2229,7 @@
                                       "text": "{{appsmith.store.expesne_form_event4}} บาท",
                                       "key": "osq6l8lqxh",
                                       "isDeprecated": false,
-                                      "rightColumn": 64,
+                                      "rightColumn": 63,
                                       "backgroundColor": "transparent",
                                       "textAlign": "CENTER",
                                       "dynamicHeight": "AUTO_HEIGHT",
@@ -2241,10 +2241,10 @@
                                       "parentId": "nw8xg05th8",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 28,
+                                      "originalTopRow": 32,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 32,
+                                      "originalBottomRow": 36,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
@@ -2261,6 +2261,355 @@
                                   "parentId": "bx3qds2f50",
                                   "renderMode": "CANVAS",
                                   "isLoading": false
+                                },
+                                {
+                                  "tabId": "tabntpo2vnjy5",
+                                  "mobileBottomRow": 421,
+                                  "widgetName": "Canvas11",
+                                  "displayName": "Canvas",
+                                  "topRow": 1,
+                                  "bottomRow": 420,
+                                  "parentRowSpace": 1,
+                                  "type": "CANVAS_WIDGET",
+                                  "canExtend": false,
+                                  "hideCard": true,
+                                  "minHeight": 420,
+                                  "mobileRightColumn": 360.6875,
+                                  "parentColumnSpace": 1,
+                                  "leftColumn": 0,
+                                  "dynamicBindingPathList": [],
+                                  "children": [
+                                    {
+                                      "widgetName": "Text6CopyCopyCopy1",
+                                      "borderColor": "transparent",
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 0,
+                                      "bottomRow": 4,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "Poppins",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "คำนวณค่าใช้จ่ายแบบหารต่อทริป",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 63,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "x6pmb6evhv",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#ec4899",
+                                      "version": 1,
+                                      "parentId": "4yrvhuu8jt",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 0,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 4,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "boxShadow": "none",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "ทริป",
+                                      "topRow": 5,
+                                      "labelWidth": "10",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "defaultOptionValue": "",
+                                      "animateLoading": true,
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        }
+                                      ],
+                                      "options": "{{select_trip.data.map(s =>({label : s.name, value : s.event_trip_id}))}}",
+                                      "labelStyle": "BOLD",
+                                      "placeholderText": "กรุณาเลือกทริป",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "dynamicHeight": "FIXED",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "originalBottomRow": 9,
+                                      "widgetName": "Select_trip5",
+                                      "isFilterable": true,
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Select",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "bottomRow": 9,
+                                      "parentRowSpace": 10,
+                                      "hideCard": false,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onDropdownOpen"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "",
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isDeprecated": false,
+                                      "rightColumn": 63,
+                                      "widgetId": "wxrqet85fk",
+                                      "parentId": "4yrvhuu8jt",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "originalTopRow": 5,
+                                      "maxDynamicHeight": 9000,
+                                      "onOptionChange": "{{Cal_expense_5.myFun2();}}",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "boxShadow": "none",
+                                      "widgetName": "Select_member5",
+                                      "isFilterable": true,
+                                      "displayName": "Select",
+                                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                                      "labelText": "สมาชิก",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "topRow": 10,
+                                      "bottomRow": 14,
+                                      "parentRowSpace": 10,
+                                      "labelWidth": "12",
+                                      "type": "SELECT_WIDGET",
+                                      "serverSideFiltering": false,
+                                      "hideCard": false,
+                                      "defaultOptionValue": "",
+                                      "animateLoading": true,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onDropdownOpen"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "options"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "{{Cal_member.myFun2()}}",
+                                      "options": "{{select_member_from_trip5.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
+                                      "labelStyle": "BOLD",
+                                      "placeholderText": "Select option",
+                                      "isDisabled": false,
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isRequired": false,
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "dynamicHeight": "FIXED",
+                                      "widgetId": "7qii5rdazo",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "4yrvhuu8jt",
+                                      "onDropdownOpen": "",
+                                      "labelAlignment": "left",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 17,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 21,
+                                      "onOptionChange": "{{Cal_member.myFun2()}}",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text7Copy1CopyCopy1",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 16,
+                                      "bottomRow": 20,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "Rubik",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "text"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "ค่าใช้จ่ายของสมาชิก\n{{Select_member3.selectedOptionLabel}}",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 63,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "37fr6sgon6",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "4yrvhuu8jt",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 23,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 27,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    },
+                                    {
+                                      "widgetName": "Text7CopyCopyCopyCopy1",
+                                      "displayName": "Text",
+                                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                                      "searchTags": [
+                                        "typography",
+                                        "paragraph",
+                                        "label"
+                                      ],
+                                      "topRow": 23,
+                                      "bottomRow": 27,
+                                      "parentRowSpace": 10,
+                                      "type": "TEXT_WIDGET",
+                                      "hideCard": false,
+                                      "animateLoading": true,
+                                      "overflow": "NONE",
+                                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                                      "parentColumnSpace": 5.3232421875,
+                                      "dynamicTriggerPathList": [],
+                                      "leftColumn": 0,
+                                      "dynamicBindingPathList": [
+                                        {
+                                          "key": "truncateButtonColor"
+                                        },
+                                        {
+                                          "key": "fontFamily"
+                                        },
+                                        {
+                                          "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "text"
+                                        }
+                                      ],
+                                      "shouldTruncate": false,
+                                      "borderWidth": "",
+                                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "text": "{{appsmith.store.expense_member}} บาท",
+                                      "key": "osq6l8lqxh",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "backgroundColor": "transparent",
+                                      "textAlign": "CENTER",
+                                      "dynamicHeight": "AUTO_HEIGHT",
+                                      "widgetId": "isy05qm4me",
+                                      "isVisible": true,
+                                      "fontStyle": "BOLD",
+                                      "textColor": "#f87171",
+                                      "version": 1,
+                                      "parentId": "4yrvhuu8jt",
+                                      "renderMode": "CANVAS",
+                                      "isLoading": false,
+                                      "originalTopRow": 28,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "maxDynamicHeight": 9000,
+                                      "originalBottomRow": 32,
+                                      "fontSize": "1rem",
+                                      "minDynamicHeight": 4
+                                    }
+                                  ],
+                                  "key": "xfh61kj04m",
+                                  "isDeprecated": false,
+                                  "tabName": "Tab 5",
+                                  "rightColumn": 360.6875,
+                                  "detachFromLayout": true,
+                                  "widgetId": "4yrvhuu8jt",
+                                  "containerStyle": "none",
+                                  "minWidth": 450,
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "bx3qds2f50",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false,
+                                  "mobileTopRow": 1,
+                                  "responsiveBehavior": "fill",
+                                  "mobileLeftColumn": 0,
+                                  "flexLayers": []
                                 }
                               ],
                               "borderWidth": 1,
@@ -2305,6 +2654,13 @@
                                   "widgetId": "nw8xg05th8",
                                   "isVisible": true,
                                   "isDuplicateLabel": false
+                                },
+                                "tabntpo2vnjy5": {
+                                  "id": "tabntpo2vnjy5",
+                                  "index": 4,
+                                  "label": "Tab 5",
+                                  "widgetId": "4yrvhuu8jt",
+                                  "isVisible": true
                                 }
                               },
                               "isVisible": true,
@@ -2320,6 +2676,16 @@
                               "isCompact": false,
                               "boxShadow": "none",
                               "widgetName": "MenuButton2",
+                              "configureMenuItems": {
+                                "label": "Configure Menu Items",
+                                "id": "config",
+                                "config": {
+                                  "id": "config",
+                                  "label": "Menu Item",
+                                  "isVisible": true,
+                                  "isDisabled": false
+                                }
+                              },
                               "dynamicPropertyPathList": [],
                               "displayName": "Menu Button",
                               "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
@@ -2342,6 +2708,9 @@
                                 },
                                 {
                                   "key": "menuItems.menuItemjcrwfga72u.onClick"
+                                },
+                                {
+                                  "key": "menuItems.menuItemct2cfwo6nd.onClick"
                                 }
                               ],
                               "leftColumn": 3,
@@ -2354,6 +2723,7 @@
                                 }
                               ],
                               "isDisabled": false,
+                              "sourceData": [],
                               "key": "5aqyl4b1u6",
                               "isDeprecated": false,
                               "rightColumn": 61,
@@ -2367,7 +2737,9 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 0,
-                                  "onClick": "{{navi_to_tabb.tabb1()}}"
+                                  "onClick": "{{navi_to_tabb.tabb1()}}",
+                                  "iconColor": "",
+                                  "backgroundColor": "#fdcfdf"
                                 },
                                 "menuItem2": {
                                   "label": "ค่าใช้จ่ายตามกิจกรรม ภายในทริป",
@@ -2376,7 +2748,8 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 1,
-                                  "onClick": "{{navi_to_tabb.tabb2()}}"
+                                  "onClick": "{{navi_to_tabb.tabb2()}}",
+                                  "backgroundColor": "#fdcfdf"
                                 },
                                 "menuItem3": {
                                   "label": "ค่าใช้จ่ายของสมาชิก ตามกิจกรรม",
@@ -2385,16 +2758,27 @@
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 2,
-                                  "onClick": "{{navi_to_tabb.tabb3()}}"
+                                  "onClick": "{{navi_to_tabb.tabb3()}}",
+                                  "backgroundColor": "#fdcfdf"
                                 },
                                 "menuItemjcrwfga72u": {
                                   "id": "menuItemjcrwfga72u",
                                   "index": 3,
-                                  "label": "หารค่าใช้จ่ายของสมาชิก ตามกิจกรรม",
+                                  "label": "ค่าใช้จ่ายแบบหารต่อกิจกรรม ของสมาชิก",
                                   "widgetId": "7oooq8frmm",
                                   "isDisabled": false,
                                   "isVisible": true,
-                                  "onClick": "{{navi_to_tabb.tabb4()}}"
+                                  "onClick": "{{navi_to_tabb.tabb4()}}",
+                                  "backgroundColor": "#fdcfdf"
+                                },
+                                "menuItemct2cfwo6nd": {
+                                  "id": "menuItemct2cfwo6nd",
+                                  "index": 4,
+                                  "label": "ค่าใช้จ่ายแบบหารต่อทริป ของสมาชิก",
+                                  "widgetId": "i1a7w7zr5e",
+                                  "isDisabled": false,
+                                  "isVisible": true,
+                                  "onClick": "{{navi_to_tabb.tabb5();}}"
                                 }
                               },
                               "isVisible": true,
@@ -3499,6 +3883,18 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.member_username"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Calculator_select_member_from_event4",
+              "name": "select_member_from_event4",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Select_event4.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

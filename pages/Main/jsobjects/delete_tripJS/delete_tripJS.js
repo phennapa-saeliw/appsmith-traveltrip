@@ -6,6 +6,7 @@ export default {
 		await create_trip_select_user.run()
 
 		 await create_trip_user_JS.run()
+		await event_trip.run()
  
 	}
 	

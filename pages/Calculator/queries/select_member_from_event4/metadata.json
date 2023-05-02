@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "cal_expense4_but_from_event",
+    "name": "select_member_from_event4",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT  {{appsmith.store.expense2}} / {{appsmith.store.member_join_event4}} + {{appsmith.store.expense_member4}} as SUM\n\nfrom list_expense\n\ninner join expense_history\non expense_history.list_expense_id = list_expense.list_expense_id\n",
+      "body": "SELECT event_history.* ,member_join_event.member_id , member_join_event.event_history_id , \nmember_firstname || ' ' || member_lastname AS member_fullname\nFROM event_history\ninner join member_join_event\non member_join_event.event_history_id = event_history.event_history_id\ninner join member\non member.member_id = member_join_event.member_id \n\nWHERE member_join_event.event_history_id  = {{Select_event4.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,16 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.expense2",
-      "appsmith.store.expense_member4",
-      "appsmith.store.member_join_event4"
+      "Select_event4.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_cal_expense4_but_from_event",
+  "id": "Calculator_select_member_from_event4",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6442464d8424293fe7876d48"
+  "gitSyncId": "644a56e901e69b53ba6da885_6450c7d2918e43297bcc1f15"
 }

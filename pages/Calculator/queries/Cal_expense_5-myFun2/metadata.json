@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "userfunc",
-    "fullyQualifiedName": "select_user.userfunc",
+    "name": "myFun2",
+    "fullyQualifiedName": "Cal_expense_5.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
-    "collectionId": "Main_select_user",
+    "pageId": "Calculator",
+    "collectionId": "Calculator_Cal_expense_5",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -24,6 +24,7 @@
       "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -37,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_select_user.userfunc",
+  "id": "Calculator_Cal_expense_5.myFun2",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6449e5cf8424293fe7876e3f"
+  "gitSyncId": "644a56e901e69b53ba6da885_644fdb6f92c5434b5a5a48b8"
 }

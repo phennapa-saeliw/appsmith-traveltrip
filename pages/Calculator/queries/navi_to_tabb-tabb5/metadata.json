@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "userfunc",
-    "fullyQualifiedName": "select_user.userfunc",
+    "name": "tabb5",
+    "fullyQualifiedName": "navi_to_tabb.tabb5",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
-    "collectionId": "Main_select_user",
+    "pageId": "Calculator",
+    "collectionId": "Calculator_navi_to_tabb",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_select_user.userfunc",
+  "id": "Calculator_navi_to_tabb.tabb5",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6449e5cf8424293fe7876e3f"
+  "gitSyncId": "644a56e901e69b53ba6da885_644fdae1bf34ca68b34ef012"
 }

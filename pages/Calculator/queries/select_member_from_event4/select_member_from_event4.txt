@@ -1,0 +1,9 @@
+SELECT event_history.* ,member_join_event.member_id , member_join_event.event_history_id , 
+member_firstname || ' ' || member_lastname AS member_fullname
+FROM event_history
+inner join member_join_event
+on member_join_event.event_history_id = event_history.event_history_id
+inner join member
+on member.member_id = member_join_event.member_id 
+
+WHERE member_join_event.event_history_id  = {{Select_event4.selectedOptionValue}}

@@ -2,6 +2,31 @@ export default {
 
 	myFun2: async () => {
 		
+				if(input_username.inputText == ''){
+					showAlert('กรุณากรอก username')
+					return;
+				}
+		
+				if(input_password1.inputText == ''){
+					showAlert('กรุณากรอก Password')
+					return;
+				}
+		
+				if(input_password2.inputText == ''){
+					showAlert('กรุณากรอก Re-Password ')
+					return;
+				} 
+		
+				if(input_firstname.inputText == ''){
+				showAlert('กรุณากรอก fistname !')
+				return;
+				}
+		
+				if(input_lastname.inputText == ''){
+				showAlert('กรุณากรอก lastname !')
+				return;
+				}
+		
 			check_username.run(() => {
 			let result = check_username.data;
 			

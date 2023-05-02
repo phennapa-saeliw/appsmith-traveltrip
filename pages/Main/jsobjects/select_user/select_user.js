@@ -8,6 +8,8 @@ export default {
 		await create_trip.run()
 		await create_trip_select_user.run()
 		
+		await event_trip.run()
+		
 	  /*
 		
 		let trip_id = create_trip_select_user.data[0].event_trip_id

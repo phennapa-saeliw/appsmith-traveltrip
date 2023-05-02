@@ -22,6 +22,7 @@ export default {
 
     }
 		
+		await event_history_trip.run()
 		
 		
 }

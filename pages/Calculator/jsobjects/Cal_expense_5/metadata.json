@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Cal_expense_5",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_Cal_expense_5",
+  "deleted": false,
+  "gitSyncId": "644a56e901e69b53ba6da885_644fdb6f92c5434b5a5a48ba"
+}

@@ -1,0 +1,3 @@
+SELECT COUNT(member_id) FROM member_join_event
+inner join event_history
+
