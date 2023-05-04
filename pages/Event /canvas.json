@@ -4885,7 +4885,7 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "#ec4899",
-                          "onClick": "{{storeValue('tab','Tab 1')}}"
+                          "onClick": "{{storeValue('tab', 'Tab 1');\nshowAlert('เข้าสู่หน้าแสดงรายการกิจกรรมย่อยเรียบร้อย', 'success');}}"
                         },
                         "groupButton2": {
                           "label": "Add",
@@ -4898,8 +4898,8 @@
                           "isDisabled": false,
                           "index": 1,
                           "menuItems": {},
-                          "buttonColor": "#fff",
-                          "onClick": "{{storeValue('tab','Tab 2')}}"
+                          "buttonColor": "#ec4899",
+                          "onClick": "{{storeValue('tab', 'Tab 2');\nshowAlert('เข้าสู่หน้าเพิ่มรายการกิจกรรมย่อยเรียบร้อย', 'success');}}"
                         },
                         "groupButtonkoxtulebzl": {
                           "id": "groupButtonkoxtulebzl",
@@ -9166,18 +9166,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Event _event_history_trip",
-              "name": "event_history_trip",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.event_trip_detail.event_trip_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Event _SC_event_type",
               "name": "SC_event_type",
               "confirmBeforeExecute": false,
@@ -9192,16 +9180,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Event _n_select_user_join_form_store",
-              "name": "n_select_user_join_form_store",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.trip_id"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -9214,6 +9192,16 @@
                 "List2Copy.triggeredItem.event_history_id"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _event_history_trip",
+              "name": "event_history_trip",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.event_trip_detail.event_trip_id"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -9224,6 +9212,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "List2Copy.triggeredItem.event_history_id",
+                "appsmith.store.trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _n_select_user_join_form_store",
+              "name": "n_select_user_join_form_store",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
                 "appsmith.store.trip_id"
               ],
               "timeoutInMillisecond": 10000

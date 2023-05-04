@@ -2143,7 +2143,7 @@
                                         "label"
                                       ],
                                       "topRow": 26,
-                                      "bottomRow": 31,
+                                      "bottomRow": 30,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2198,8 +2198,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 32,
-                                      "bottomRow": 36,
+                                      "topRow": 31,
+                                      "bottomRow": 35,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2777,7 +2777,7 @@
                                   "label": "ค่าใช้จ่ายแบบหารต่อทริป ของสมาชิก",
                                   "widgetId": "i1a7w7zr5e",
                                   "isDisabled": false,
-                                  "isVisible": true,
+                                  "isVisible": false,
                                   "onClick": "{{navi_to_tabb.tabb5();}}"
                                 }
                               },
@@ -3883,18 +3883,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "appsmith.store.member_username"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Calculator_select_member_from_event4",
-              "name": "select_member_from_event4",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Select_event4.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

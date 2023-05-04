@@ -4508,7 +4508,7 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "isCompact": false,
+                              "isCompact": true,
                               "boxShadow": "none",
                               "widgetName": "MenuButton1",
                               "configureMenuItems": {
@@ -4540,14 +4540,14 @@
                                   "key": "menuItems.menuItem1.onClick"
                                 }
                               ],
-                              "leftColumn": 56,
+                              "leftColumn": 55,
                               "dynamicBindingPathList": [],
                               "isDisabled": false,
                               "sourceData": "[]",
                               "key": "bu74nu1clm",
                               "sourceDataKeys": [],
                               "isDeprecated": false,
-                              "rightColumn": 64,
+                              "rightColumn": 63,
                               "iconName": "align-justify",
                               "menuVariant": "PRIMARY",
                               "widgetId": "vloi0chck4",
@@ -4597,7 +4597,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 6.21875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 17,
+                              "leftColumn": 16,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -4607,7 +4607,7 @@
                               "isDisabled": true,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 35,
+                              "rightColumn": 34,
                               "isDefaultClickDisabled": true,
                               "iconName": "map-marker",
                               "widgetId": "lluy535uf1",
@@ -4647,7 +4647,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 35,
+                              "leftColumn": 34,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -4657,7 +4657,7 @@
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 54,
                               "isDefaultClickDisabled": true,
                               "iconName": "calculator",
                               "widgetId": "xnga2ltmww",
@@ -4707,7 +4707,7 @@
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 17,
+                              "rightColumn": 16,
                               "isDefaultClickDisabled": true,
                               "iconName": "home",
                               "widgetId": "japn1lxp0g",

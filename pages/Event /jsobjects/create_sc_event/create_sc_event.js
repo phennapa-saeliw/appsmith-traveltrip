@@ -6,14 +6,15 @@ export default {
 
     if (SC_event_form.formData.customField6 != '') {
 			// แบบจ่ายคนเดียว
-      showAlert('เข้า1')
+      //showAlert('เข้า1')
       let one_or_two = 1
       storeValue('one_or_two', one_or_two)
       await SC_event_create.run();
 
-			//แบบจ่ายหาร
+			
     } else {
-      showAlert('เข้า 2')
+			//แบบจ่ายหาร
+      //showAlert('เข้า 2')
       let one_or_two = 2
       storeValue('one_or_two', one_or_two)
       await SC_event_create.run();
