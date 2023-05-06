@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "check_select_from_cal_3",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_check_select_from_cal_3",
+  "deleted": false,
+  "gitSyncId": "644a56e901e69b53ba6da885_6454e2b8bd80bc02b63ea00b"
+}

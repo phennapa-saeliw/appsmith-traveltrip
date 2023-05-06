@@ -1,1 +1,1 @@
-select * from list_expense 
+select * from list_expense order by list_expense_id desc 

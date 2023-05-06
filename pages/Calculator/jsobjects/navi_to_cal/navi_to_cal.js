@@ -1,7 +1,7 @@
 export default {
 	
 	myFun2: async () => {
-		navigateTo('Calculator', {}, 'SAME_WINDOW')
+		
 		
 		let expense_all = 0;
 		storeValue('expense_all',expense_all)
@@ -12,6 +12,17 @@ export default {
 		
 		let expesne_form_event4 = 0
 		storeValue('expesne_form_event4',expesne_form_event4)
+		
+		
+		resetWidget('Select1','true')
+		
+		{{storeValue('tabb','Tab 1')}}
+		
+		
+		navigateTo('Calculator', {}, 'SAME_WINDOW')
+		
+		
+		
 		
 		}
 	}

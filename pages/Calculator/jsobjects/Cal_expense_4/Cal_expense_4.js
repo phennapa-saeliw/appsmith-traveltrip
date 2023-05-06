@@ -1,16 +1,17 @@
 export default {
 
 	myFun2: async () => {
-		
-			
-			
 
 			if(Select_trip4.selectedOptionValue.length != 0){
 			await select_event_form_trip_id4.run()
-			await select_member_from_event4.run()
-	
-			
+
 		}
+			if(Select_event4.selectedOptionValue.length != 0){
+				await select_member_from_event4.run()
+			
+				
+			}
+		
 		
 		 if(Select_trip4.selectedOptionValue == ''){
 			 

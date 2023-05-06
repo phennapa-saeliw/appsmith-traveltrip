@@ -4806,7 +4806,7 @@
                               "key": "1ojvgm3hgy",
                               "isDeprecated": false,
                               "rightColumn": 59,
-                              "textAlign": "LEFT",
+                              "textAlign": "CENTER",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "e4pg3m9csu",
                               "isVisible": true,
@@ -4874,7 +4874,7 @@
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton1": {
-                          "label": "List ",
+                          "label": "แสดงรายการค่าใช้จ่าย",
                           "iconName": "list",
                           "id": "groupButton1",
                           "widgetId": "",
@@ -4885,10 +4885,10 @@
                           "index": 0,
                           "menuItems": {},
                           "buttonColor": "#ec4899",
-                          "onClick": "{{storeValue('tab', 'Tab 1');\nshowAlert('เข้าสู่หน้าแสดงรายการกิจกรรมย่อยเรียบร้อย', 'success');}}"
+                          "onClick": "{{storeValue('tab', 'Tab 1');\nshowAlert('แสดงรายการค่าใช้จ่าย', 'success');}}"
                         },
                         "groupButton2": {
-                          "label": "Add",
+                          "label": "เพิ่มรายการค่าใช้จ่าย",
                           "iconName": "add",
                           "id": "groupButton2",
                           "buttonType": "SIMPLE",
@@ -4897,9 +4897,18 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "menuItems": {},
+                          "menuItems": {
+                            "menuItemzmho0yexza": {
+                              "id": "menuItemzmho0yexza",
+                              "index": 0,
+                              "label": "Menu Item 1",
+                              "widgetId": "b4g1ffpz0q",
+                              "isDisabled": false,
+                              "isVisible": true
+                            }
+                          },
                           "buttonColor": "#ec4899",
-                          "onClick": "{{storeValue('tab', 'Tab 2');\nshowAlert('เข้าสู่หน้าเพิ่มรายการกิจกรรมย่อยเรียบร้อย', 'success');}}"
+                          "onClick": "{{storeValue('tab', 'Tab 2');}}"
                         },
                         "groupButtonkoxtulebzl": {
                           "id": "groupButtonkoxtulebzl",
@@ -4966,8 +4975,8 @@
                       "dynamicPropertyPathList": [],
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-                      "topRow": 12,
-                      "bottomRow": 62,
+                      "topRow": 11,
+                      "bottomRow": 61,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -5420,7 +5429,7 @@
                               "borderColor": "#E0DEDE",
                               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
                               "onSubmit": "{{create_sc_event.myFun2(SC_event_show_table.run())}}/",
-                              "topRow": 0,
+                              "topRow": 4,
                               "type": "JSON_FORM_WIDGET",
                               "animateLoading": true,
                               "leftColumn": 0,
@@ -5784,7 +5793,7 @@
                                 }
                               ],
                               "displayName": "JSON Form",
-                              "bottomRow": 43,
+                              "bottomRow": 47,
                               "fieldLimitExceeded": false,
                               "parentRowSpace": 10,
                               "title": "",
@@ -5809,6 +5818,64 @@
                               "fixedFooter": true,
                               "originalTopRow": 22,
                               "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "mobileBottomRow": 4,
+                              "widgetName": "Text9",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 16,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 5.77392578125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "เพิ่มรายการค่าใช้จ่าย",
+                              "key": "thxrehu326",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "textAlign": "CENTER",
+                              "dynamicHeight": "AUTO_HEIGHT",
+                              "widgetId": "3hdjcgqmvb",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "87xpgl8jcf",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 0,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "mobileLeftColumn": 0,
+                              "maxDynamicHeight": 9000,
+                              "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
                           ],
@@ -7859,7 +7926,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Container2",
+                      "widgetName": "Container2Copy1",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Container",
@@ -7870,7 +7937,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 7,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -7886,10 +7953,10 @@
                       ],
                       "children": [
                         {
-                          "widgetName": "Canvas2",
+                          "widgetName": "Canvas2Copy1",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 110,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -7900,149 +7967,9 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "resetFormOnClick": false,
+                              "isCompact": true,
                               "boxShadow": "none",
-                              "widgetName": "Button2Copy2",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 18,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Map",
-                              "isDisabled": true,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 36,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "map-marker",
-                              "widgetId": "3sz6vpw3f6",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy1",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 6,
-                              "bottomRow": 11,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 20,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Main",
-                              "isDisabled": false,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 40,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "home",
-                              "widgetId": "nepl9c2ojk",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy3",
-                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
-                              "leftColumn": 36,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "calculator",
-                              "isDisabled": false,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 56,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "calculator",
-                              "widgetId": "tns9lwa9lg",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "isCompact": false,
-                              "boxShadow": "none",
-                              "widgetName": "MenuButton1",
+                              "widgetName": "MenuButton1Copy",
                               "configureMenuItems": {
                                 "label": "Configure Menu Items",
                                 "id": "config",
@@ -8053,11 +7980,15 @@
                                   "isDisabled": false
                                 }
                               },
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
                               "displayName": "Menu Button",
                               "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
                               "topRow": 0,
-                              "bottomRow": 6,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "MENU_BUTTON_WIDGET",
                               "hideCard": false,
@@ -8068,49 +7999,54 @@
                                   "key": "menuItems.menuItem1.onClick"
                                 }
                               ],
-                              "leftColumn": 56,
-                              "dynamicBindingPathList": [],
+                              "leftColumn": 45,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
                               "isDisabled": false,
                               "sourceData": "[]",
                               "key": "bu74nu1clm",
                               "sourceDataKeys": [],
                               "isDeprecated": false,
-                              "rightColumn": 64,
+                              "rightColumn": 63,
                               "iconName": "align-justify",
                               "menuVariant": "PRIMARY",
-                              "widgetId": "q6zsyj1tdc",
+                              "widgetId": "v7udao1s4o",
                               "menuItems": {
                                 "menuItem1": {
-                                  "label": "Logout",
+                                  "label": "ออกจากระบบ",
                                   "id": "menuItem1",
                                   "widgetId": "",
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 0,
-                                  "iconColor": "transparent",
+                                  "iconColor": "#18181b",
                                   "textColor": "#fff",
                                   "backgroundColor": "#ec4899",
-                                  "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}"
+                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}",
+                                  "iconAlign": "left"
                                 }
                               },
                               "isVisible": true,
                               "label": "",
                               "version": 1,
-                              "parentId": "2cax0xex1o",
+                              "parentId": "u1hglmq5iw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "1.5rem",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "menuItemsSource": "STATIC",
                               "menuColor": "#FCA3CC",
-                              "iconAlign": "left",
                               "placement": "CENTER"
                             },
                             {
                               "resetFormOnClick": false,
                               "boxShadow": "none",
-                              "widgetName": "Button2",
-                              "onClick": "{{navigateTo('Main', {}, 'SAME_WINDOW')}}",
+                              "widgetName": "Button2Copy4",
+                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fff",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -8118,7 +8054,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -8129,24 +8065,74 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 19,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Main",
+                              "text": "คำนวณค่าใช้จ่าย",
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 18,
+                              "rightColumn": 45,
                               "isDefaultClickDisabled": true,
-                              "iconName": "home",
-                              "widgetId": "puazxj4vpa",
+                              "iconName": "calculator",
+                              "widgetId": "uqssuhxsz5",
                               "isVisible": true,
                               "recaptchaType": "V3",
                               "version": 1,
-                              "parentId": "2cax0xex1o",
+                              "parentId": "u1hglmq5iw",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "TERTIARY",
+                              "iconAlign": "left",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "Button2Copy5",
+                              "onClick": "{{navigateTo('Main', {}, 'SAME_WINDOW')}}",
+                              "buttonColor": "#fff",
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.21875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "หน้าหลัก",
+                              "isDisabled": false,
+                              "key": "nm7n23ob09",
+                              "isDeprecated": false,
+                              "rightColumn": 19,
+                              "isDefaultClickDisabled": true,
+                              "iconName": "home",
+                              "widgetId": "clxph911g3",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "u1hglmq5iw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
@@ -8160,11 +8146,11 @@
                           "isDeprecated": false,
                           "rightColumn": 156.75,
                           "detachFromLayout": true,
-                          "widgetId": "2cax0xex1o",
+                          "widgetId": "u1hglmq5iw",
                           "containerStyle": "none",
                           "isVisible": true,
                           "version": 1,
-                          "parentId": "smp3vjv4im",
+                          "parentId": "5ehkir24us",
                           "renderMode": "CANVAS",
                           "isLoading": false
                         }
@@ -8173,9 +8159,9 @@
                       "key": "dud65iiq2v",
                       "backgroundColor": "#ec4899",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "smp3vjv4im",
+                      "widgetId": "5ehkir24us",
                       "containerStyle": "card",
                       "isVisible": true,
                       "version": 1,
@@ -9166,6 +9152,18 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Event _event_history_trip",
+              "name": "event_history_trip",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.event_trip_detail.event_trip_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Event _SC_event_type",
               "name": "SC_event_type",
               "confirmBeforeExecute": false,
@@ -9180,6 +9178,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Event _n_select_user_join_form_store",
+              "name": "n_select_user_join_form_store",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.trip_id"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -9192,16 +9200,6 @@
                 "List2Copy.triggeredItem.event_history_id"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Event _event_history_trip",
-              "name": "event_history_trip",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.event_trip_detail.event_trip_id"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -9212,16 +9210,6 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "List2Copy.triggeredItem.event_history_id",
-                "appsmith.store.trip_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Event _n_select_user_join_form_store",
-              "name": "n_select_user_join_form_store",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
                 "appsmith.store.trip_id"
               ],
               "timeoutInMillisecond": 10000

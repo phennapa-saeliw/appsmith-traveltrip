@@ -4406,7 +4406,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "List Travel Trip ",
+                      "text": "รายการทริป",
                       "key": "sf3r6zjw7q",
                       "isDeprecated": false,
                       "rightColumn": 53,
@@ -4478,7 +4478,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 7,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -4497,7 +4497,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 70,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -4523,7 +4523,7 @@
                               },
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "iconName"
+                                  "key": "borderRadius"
                                 }
                               ],
                               "displayName": "Menu Button",
@@ -4540,8 +4540,12 @@
                                   "key": "menuItems.menuItem1.onClick"
                                 }
                               ],
-                              "leftColumn": 55,
-                              "dynamicBindingPathList": [],
+                              "leftColumn": 45,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
                               "isDisabled": false,
                               "sourceData": "[]",
                               "key": "bu74nu1clm",
@@ -4553,7 +4557,7 @@
                               "widgetId": "vloi0chck4",
                               "menuItems": {
                                 "menuItem1": {
-                                  "label": "Logout",
+                                  "label": "ออกจากระบบ",
                                   "id": "menuItem1",
                                   "widgetId": "",
                                   "isVisible": true,
@@ -4572,55 +4576,9 @@
                               "parentId": "a8ikkwn7ol",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "1.5rem",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "menuItemsSource": "STATIC",
                               "menuColor": "#FCA3CC",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy2",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 16,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Map",
-                              "isDisabled": true,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 34,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "map-marker",
-                              "widgetId": "lluy535uf1",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "a8ikkwn7ol",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
                               "placement": "CENTER"
                             },
                             {
@@ -4629,6 +4587,7 @@
                               "widgetName": "Button2Copy",
                               "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fff",
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -4636,7 +4595,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -4647,17 +4606,17 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 34,
+                              "leftColumn": 19,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "calculator",
+                              "text": "คำนวณค่าใช้จ่าย",
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 54,
+                              "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "iconName": "calculator",
                               "widgetId": "xnga2ltmww",
@@ -4686,7 +4645,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -4703,11 +4662,11 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Main",
+                              "text": "หน้าหลัก",
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 16,
+                              "rightColumn": 19,
                               "isDefaultClickDisabled": true,
                               "iconName": "home",
                               "widgetId": "japn1lxp0g",

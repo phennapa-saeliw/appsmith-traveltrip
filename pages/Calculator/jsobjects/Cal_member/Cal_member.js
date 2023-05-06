@@ -1,6 +1,6 @@
 export default {
   myFun2: async () => {
-		
+
 		let expense_member = 0;
 		storeValue('expense_member',expense_member);
 		
@@ -21,14 +21,15 @@ export default {
 		 }
 
     if (Select_member3.selectedOptionValue == '') {
-      showAlert('ไม่ได้เลือกสมาชิก');
+      //showAlert('ไม่ได้เลือกสมาชิก');
 			let expense_member = 0
 			storeValue('expense_member',expense_member)
 			
     } else{
       // showAlert('เลือกสมาชิกแล้ว')
+			select_member_from_trip3.run()
 			
-			select_event_form_trip_id3.run()
+		
 			
 			await cal_expense_member_2.run().then(()=>{
 				if(cal_expense_member_2.data.length != 0){
@@ -52,7 +53,10 @@ export default {
 					
 				}
 			}, ()=>{
-				showAlert('คิวรี่ไม่ได้')
+				showAlert('กรุณาเลือกทริปตามลำดับ')
+				reset_widget('Select_trip3','true')
+				reset_widget('Select_member3','true')
+				reset_widget('Select_event3','true')
 			})
 
 			

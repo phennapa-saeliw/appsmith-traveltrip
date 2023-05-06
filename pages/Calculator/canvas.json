@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -1579,7 +1579,7 @@
                                       "isVisible": true,
                                       "version": 1,
                                       "parentId": "892454fxm0",
-                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน','error'))}}",
+                                      "onDropdownOpen": "{{select_trip.run(() => {}, () => showAlert('กรุณาเลือกทริปก่อน', 'error'));}}",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
@@ -1655,7 +1655,7 @@
                                       "isLoading": false,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "onOptionChange": "{{Cal_member.myFun2()}}",
+                                      "onOptionChange": "{{Cal_member.myFun2();\nreset_widget.myFun2();}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -1668,7 +1668,7 @@
                                         "label"
                                       ],
                                       "topRow": 23,
-                                      "bottomRow": 28,
+                                      "bottomRow": 27,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -1723,8 +1723,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 29,
-                                      "bottomRow": 33,
+                                      "topRow": 28,
+                                      "bottomRow": 32,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2727,6 +2727,7 @@
                               "key": "5aqyl4b1u6",
                               "isDeprecated": false,
                               "rightColumn": 61,
+                              "iconName": "menu",
                               "menuVariant": "PRIMARY",
                               "widgetId": "wt2bv9py94",
                               "menuItems": {
@@ -2782,7 +2783,7 @@
                                 }
                               },
                               "isVisible": true,
-                              "label": "Open Menu",
+                              "label": "เมนู เลือกวิธีการคำนวณค่าใช้จ่าย",
                               "version": 1,
                               "parentId": "blirrmmdhu",
                               "renderMode": "CANVAS",
@@ -2790,6 +2791,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "menuItemsSource": "STATIC",
                               "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "iconAlign": "left",
                               "placement": "CENTER"
                             }
                           ],
@@ -2846,7 +2848,7 @@
                       "dynamicBindingPathList": [],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Calculator Expense",
+                      "text": "คำนวณ ค่าใช้จ่าย",
                       "key": "sf3r6zjw7q",
                       "isDeprecated": false,
                       "rightColumn": 55,
@@ -2878,7 +2880,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 7,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -2897,7 +2899,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 110,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -2908,148 +2910,7 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy2",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 18,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Map",
-                              "isDisabled": true,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 36,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "map-marker",
-                              "widgetId": "3sz6vpw3f6",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy1",
-                              "buttonColor": "#fff",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 6,
-                              "bottomRow": 11,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 20,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Main",
-                              "isDisabled": false,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 40,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "home",
-                              "widgetId": "nepl9c2ojk",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "Button2Copy3",
-                              "onClick": "{{navi_to_cal.myFun2()}}",
-                              "buttonColor": "#fff",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 5,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 6.21875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
-                              "leftColumn": 36,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "calculator",
-                              "isDisabled": false,
-                              "key": "nm7n23ob09",
-                              "isDeprecated": false,
-                              "rightColumn": 56,
-                              "isDefaultClickDisabled": true,
-                              "iconName": "calculator",
-                              "widgetId": "tns9lwa9lg",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "2cax0xex1o",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY",
-                              "iconAlign": "left",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "isCompact": false,
+                              "isCompact": true,
                               "boxShadow": "none",
                               "widgetName": "MenuButton1",
                               "configureMenuItems": {
@@ -3064,7 +2925,7 @@
                               },
                               "dynamicPropertyPathList": [
                                 {
-                                  "key": "iconName"
+                                  "key": "borderRadius"
                                 }
                               ],
                               "displayName": "Menu Button",
@@ -3081,10 +2942,10 @@
                                   "key": "menuItems.menuItem1.onClick"
                                 }
                               ],
-                              "leftColumn": 56,
+                              "leftColumn": 45,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "menuItems.menuItem1.backgroundColor"
+                                  "key": "borderRadius"
                                 }
                               ],
                               "isDisabled": false,
@@ -3092,33 +2953,84 @@
                               "key": "bu74nu1clm",
                               "sourceDataKeys": [],
                               "isDeprecated": false,
-                              "rightColumn": 64,
+                              "rightColumn": 63,
                               "iconName": "align-justify",
                               "menuVariant": "PRIMARY",
-                              "widgetId": "q6zsyj1tdc",
+                              "widgetId": "lkl2vong4e",
                               "menuItems": {
                                 "menuItem1": {
-                                  "label": "Logout",
+                                  "label": "ออกจากระบบ",
                                   "id": "menuItem1",
                                   "widgetId": "",
                                   "isVisible": true,
                                   "isDisabled": false,
                                   "index": 0,
-                                  "iconColor": "transparent",
+                                  "iconColor": "#18181b",
                                   "textColor": "#fff",
-                                  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
-                                  "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}"
+                                  "backgroundColor": "#ec4899",
+                                  "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}",
+                                  "iconAlign": "left"
                                 }
                               },
                               "isVisible": true,
                               "label": "",
                               "version": 1,
-                              "parentId": "2cax0xex1o",
+                              "parentId": "1knxe556dj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "1.5rem",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "menuItemsSource": "STATIC",
                               "menuColor": "#FCA3CC",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "Button2Copy",
+                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW');\nnavi_to_cal.myFun2();}}",
+                              "buttonColor": "#fff",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.21875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 19,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "คำนวณค่าใช้จ่าย",
+                              "isDisabled": false,
+                              "key": "nm7n23ob09",
+                              "isDeprecated": false,
+                              "rightColumn": 45,
+                              "isDefaultClickDisabled": true,
+                              "iconName": "calculator",
+                              "widgetId": "co58j30f03",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "1knxe556dj",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "TERTIARY",
                               "iconAlign": "left",
                               "placement": "CENTER"
                             },
@@ -3135,7 +3047,7 @@
                                 "submit"
                               ],
                               "topRow": 0,
-                              "bottomRow": 5,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -3146,24 +3058,24 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Main",
+                              "text": "หน้าหลัก",
                               "isDisabled": false,
                               "key": "nm7n23ob09",
                               "isDeprecated": false,
-                              "rightColumn": 18,
+                              "rightColumn": 19,
                               "isDefaultClickDisabled": true,
                               "iconName": "home",
-                              "widgetId": "puazxj4vpa",
+                              "widgetId": "8fwx5jqlar",
                               "isVisible": true,
                               "recaptchaType": "V3",
                               "version": 1,
-                              "parentId": "2cax0xex1o",
+                              "parentId": "1knxe556dj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
@@ -3177,11 +3089,11 @@
                           "isDeprecated": false,
                           "rightColumn": 156.75,
                           "detachFromLayout": true,
-                          "widgetId": "a8ikkwn7ol",
+                          "widgetId": "1knxe556dj",
                           "containerStyle": "none",
                           "isVisible": true,
                           "version": 1,
-                          "parentId": "3ac70p1ma7",
+                          "parentId": "xgsikwuuer",
                           "renderMode": "CANVAS",
                           "isLoading": false
                         }
@@ -3190,9 +3102,9 @@
                       "key": "dud65iiq2v",
                       "backgroundColor": "#ec4899",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "3ac70p1ma7",
+                      "widgetId": "xgsikwuuer",
                       "containerStyle": "card",
                       "isVisible": true,
                       "version": 1,

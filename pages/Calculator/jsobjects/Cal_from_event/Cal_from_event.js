@@ -48,7 +48,7 @@ export default {
           storeValue('member_in_event', member_in_event);
 						
 					}else{
-						showAlert('กรุณาเลือกกิจกรรม')
+						//showAlert('กรุณาเลือกกิจกรรม')
 						return;
 						
 					}
