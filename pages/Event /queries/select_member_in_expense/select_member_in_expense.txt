@@ -1,0 +1,4 @@
+SELECT expense_history.* ,  member_firstname || ' ' || member_lastname AS member_fullname FROM expense_history 
+inner join member
+on member.member_id = expense_history.member_id
+WHERE list_expense_id = {{list2.triggeredItem.list_expense_id}}

@@ -1,1 +1,0 @@
-SELECT member_id,member_firstname,member_lastname FROM member ORDER BY member_id LIMIT 10;

@@ -1,9 +1,0 @@
-INSERT INTO event_member ( member_id , event_trip_id )
-
-VALUES
-  (
-    '{{appsmith.store.user_id}}',
-		'{{appsmith.store.trip_id}}'
-		
-  )
-

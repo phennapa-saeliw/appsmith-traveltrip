@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_password",
+    "pageId": "Event ",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Event _JS_password",
+  "deleted": false,
+  "gitSyncId": "644a56e901e69b53ba6da885_6458bc4abd80bc02b63ec421"
+}

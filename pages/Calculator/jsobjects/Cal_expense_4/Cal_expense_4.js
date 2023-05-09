@@ -73,11 +73,12 @@ export default {
 						//showAlert('it null')
 						let expense_member4 = 0
 						storeValue('expense_member4',expense_member4)
-						
+						showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 						
 					}else{
 						storeValue('expense_member4',expense_member4)
 						console.log(expense_member4)
+						showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 						
 					}					
 					//select_member_from_trip3.run()

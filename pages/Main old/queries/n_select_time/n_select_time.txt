@@ -1,2 +1,0 @@
-SELECT * event_trip
-where event_trip_id = {{list2.triggeredItem.event_trip_id}}

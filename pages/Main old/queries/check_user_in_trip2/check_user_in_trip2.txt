@@ -1,1 +1,0 @@
-SELECT * FROM event_member where member_id = {{appsmith.store.user_id}}

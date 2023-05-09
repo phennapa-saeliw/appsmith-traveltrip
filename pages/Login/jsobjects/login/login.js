@@ -22,6 +22,7 @@ export default {
 					
 				if(check_login.data[0].member_password == Input_password.text){
 					console.log(check_login.data[0].member_password)
+					showAlert('เข้าสู่ระบบสำเร็จ','success')
 					navigateTo('Main','SAMEPAGE')
 					
 

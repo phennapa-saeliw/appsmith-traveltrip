@@ -20,21 +20,26 @@ export default {
 
 					let expense_all = cal_expense.data[0].sum
 					storeValue('expense_all',expense_all)
-					
-				
-					
+					showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 			
 				}else{
-					showAlert('กรุณารอสักครู่ เเล้วลองใหม่อีกครั้ง')
+					showAlert('กรุณารอสักครู่ เเล้วลองใหม่อีกครั้ง',)
 				}
+				
+				
 			}, ()=>{
-				showAlert('กรุณารอสักครู่ เเล้วลองใหม่อีกครั้ง')
+				showAlert('กรุณารอสักครู่ เเล้วลองใหม่อีกครั้ง','error')
 			})
+			
+			
+			if(sum_1.text != '0 บาท'){
+					showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
+				}
 
+		}  
+		
+
+	}	
 	
-		}  	
-
-	}
-
 
 }

@@ -202,7 +202,7 @@
                               "widgetId": "q2mdo9hxda",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "label": "Username",
+                              "label": "ชื่อบัญชี",
                               "version": 2,
                               "parentId": "tjjhm6sqcb",
                               "labelAlignment": "left",
@@ -265,7 +265,7 @@
                               "widgetId": "qixok2xx9h",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
-                              "label": "Password",
+                              "label": "รหัสผ่าน",
                               "version": 2,
                               "parentId": "tjjhm6sqcb",
                               "labelAlignment": "left",
@@ -304,7 +304,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 19,
+                              "leftColumn": 20,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -317,7 +317,7 @@
                               "isDisabled": false,
                               "key": "rtykqovv18",
                               "isDeprecated": false,
-                              "rightColumn": 44,
+                              "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "k4ujgqwqax",
                               "isVisible": true,
@@ -476,7 +476,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 0,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -489,7 +489,7 @@
                       "isDisabled": false,
                       "key": "rtykqovv18",
                       "isDeprecated": false,
-                      "rightColumn": 16,
+                      "rightColumn": 18,
                       "isDefaultClickDisabled": true,
                       "widgetId": "ef0hnj712i",
                       "isVisible": true,

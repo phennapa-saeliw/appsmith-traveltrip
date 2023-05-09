@@ -19,10 +19,6 @@
     {
       "id": "Calculator",
       "isDefault": false
-    },
-    {
-      "id": "Main old",
-      "isDefault": false
     }
   ],
   "viewMode": false,

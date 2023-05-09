@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "select_member_on_expense",
+    "name": "select_member_in_expense",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT expense_history.expense_history_id , expense_history.member_id , expense_history.list_expense_id , member.member_firstname || ' ' || member_lastname as member_fullname , list_expense.* FROM expense_history\ninner join member on member.member_id = expense_history.member_id\ninner join list_expense on list_expense.list_expense_id =  expense_history.list_expense_id\n\nwhere list_expense.list_expense_id = {{list2.triggeredItem.list_expense_id}}\n",
+      "body": "SELECT expense_history.* ,  member_firstname || ' ' || member_lastname AS member_fullname FROM expense_history \ninner join member\non member.member_id = expense_history.member_id\nWHERE list_expense_id = {{list2.triggeredItem.list_expense_id}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -43,7 +43,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event _select_member_on_expense",
+  "id": "Event _select_member_in_expense",
   "deleted": false,
-  "gitSyncId": "6402c1438424293fe7876437_6434f3ad8424293fe7876b31"
+  "gitSyncId": "644a56e901e69b53ba6da885_6458a191bd80bc02b63ec25b"
 }

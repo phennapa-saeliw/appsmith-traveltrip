@@ -40,10 +40,12 @@ export default {
 						let expense_member = 0
 						storeValue('expense_member',expense_member)
 						console.log(expense_member)
+						showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 						//showAlert('expense_member = '+ expense_member)
 						select_member_from_trip3.run()
 					}else{
 					storeValue('expense_member',expense_member)
+						showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 					//console.log(cal_expense_member_2.data[0].total_sum)
 					select_member_from_trip3.run()
 					}

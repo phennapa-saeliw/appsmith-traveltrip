@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_password",
+    "pageId": "Calculator",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Calculator_JS_password",
+  "deleted": false,
+  "gitSyncId": "644a56e901e69b53ba6da885_6458bd55d192432eef648ff8"
+}

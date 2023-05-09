@@ -1,1 +1,0 @@
-SELECT * FROM member where member_username = {{appsmith.store.member_username}}

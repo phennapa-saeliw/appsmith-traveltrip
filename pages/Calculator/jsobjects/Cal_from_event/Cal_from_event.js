@@ -36,6 +36,8 @@ export default {
 
 					let expense_all2 = cal_expense2.data[0].sum
 					storeValue('expense_all2',expense_all2)
+					
+					
 
 				}
 			})
@@ -53,7 +55,7 @@ export default {
 						
 					}
 					
-
+					
 					await cal_expense_individual.run() 
           let expense_individual = cal_expense_individual.data[0].expense_per_member
           storeValue('expense_individual',expense_individual)
@@ -62,13 +64,14 @@ export default {
 					await cal_expense2_but_from_event.run()
 					let cal_from_event_total = cal_expense2_but_from_event.data[0].sum
 					storeValue('cal_from_event_total',cal_from_event_total)
+					showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
 			
 					await select_member_from_trip.run()
-					
 			
 					
+					
 			
-			
-    }
-  }
+    } 
+					
+  } 
 };
