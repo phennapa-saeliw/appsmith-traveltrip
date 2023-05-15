@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "send_mail",
+    "pageId": "forgot password",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "forgot password_send_mail",
+  "deleted": false,
+  "gitSyncId": "644a56e901e69b53ba6da885_646227f9c50b670aac6d0b7b"
+}

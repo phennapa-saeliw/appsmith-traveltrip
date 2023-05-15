@@ -1,0 +1,1 @@
+SELECT member_username FROM member WHERE member_username = {{email_to_forgotpassword.inputText}}

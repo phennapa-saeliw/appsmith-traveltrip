@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Register",
-    "slug": "register",
+    "name": "forgot password",
+    "slug": "forgot-password",
     "layouts": [
       {
         "viewMode": false,
@@ -81,8 +81,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 61,
-                      "bottomRow": 65,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -93,7 +93,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 47,
+                      "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -103,19 +103,19 @@
                       "isDisabled": false,
                       "key": "rtykqovv18",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "isDefaultClickDisabled": true,
                       "widgetId": "srdrygfrcu",
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "4ppkmhpp22",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 62,
+                      "originalTopRow": 60,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 66,
+                      "originalBottomRow": 64,
                       "buttonVariant": "TERTIARY",
                       "placement": "CENTER"
                     },
@@ -129,8 +129,8 @@
                       ],
                       "displayName": "Image",
                       "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
-                      "topRow": 0,
-                      "bottomRow": 16,
+                      "topRow": 3,
+                      "bottomRow": 19,
                       "parentRowSpace": 10,
                       "type": "IMAGE_WIDGET",
                       "hideCard": false,
@@ -170,8 +170,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 23,
+                      "topRow": 20,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -219,8 +219,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 61,
-                      "bottomRow": 65,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -253,10 +253,10 @@
                       "parentId": "4ppkmhpp22",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 62,
+                      "originalTopRow": 60,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 66,
+                      "originalBottomRow": 64,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
@@ -267,12 +267,12 @@
                       "isCanvas": true,
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-                      "topRow": 23,
-                      "bottomRow": 60,
+                      "topRow": 34,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
-                      "shouldScrollContents": false,
+                      "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
                       "dynamicTriggerPathList": [
@@ -297,7 +297,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
-                          "bottomRow": 370,
+                          "bottomRow": 190,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -310,148 +310,6 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 25,
-                              "labelWidth": "20",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "validation"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "placeholderText": "กรอกนามสกุล",
-                              "maxChars": "50",
-                              "isDisabled": false,
-                              "validation": "{{input_password2.text.length < 30 }}",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 46,
-                              "widgetName": "input_lastname",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 29,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 6.3173828125,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "key": "izpsacawsr",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "widgetId": "00pj2k7kp7",
-                              "errorMessage": "ความยาวไม่เกิน 30 ตัวอักษร",
-                              "label": "นามสกุล",
-                              "parentId": "7cz3q36g8i",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "originalTopRow": 42,
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 21,
-                              "labelWidth": "20",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "validation"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "placeholderText": "กรอกชื่อ",
-                              "maxChars": "50",
-                              "isDisabled": false,
-                              "validation": "{{input_password2.text.length < 30 }}",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 46,
-                              "widgetName": "input_firstname",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 25,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 6.3173828125,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "key": "izpsacawsr",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "widgetId": "h4c3n0fefq",
-                              "errorMessage": "ความยาวไม่เกิน 30 ตัวอักษร",
-                              "label": "ชื่อ",
-                              "parentId": "7cz3q36g8i",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "originalTopRow": 42,
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1Copy1Copy",
@@ -463,8 +321,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 30,
-                              "bottomRow": 34,
+                              "topRow": 11,
+                              "bottomRow": 15,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -507,8 +365,9 @@
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 13,
-                              "labelWidth": "20",
+                              "topRow": 5,
+                              "tooltip": "กรอกอีเมลที่ใช้สมัครสมาชิก",
+                              "labelWidth": "17",
                               "type": "INPUT_WIDGET_V2",
                               "animateLoading": true,
                               "resetOnSubmit": true,
@@ -522,153 +381,11 @@
                                 },
                                 {
                                   "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "validation"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "PASSWORD",
-                              "placeholderText": "กรอกรหัสผ่านอีกครั้ง",
-                              "isDisabled": false,
-                              "validation": "{{input_password2.text.length < 30 }}",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 46,
-                              "widgetName": "input_password2",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 17,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 6.3173828125,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "key": "izpsacawsr",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "widgetId": "l6o1lczpii",
-                              "errorMessage": "ความยาวไม่เกิน 30 ตัวอักษร",
-                              "label": "ยืนยันรหัสผ่าน",
-                              "parentId": "7cz3q36g8i",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "originalTopRow": 42,
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 17,
-                              "tooltip": "ใช้สำหรับ กรณีลืมรหัสผ่าน",
-                              "labelWidth": "20",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "validation"
                                 }
                               ],
                               "labelStyle": "BOLD",
                               "inputType": "EMAIL",
-                              "placeholderText": "กรอกอีเมล",
-                              "isDisabled": false,
-                              "validation": "{{input_password2.text.length < 30 }}",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "iconName": "",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 46,
-                              "widgetName": "input_email",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 21,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 6.3173828125,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "key": "izpsacawsr",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "widgetId": "euut1kshek",
-                              "errorMessage": "ความยาวไม่เกิน 30 ตัวอักษร",
-                              "label": "อีเมล",
-                              "parentId": "7cz3q36g8i",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "originalTopRow": 42,
-                              "maxDynamicHeight": 9000,
-                              "shouldAllowAutofill": true,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 5,
-                              "labelWidth": "20",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "TEXT",
-                              "placeholderText": "กรอกชื่อบัญชี",
+                              "placeholderText": "กรุณากรอกอีเมล",
                               "maxChars": "30",
                               "isDisabled": false,
                               "isRequired": true,
@@ -680,7 +397,7 @@
                               "regex": "",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "originalBottomRow": 42,
-                              "widgetName": "input_username",
+                              "widgetName": "email_to_forgotpassword",
                               "displayName": "Input",
                               "searchTags": [
                                 "form",
@@ -701,80 +418,13 @@
                               "isDeprecated": false,
                               "rightColumn": 62,
                               "widgetId": "68hersrve6",
-                              "label": "ชื่อบัญชี",
+                              "label": "กรอกอีเมล",
                               "parentId": "7cz3q36g8i",
                               "labelAlignment": "left",
                               "renderMode": "CANVAS",
                               "originalTopRow": 38,
                               "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "topRow": 9,
-                              "labelWidth": "20",
-                              "type": "INPUT_WIDGET_V2",
-                              "animateLoading": true,
-                              "resetOnSubmit": true,
-                              "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "labelTextColor"
-                                },
-                                {
-                                  "key": "validation"
-                                }
-                              ],
-                              "labelStyle": "BOLD",
-                              "inputType": "PASSWORD",
-                              "placeholderText": "กรอกรหัสผ่าน",
-                              "isDisabled": false,
-                              "validation": "{{input_password1.text.length < 20 }}",
-                              "isRequired": true,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "isVisible": true,
-                              "version": 2,
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 46,
-                              "widgetName": "input_password1",
-                              "displayName": "Input",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 13,
-                              "parentRowSpace": 10,
-                              "autoFocus": false,
-                              "hideCard": false,
-                              "parentColumnSpace": 6.3173828125,
-                              "dynamicTriggerPathList": [],
-                              "labelPosition": "Left",
-                              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "key": "izpsacawsr",
-                              "labelTextSize": "0.875rem",
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "widgetId": "v2yffsmgss",
-                              "errorMessage": "ความยาวไม่เกิน 20 ตัวอักษร",
-                              "label": "รหัสผ่าน",
-                              "parentId": "7cz3q36g8i",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "originalTopRow": 42,
-                              "maxDynamicHeight": 9000,
+                              "shouldAllowAutofill": true,
                               "iconAlign": "left",
                               "defaultText": "",
                               "minDynamicHeight": 4
@@ -783,21 +433,17 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1Copy1",
-                              "onClick": "{{test.myFun2()}}",
+                              "onClick": "{{send_mail.myFun2();}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 30,
-                              "bottomRow": 34,
+                              "topRow": 11,
+                              "bottomRow": 15,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -808,7 +454,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 37,
+                              "leftColumn": 36,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -817,11 +463,11 @@
                                   "key": "buttonColor"
                                 }
                               ],
-                              "text": "สมัครสมาชิก",
+                              "text": "ยืนยัน",
                               "isDisabled": false,
                               "key": "rtykqovv18",
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 61,
                               "isDefaultClickDisabled": true,
                               "widgetId": "jydziauh6r",
                               "isVisible": true,
@@ -870,7 +516,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "สมัครสมาชิก",
+                              "text": "ลืมรหัสผ่าน",
                               "key": "3qyn2utk56",
                               "isDeprecated": false,
                               "rightColumn": 62,
@@ -907,7 +553,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas4",
                           "displayName": "Canvas",
-                          "bottomRow": 370,
+                          "bottomRow": 190,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -967,7 +613,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "minDynamicHeight": 15
+                      "minDynamicHeight": 10
                     }
                   ],
                   "key": "bgsg7ph85k",
@@ -1256,7 +902,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Register",
+        "id": "forgot password",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -1267,5 +913,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63fefe643b57a70f0657d473"
+  "gitSyncId": "644a56e901e69b53ba6da885_64621dfa4d66f968a16e6a19"
 }

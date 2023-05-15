@@ -19,6 +19,10 @@
     {
       "id": "Calculator",
       "isDefault": false
+    },
+    {
+      "id": "forgot password",
+      "isDefault": false
     }
   ],
   "viewMode": false,
