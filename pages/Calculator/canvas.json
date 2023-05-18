@@ -3086,7 +3086,7 @@
                                         "label"
                                       ],
                                       "topRow": 16,
-                                      "bottomRow": 21,
+                                      "bottomRow": 20,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3128,7 +3128,7 @@
                                       "originalTopRow": 16,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 20,
+                                      "originalBottomRow": 21,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -3141,8 +3141,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 24,
-                                      "bottomRow": 28,
+                                      "topRow": 23,
+                                      "bottomRow": 27,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3184,10 +3184,10 @@
                                       "parentId": "4yrvhuu8jt",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 23,
+                                      "originalTopRow": 24,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 27,
+                                      "originalBottomRow": 28,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
@@ -3613,7 +3613,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2Copy4",
-                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('Calculator', {}, 'SAME_WINDOW');\nreset_sum.reset_expense_all();}}",
                               "buttonColor": "#fff",
                               "dynamicPropertyPathList": [],
                               "displayName": "Button",

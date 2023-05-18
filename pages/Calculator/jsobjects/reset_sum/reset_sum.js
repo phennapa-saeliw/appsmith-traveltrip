@@ -1,4 +1,10 @@
 export default {
+	
+	reset_expense_all: async () => {
+		
+		let expense_all = 0
+		storeValue('expense_all',expense_all)
+	},
 
 	myFun2: async () => {
 		{
