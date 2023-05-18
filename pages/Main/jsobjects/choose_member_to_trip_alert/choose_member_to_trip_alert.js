@@ -6,7 +6,7 @@ export default {
       if (select_from_detail.data.length != 0) {
         let trip_id = select_from_detail.data[0].event_trip_id;
         storeValue('trip_id', trip_id);
-				showAlert('เก็บ trip id เรียบร้อย')
+				//showAlert('เก็บ trip id เรียบร้อย')
       } else {
         showAlert('ข้อมูลเท่ากับ 0');
       }

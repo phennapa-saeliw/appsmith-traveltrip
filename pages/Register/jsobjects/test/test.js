@@ -27,6 +27,16 @@ export default {
 				return;
 				}
 		
+		
+				await check_email.run()
+				let result_email = check_email.data;
+				if(result_email.length != 0){
+					showAlert('มีผู้ใช้งานอีเมลนี้อยู่เเล้ว!','error');
+					return;
+				} //showAlert('เช็คไปต่อ')
+			
+			
+		
 			check_username.run(() => {
 			let result = check_username.data;
 			

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "register",
+    "name": "check_email",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO member ( member_username , member_password , member_firstname , member_lastname,member_email )\n\nVALUES\n  (\n    '{{input_username.inputText}}',\n\t\t'{{input_password1.inputText}}',\n\t\t'{{input_firstname.inputText}}',\n\t\t'{{input_lastname.inputText}}',\n\t\t'{{input_email.inputText}}'\n\t\t\n\t\t\n  )\n\n",
+      "body": "SELECT member_email FROM member WHERE member_email = {{input_email.inputText}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,18 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "input_email.inputText",
-      "input_firstname.inputText",
-      "input_lastname.inputText",
-      "input_password1.inputText",
-      "input_username.inputText"
+      "input_email.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Register_register",
+  "id": "Register_check_email",
   "deleted": false,
-  "gitSyncId": "63c647e929e6fc43b6bc5555_63fefe653b57a70f0657d476"
+  "gitSyncId": "644a56e901e69b53ba6da885_6465e4f483b654658f3166bd"
 }

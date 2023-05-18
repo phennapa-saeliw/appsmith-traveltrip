@@ -1,0 +1,1 @@
+SELECT member_email FROM member WHERE member_email = {{input_email.inputText}}

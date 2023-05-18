@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 78,
+          "version": 79,
           "minHeight": 690,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -6264,6 +6264,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Main_member_fullname",
+              "name": "member_fullname",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Main_event_trip",
               "name": "event_trip",
               "confirmBeforeExecute": false,
@@ -6271,16 +6281,6 @@
               "jsonPathKeys": [
                 "appsmith.store.member_username"
               ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Main_member_fullname",
-              "name": "member_fullname",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
