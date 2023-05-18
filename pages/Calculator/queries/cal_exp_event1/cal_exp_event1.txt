@@ -1,0 +1,5 @@
+SELECT SUM(list_expense_amount) AS total_expense_amount
+FROM expense_history
+INNER JOIN list_expense ON list_expense.list_expense_id = expense_history.list_expense_id
+inner join event_history on event_history.event_history_id = list_expense.event_history_id
+WHERE event_history.event_history_id = {{Select_event.selectedOptionValue}}

@@ -1,0 +1,3 @@
+SELECT SUM(list_expense_amount) AS total_expense_amount
+FROM expense_history
+INNER JOIN list_expense ON list_expense.list_expense_id = expense_history.list_expense_id;

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "check_member_join_event5",
+    "name": "check_count_member_cal5",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{Select_event4.selectedOptionValue}}",
+      "body": "SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{appsmith.store.count_event}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select_event4.selectedOptionValue"
+      "appsmith.store.count_event"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_check_member_join_event5",
+  "id": "Calculator_check_count_member_cal5",
   "deleted": false,
-  "gitSyncId": "644a56e901e69b53ba6da885_64500224bf34ca68b34ef1bf"
+  "gitSyncId": "644a56e901e69b53ba6da885_6466438087ddcd06b550cdcd"
 }

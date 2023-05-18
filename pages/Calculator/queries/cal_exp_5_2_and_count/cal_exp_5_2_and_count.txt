@@ -1,0 +1,1 @@
+SELECT ({{appsmith.store.sum_cal5_2}} / {{appsmith.store.member_in_event}}) AS expense_event;

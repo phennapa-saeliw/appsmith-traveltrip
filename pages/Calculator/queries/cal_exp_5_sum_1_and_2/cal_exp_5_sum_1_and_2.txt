@@ -1,0 +1,1 @@
+SELECT ({{appsmith.store.cal_ex51}} + ({{appsmith.store.result_expense_event}})) AS expense_all;

@@ -1,0 +1,1 @@
+SELECT ({{appsmith.store.cal_exp1}} + {{appsmith.store.cal_exp2}}) AS expense_all;

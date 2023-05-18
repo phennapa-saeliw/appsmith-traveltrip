@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "check_member_join_event5",
+    "name": "cal_exp_5_2",
     "datasource": {
       "name": "lzzlvtsp",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT COUNT(member_id) FROM member_join_event WHERE event_history_id = {{Select_event4.selectedOptionValue}}",
+      "body": "SELECT SUM(list_expense_amount) \nFROM list_expense \nINNER JOIN event_history ON list_expense.event_history_id = event_history.event_history_id\nWHERE \"calculate_type (1 = split, 2 = individual)\" = 2 and list_expense.event_history_id = {{appsmith.store.count_event}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select_event4.selectedOptionValue"
+      "appsmith.store.count_event"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Calculator_check_member_join_event5",
+  "id": "Calculator_cal_exp_5_2",
   "deleted": false,
-  "gitSyncId": "644a56e901e69b53ba6da885_64500224bf34ca68b34ef1bf"
+  "gitSyncId": "644a56e901e69b53ba6da885_646607ac74bb394d09c64990"
 }

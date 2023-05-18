@@ -29,9 +29,9 @@ export default {
     } else {
       //showAlert('เลือกทริป')
 			
-			await select_event_form_trip_id.run()
+			/* await select_event_form_trip_id.run()
 
-			await cal_expense2.run().then(()=>{
+			 await cal_expense2.run().then(()=>{
 				if(cal_expense2.data.length != 0){
 
 					let expense_all2 = cal_expense2.data[0].sum
@@ -69,7 +69,42 @@ export default {
 					await select_member_from_trip.run()
 			
 					
+				*/
+					if(Select_event.selectedOptionLabel != ''){
+						//showAlert('เลือกกิจกรรมเเล้ว','success')
+						await select_event_form_trip_id.run()
+					}else{
+						//showAlert('กรุณาเลือกกิจกรรม','error')
+						return;
+					}
+			
+					await cal_exp_event1.run()
+					let cal_exp_e1 = cal_exp_event1.data[0].total_expense_amount 
+					if( cal_exp_e1 != null){
+						storeValue('cal_exp_e1',cal_exp_e1)
+						//showAlert('cal_e1 = '+ cal_exp_e1)
+					}else{
+						let cal_exp_e1 = 0
+						storeValue('cal_exp_e1',cal_exp_e1)
+						//showAlert('e1 = 0')
+					}
+			
+					await cal_exp_event2.run()
+					let cal_exp_e2 = cal_exp_event2.data[0].sum 
+					if( cal_exp_e2 != null){
+						storeValue('cal_exp_e2',cal_exp_e2)
+						//showAlert('cal_e2 = '+ cal_exp_e2)
+					}else{
+						let cal_exp_e2 = 0
+						storeValue('cal_exp_e2',cal_exp_e2)
+						//showAlert('e2 = 0')
+					}	
 					
+					await cal_exp_event_sum_1_and_2.run()
+					let cal_from_event_total = cal_exp_event_sum_1_and_2.data[0].expense_all
+					storeValue('cal_from_event_total',cal_from_event_total)
+			
+			
 			
     } 
 					

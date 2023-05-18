@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -1766,7 +1766,7 @@
                                       ],
                                       "labelPosition": "Left",
                                       "onDropdownClose": "",
-                                      "options": "{{select_event_form_trip_id.data.map((row) => {\n\treturn{\n\n\t\t\tlabel : row.event_name,\n\t\tvalue : row.event_history_id\n\t\t\n\t}\n})}}\n\n",
+                                      "options": "{{select_event_form_trip_id.data.map((row) => {\n\treturn{\n\t\t\tlabel : row.event_name,\n\t\tvalue : row.event_history_id\n\t\t\n\t}\n})}}\n\n",
                                       "labelStyle": "BOLD",
                                       "placeholderText": "กรุณาเลือกกิจกรรม",
                                       "isDisabled": false,
@@ -1914,7 +1914,7 @@
                                       "isLoading": false,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "onOptionChange": "{{Cal_from_event.myFun2()}}",
+                                      "onOptionChange": "{{Cal_from_event.myFun2();\nselect_event_form_trip_id.run()}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -2745,7 +2745,7 @@
                                         "label"
                                       ],
                                       "topRow": 26,
-                                      "bottomRow": 30,
+                                      "bottomRow": 31,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2800,8 +2800,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 31,
-                                      "bottomRow": 35,
+                                      "topRow": 32,
+                                      "bottomRow": 36,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3010,35 +3010,14 @@
                                     },
                                     {
                                       "boxShadow": "none",
-                                      "widgetName": "Select_member5",
-                                      "isFilterable": true,
-                                      "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                                       "labelText": "สมาชิก",
-                                      "searchTags": [
-                                        "dropdown"
-                                      ],
                                       "topRow": 10,
-                                      "bottomRow": 14,
-                                      "parentRowSpace": 10,
                                       "labelWidth": "12",
                                       "type": "SELECT_WIDGET",
                                       "serverSideFiltering": false,
-                                      "hideCard": false,
                                       "defaultOptionValue": "",
                                       "animateLoading": true,
-                                      "parentColumnSpace": 6.21875,
-                                      "dynamicTriggerPathList": [
-                                        {
-                                          "key": "onDropdownOpen"
-                                        },
-                                        {
-                                          "key": "onDropdownClose"
-                                        },
-                                        {
-                                          "key": "onOptionChange"
-                                        }
-                                      ],
                                       "leftColumn": 0,
                                       "dynamicBindingPathList": [
                                         {
@@ -3051,32 +3030,54 @@
                                           "key": "options"
                                         }
                                       ],
-                                      "labelPosition": "Left",
-                                      "onDropdownClose": "{{Cal_member.myFun2()}}",
                                       "options": "{{select_member_from_trip5.data.map((row) => {\n  return {\n    label: row.member_fullname,\n    value: row.member_id.toString() // convert member_id to string\n  }\n})}}\n",
                                       "labelStyle": "BOLD",
                                       "placeholderText": "Select option",
                                       "isDisabled": false,
-                                      "key": "ouai8fownt",
-                                      "labelTextSize": "0.875rem",
                                       "isRequired": false,
-                                      "isDeprecated": false,
-                                      "rightColumn": 64,
                                       "dynamicHeight": "FIXED",
-                                      "widgetId": "7qii5rdazo",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
                                       "version": 1,
-                                      "parentId": "4yrvhuu8jt",
                                       "onDropdownOpen": "",
+                                      "isLoading": false,
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "originalBottomRow": 21,
+                                      "widgetName": "Select_member5",
+                                      "isFilterable": true,
+                                      "dynamicPropertyPathList": [],
+                                      "displayName": "Select",
+                                      "searchTags": [
+                                        "dropdown"
+                                      ],
+                                      "bottomRow": 14,
+                                      "parentRowSpace": 10,
+                                      "hideCard": false,
+                                      "parentColumnSpace": 6.21875,
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onDropdownOpen"
+                                        },
+                                        {
+                                          "key": "onDropdownClose"
+                                        },
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
+                                      "labelPosition": "Left",
+                                      "onDropdownClose": "",
+                                      "key": "ouai8fownt",
+                                      "labelTextSize": "0.875rem",
+                                      "isDeprecated": false,
+                                      "rightColumn": 64,
+                                      "widgetId": "7qii5rdazo",
+                                      "parentId": "4yrvhuu8jt",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
-                                      "isLoading": false,
                                       "originalTopRow": 17,
-                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 21,
-                                      "onOptionChange": "{{Cal_member.myFun2()}}",
+                                      "onOptionChange": "{{Cal_expense_5.reset();\nCal_expense_5.myFun2();}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -3128,10 +3129,10 @@
                                       "parentId": "4yrvhuu8jt",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 23,
+                                      "originalTopRow": 16,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 27,
+                                      "originalBottomRow": 21,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -3172,7 +3173,7 @@
                                       "shouldTruncate": false,
                                       "borderWidth": "",
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{appsmith.store.expense_member}} บาท",
+                                      "text": "{{appsmith.store.expense_all}} บาท",
                                       "key": "osq6l8lqxh",
                                       "isDeprecated": false,
                                       "rightColumn": 64,
@@ -3187,10 +3188,10 @@
                                       "parentId": "4yrvhuu8jt",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 28,
+                                      "originalTopRow": 24,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 32,
+                                      "originalBottomRow": 28,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
@@ -3313,6 +3314,9 @@
                                 },
                                 {
                                   "key": "menuItems.menuItemct2cfwo6nd.onClick"
+                                },
+                                {
+                                  "key": "menuItems.menuItemq7v6z4pfxg.onClick"
                                 }
                               ],
                               "leftColumn": 3,
@@ -3381,6 +3385,16 @@
                                   "widgetId": "i1a7w7zr5e",
                                   "isDisabled": false,
                                   "isVisible": false,
+                                  "onClick": "{{navi_to_tabb.tabb5();}}"
+                                },
+                                "menuItemq7v6z4pfxg": {
+                                  "id": "menuItemq7v6z4pfxg",
+                                  "index": 5,
+                                  "label": "ค่าใช้จ่ายแบบหารต่อทริป ของสมาชิก",
+                                  "widgetId": "fio0va333c",
+                                  "isDisabled": false,
+                                  "isVisible": true,
+                                  "backgroundColor": "#fdcfdf",
                                   "onClick": "{{navi_to_tabb.tabb5();}}"
                                 }
                               },

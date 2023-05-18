@@ -51,6 +51,9 @@ export default {
 		let expesne_form_event5 = 0
 		storeValue('expesne_form_event5',expesne_form_event5)
 		
+		let expense_member = 0
+		storeValue('expense_member',expense_member)
+		
 		{{storeValue('tabb','Tab 5')}}
 		
 	}
