@@ -104,8 +104,8 @@ export default {
 					let cal_from_event_total = cal_exp_event_sum_1_and_2.data[0].expense_all
 					storeValue('cal_from_event_total',cal_from_event_total)
 			
-			
-			
+					showAlert('คำนวนค่าใช้จ่ายสำเร็จ','success')
+					
     } 
 					
   } 

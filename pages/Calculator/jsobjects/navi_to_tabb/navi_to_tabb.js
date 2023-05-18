@@ -54,6 +54,9 @@ export default {
 		let expense_member = 0
 		storeValue('expense_member',expense_member)
 		
+		let expense_all = 0
+			storeValue('expense_all',expense_all)
+		
 		{{storeValue('tabb','Tab 5')}}
 		
 	}

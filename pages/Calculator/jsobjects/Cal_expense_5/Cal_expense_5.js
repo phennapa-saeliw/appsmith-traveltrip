@@ -1,6 +1,9 @@
 export default {
 	myFun2: async () => {
 		
+		
+	
+		
 		if (Select_trip5.selectedOptionValue == '') {
 			//showAlert('ไม่ได้เลือกทริป ');
 			
@@ -81,7 +84,7 @@ export default {
 		
 		await check_count_member_cal5.run()
 		let member_in_event = check_count_member_cal5.data[0].count
-		//storeValue('member_in_event',member_in_event)
+		storeValue('member_in_event',member_in_event)
 
 		await cal_exp_5_2_and_count.run()
 		let expense_event = cal_exp_5_2_and_count.data[0].expense_event
@@ -100,14 +103,15 @@ export default {
 			await check_count_member_cal5.run()
 			let count_event = check_count_member_cal5.data[0].count
 			storeValue('count_event',count_event)
-
-			await cal_exp_5_2_and_count.run()
+			
+			if(count_event != 0){
+			await cal_exp_5_2_and_count.run() //ขั้นตอนการหาร
 			let expense_event = cal_exp_5_2_and_count.data[0].expense_event
 			storeValue('expense_event',expense_event)
-			//showAlert('expense = '+ expense_event)
+			}
+
+			//showAlert('expense = '+ expense_event) 
 			
-			result_expense_event += expense_event;
-			storeValue('result_expense_event',result_expense_event)
 			//showAlert('result ='+ result_expense_event )
 			//continue;
 			
@@ -128,9 +132,14 @@ export default {
 
 	},
 		reset : async () => {
+			if(Select_member5.selectedOptionValue == ''){
+				let expense_all = 0
+				storeValue('expense_all',expense_all)
+			}
 			
 			let expense_all = 0
 			storeValue('expense_all',expense_all)
+	
 		}
 
 }

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 690,
+          "bottomRow": 770,
           "containerStyle": "none",
           "snapRows": 68,
           "parentRowSpace": 1,
@@ -2264,7 +2264,7 @@
                                         "label"
                                       ],
                                       "topRow": 23,
-                                      "bottomRow": 28,
+                                      "bottomRow": 27,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2306,7 +2306,7 @@
                                       "originalTopRow": 23,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 27,
+                                      "originalBottomRow": 28,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2319,8 +2319,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 29,
-                                      "bottomRow": 33,
+                                      "topRow": 28,
+                                      "bottomRow": 32,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2362,10 +2362,10 @@
                                       "parentId": "892454fxm0",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 28,
+                                      "originalTopRow": 29,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 32,
+                                      "originalBottomRow": 33,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -2373,11 +2373,7 @@
                                       "boxShadow": "none",
                                       "widgetName": "Select_member3",
                                       "isFilterable": true,
-                                      "dynamicPropertyPathList": [
-                                        {
-                                          "key": "onDropdownClose"
-                                        }
-                                      ],
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                                       "labelText": "สมาชิก",
@@ -2745,7 +2741,7 @@
                                         "label"
                                       ],
                                       "topRow": 26,
-                                      "bottomRow": 31,
+                                      "bottomRow": 30,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -2800,8 +2796,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 32,
-                                      "bottomRow": 36,
+                                      "topRow": 31,
+                                      "bottomRow": 35,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3090,7 +3086,7 @@
                                         "label"
                                       ],
                                       "topRow": 16,
-                                      "bottomRow": 20,
+                                      "bottomRow": 21,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3114,7 +3110,7 @@
                                       "shouldTruncate": false,
                                       "borderWidth": "",
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "ค่าใช้จ่ายของสมาชิก\n{{Select_member3.selectedOptionLabel}}",
+                                      "text": "ค่าใช้จ่ายของสมาชิก\n{{Select_member5.selectedOptionLabel}}",
                                       "key": "osq6l8lqxh",
                                       "isDeprecated": false,
                                       "rightColumn": 63,
@@ -3132,7 +3128,7 @@
                                       "originalTopRow": 16,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 21,
+                                      "originalBottomRow": 20,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     },
@@ -3145,8 +3141,8 @@
                                         "paragraph",
                                         "label"
                                       ],
-                                      "topRow": 23,
-                                      "bottomRow": 27,
+                                      "topRow": 24,
+                                      "bottomRow": 28,
                                       "parentRowSpace": 10,
                                       "type": "TEXT_WIDGET",
                                       "hideCard": false,
@@ -3188,10 +3184,10 @@
                                       "parentId": "4yrvhuu8jt",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "originalTopRow": 24,
+                                      "originalTopRow": 23,
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
-                                      "originalBottomRow": 28,
+                                      "originalBottomRow": 27,
                                       "fontSize": "1rem",
                                       "minDynamicHeight": 4
                                     }
